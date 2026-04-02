@@ -70,17 +70,6 @@ Keep the tone direct and analytical. Cite specific statistics. Avoid generic sta
 }
 
 export default async function handler(req, res) {
-  // Temporary: GET lists available models for diagnostics
-  if (req.method === 'GET') {
-    const apiKey = process.env.GEMINI_API_KEY;
-    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-    const data = await r.json();
-    const models = (data.models ?? [])
-      .filter(m => m.supportedGenerationMethods?.includes('generateContent'))
-      .map(m => m.name);
-    return res.status(200).json({ models });
-  }
-
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -109,16 +98,13 @@ export default async function handler(req, res) {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel(
-      {
-        model: 'gemini-1.5-flash',
-        generationConfig: {
-          maxOutputTokens: 600,
-          temperature: 0.7,
-        },
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
+      generationConfig: {
+        maxOutputTokens: 600,
+        temperature: 0.7,
       },
-      { apiVersion: 'v1' },
-    );
+    });
 
     const prompt = buildPrompt(properties);
     const result = await model.generateContentStream(prompt);
