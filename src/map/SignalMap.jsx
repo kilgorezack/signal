@@ -124,7 +124,16 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
           const pt = overlay.points?.[0]?.[0]; // points[ring][vertex]
           if (!pt) continue;
           const props = coordToProps.get(coordKey(pt.latitude, pt.longitude));
-          if (props) overlay.data = props;
+          if (props) {
+            overlay.data = props;
+            overlay.style = new mapkit.Style({
+              fillColor: scoreToHex(props.opportunity_score),
+              fillOpacity: 0.78,
+              strokeColor: '#ffffff',
+              strokeOpacity: 0.25,
+              lineWidth: 0.8,
+            });
+          }
         }
 
         map.addEventListener('select', (event) => {
