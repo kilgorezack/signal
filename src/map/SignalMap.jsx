@@ -82,12 +82,26 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
     }
     overlayMapRef.current = {};
 
+    // Build a first-coordinate → SA4 props lookup so we can stamp every
+    // leaf ring overlay after MapKit expands MultiPolygons into sub-overlays.
+    const coordKey = (lat, lng) => `${lat.toFixed(6)},${lng.toFixed(6)}`;
+    const coordToProps = new Map();
+    for (const f of geojson.features) {
+      if (!f.geometry || !f.properties?.id) continue;
+      const props = f.properties;
+      const rings = f.geometry.type === 'Polygon'
+        ? f.geometry.coordinates
+        : f.geometry.coordinates.flat(); // MultiPolygon → array of rings
+      for (const ring of rings) {
+        if (ring[0]) coordToProps.set(coordKey(ring[0][1], ring[0][0]), props);
+      }
+    }
+
     const delegate2 = {
       itemForFeature(overlay, feature) {
         if (!overlay) return null;
         const props = feature.properties ?? {};
         const score = props.opportunity_score;
-        // Apply choropleth style directly — styleForFeature is not reliably called in MapKit 5.x
         overlay.style = new mapkit.Style({
           fillColor: scoreToHex(score),
           fillOpacity: 0.78,
@@ -103,13 +117,18 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       geoJSONDidComplete(result) {
         map.addItems(result.items);
 
-        // MapKit overlays don't support DOM events — use map-level select
+        // MapKit expands MultiPolygonOverlay into individual PolygonOverlay rings in
+        // map.overlays. Stamp each ring with SA4 props using first-coordinate lookup.
+        for (const overlay of map.overlays) {
+          if (overlay.data?.id) continue; // already has our props (Polygon features)
+          const pt = overlay.points?.[0];
+          if (!pt) continue;
+          const props = coordToProps.get(coordKey(pt.latitude, pt.longitude));
+          if (props) overlay.data = props;
+        }
+
         map.addEventListener('select', (event) => {
-          if (!event.overlay) return;
-          const d = event.overlay.data;
-          if (!d) return;
-          // MapKit may overwrite overlay.data with the full GeoJSON feature after itemForFeature
-          const props = (d.type === 'Feature' && d.properties) ? d.properties : d;
+          const props = event.overlay?.data;
           if (props?.id) onRegionSelect?.(props);
         });
       },
