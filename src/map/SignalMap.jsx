@@ -86,10 +86,10 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       styleForFeature(style, feature) {
         const score = feature.properties?.opportunity_score;
         style.fillColor = scoreToHex(score);
-        style.fillOpacity = 0.60;
+        style.fillOpacity = 0.78;
         style.strokeColor = '#ffffff';
-        style.strokeOpacity = 0.15;
-        style.lineWidth = 0.5;
+        style.strokeOpacity = 0.25;
+        style.lineWidth = 0.8;
         return style;
       },
 
@@ -132,9 +132,9 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       const isSelected = id === selectedId;
       overlay.style = new mapkit.Style({
         fillColor: scoreToHex(score),
-        fillOpacity: isSelected ? 0.85 : 0.60,
+        fillOpacity: isSelected ? 0.92 : 0.78,
         strokeColor: '#ffffff',
-        strokeOpacity: isSelected ? 0.6 : 0.15,
+        strokeOpacity: isSelected ? 0.7 : 0.25,
         lineWidth: isSelected ? 2 : 0.5,
       });
     }
