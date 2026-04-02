@@ -82,21 +82,6 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
     }
     overlayMapRef.current = {};
 
-    const delegate = {
-      styleForOverlay(overlay) {
-        const score = overlay._signalProps?.opportunity_score;
-        const isSelected = overlay._signalProps?.id === selectedId;
-        const style = new mapkit.Style({
-          fillColor: scoreToHex(score),
-          fillOpacity: isSelected ? 0.85 : 0.60,
-          strokeColor: '#ffffff',
-          strokeOpacity: isSelected ? 0.6 : 0.15,
-          lineWidth: isSelected ? 2 : 0.5,
-        });
-        return style;
-      },
-    };
-
     const delegate2 = {
       styleForFeature(style, feature) {
         const score = feature.properties?.opportunity_score;
@@ -109,41 +94,21 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       },
 
       itemForFeature(overlay, feature) {
+        if (!overlay) return null;
         const props = feature.properties ?? {};
         overlay._signalProps = props;
-
-        // Click handler
-        overlay.addEventListener('select', () => {
-          onRegionSelect?.(props);
-        });
-
-        // Hover handlers
-        overlay.addEventListener('mouseenter', () => {
-          overlay.style = new mapkit.Style({
-            fillColor: scoreToHex(props.opportunity_score),
-            fillOpacity: 0.82,
-            strokeColor: '#ffffff',
-            strokeOpacity: 0.4,
-            lineWidth: 1.5,
-          });
-        });
-
-        overlay.addEventListener('mouseleave', () => {
-          overlay.style = new mapkit.Style({
-            fillColor: scoreToHex(props.opportunity_score),
-            fillOpacity: 0.60,
-            strokeColor: '#ffffff',
-            strokeOpacity: 0.15,
-            lineWidth: 0.5,
-          });
-        });
-
         overlayMapRef.current[props.id] = overlay;
         return overlay;
       },
 
       geoJSONDidComplete(result) {
         map.addItems(result.items);
+
+        // MapKit overlays don't support DOM events — use map-level select
+        map.addEventListener('select', (event) => {
+          const props = event.overlay?._signalProps;
+          if (props) onRegionSelect?.(props);
+        });
       },
 
       geoJSONDidError(error) {
