@@ -1,0 +1,965 @@
+[
+  {
+    "id": "115",
+    "name": "Sydney - Baulkham Hills and Hawkesbury",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 81,
+    "centroid_lat": -33.3846,
+    "centroid_lng": 150.7562
+  },
+  {
+    "id": "304",
+    "name": "Brisbane - West",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 76,
+    "centroid_lat": -27.4979,
+    "centroid_lng": 152.9096
+  },
+  {
+    "id": "122",
+    "name": "Sydney - Northern Beaches",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 74,
+    "centroid_lat": -33.6979,
+    "centroid_lng": 151.2519
+  },
+  {
+    "id": "128",
+    "name": "Sydney - Sutherland",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 74,
+    "centroid_lat": -34.0747,
+    "centroid_lng": 151.0843
+  },
+  {
+    "id": "801",
+    "name": "Australian Capital Territory",
+    "state_code": "ACT",
+    "type": "sa4",
+    "opportunity_score": 73,
+    "centroid_lat": -35.5224,
+    "centroid_lng": 149.0811
+  },
+  {
+    "id": "211",
+    "name": "Melbourne - Outer East",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 72,
+    "centroid_lat": -37.7505,
+    "centroid_lng": 145.5177
+  },
+  {
+    "id": "123",
+    "name": "Sydney - Outer South West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 71,
+    "centroid_lat": -34.136,
+    "centroid_lng": 150.7075
+  },
+  {
+    "id": "314",
+    "name": "Moreton Bay - South",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 71,
+    "centroid_lat": -27.2543,
+    "centroid_lng": 152.8798
+  },
+  {
+    "id": "209",
+    "name": "Melbourne - North East",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 70,
+    "centroid_lat": -37.524,
+    "centroid_lng": 145.2303
+  },
+  {
+    "id": "213",
+    "name": "Melbourne - West",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 70,
+    "centroid_lat": -37.7755,
+    "centroid_lng": 144.625
+  },
+  {
+    "id": "301",
+    "name": "Brisbane - East",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 70,
+    "centroid_lat": -27.5307,
+    "centroid_lng": 153.3173
+  },
+  {
+    "id": "505",
+    "name": "Perth - North West",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 70,
+    "centroid_lat": -31.694,
+    "centroid_lng": 115.7303
+  },
+  {
+    "id": "507",
+    "name": "Perth - South West",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 70,
+    "centroid_lat": -32.2227,
+    "centroid_lng": 115.6829
+  },
+  {
+    "id": "210",
+    "name": "Melbourne - North West",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 69,
+    "centroid_lat": -37.4756,
+    "centroid_lng": 144.7215
+  },
+  {
+    "id": "212",
+    "name": "Melbourne - South East",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 69,
+    "centroid_lat": -38.0929,
+    "centroid_lng": 145.4223
+  },
+  {
+    "id": "124",
+    "name": "Sydney - Outer West and Blue Mountains",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 68,
+    "centroid_lat": -33.8969,
+    "centroid_lng": 150.4065
+  },
+  {
+    "id": "504",
+    "name": "Perth - North East",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 68,
+    "centroid_lat": -31.8299,
+    "centroid_lng": 116.146
+  },
+  {
+    "id": "121",
+    "name": "Sydney - North Sydney and Hornsby",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 67,
+    "centroid_lat": -33.6804,
+    "centroid_lng": 151.1635
+  },
+  {
+    "id": "506",
+    "name": "Perth - South East",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 67,
+    "centroid_lat": -32.1966,
+    "centroid_lng": 116.0941
+  },
+  {
+    "id": "510",
+    "name": "Western Australia - Outback (North)",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 67,
+    "centroid_lat": -18.7883,
+    "centroid_lng": 121.6528
+  },
+  {
+    "id": "701",
+    "name": "Darwin",
+    "state_code": "NT",
+    "type": "sa4",
+    "opportunity_score": 67,
+    "centroid_lat": -12.4314,
+    "centroid_lng": 131.1059
+  },
+  {
+    "id": "111",
+    "name": "Newcastle and Lake Macquarie",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 65,
+    "centroid_lat": -32.9913,
+    "centroid_lng": 151.6052
+  },
+  {
+    "id": "116",
+    "name": "Sydney - Blacktown",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 65,
+    "centroid_lat": -33.7384,
+    "centroid_lng": 150.8633
+  },
+  {
+    "id": "127",
+    "name": "Sydney - South West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 65,
+    "centroid_lat": -33.9358,
+    "centroid_lng": 150.808
+  },
+  {
+    "id": "214",
+    "name": "Mornington Peninsula",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 65,
+    "centroid_lat": -38.2852,
+    "centroid_lng": 144.9566
+  },
+  {
+    "id": "312",
+    "name": "Mackay - Isaac - Whitsunday",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 65,
+    "centroid_lat": -21.6307,
+    "centroid_lng": 148.2368
+  },
+  {
+    "id": "107",
+    "name": "Illawarra",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 64,
+    "centroid_lat": -34.4428,
+    "centroid_lng": 150.7969
+  },
+  {
+    "id": "203",
+    "name": "Geelong",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 64,
+    "centroid_lat": -38.1803,
+    "centroid_lng": 144.1712
+  },
+  {
+    "id": "401",
+    "name": "Adelaide - Central and Hills",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 64,
+    "centroid_lat": -34.9619,
+    "centroid_lng": 138.808
+  },
+  {
+    "id": "302",
+    "name": "Brisbane - North",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 63,
+    "centroid_lat": -27.3622,
+    "centroid_lng": 153.0679
+  },
+  {
+    "id": "303",
+    "name": "Brisbane - South",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 63,
+    "centroid_lat": -27.5589,
+    "centroid_lng": 153.0816
+  },
+  {
+    "id": "310",
+    "name": "Ipswich",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 63,
+    "centroid_lat": -27.6647,
+    "centroid_lng": 152.5663
+  },
+  {
+    "id": "311",
+    "name": "Logan - Beaudesert",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 63,
+    "centroid_lat": -27.9756,
+    "centroid_lng": 152.9691
+  },
+  {
+    "id": "403",
+    "name": "Adelaide - South",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 63,
+    "centroid_lat": -35.1544,
+    "centroid_lng": 138.5778
+  },
+  {
+    "id": "102",
+    "name": "Central Coast",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -33.3071,
+    "centroid_lng": 151.3073
+  },
+  {
+    "id": "106",
+    "name": "Hunter Valley exc Newcastle",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -32.3463,
+    "centroid_lng": 151.0643
+  },
+  {
+    "id": "308",
+    "name": "Central Queensland",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -23.9406,
+    "centroid_lng": 149.646
+  },
+  {
+    "id": "402",
+    "name": "Adelaide - North",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -34.6942,
+    "centroid_lng": 138.6418
+  },
+  {
+    "id": "511",
+    "name": "Western Australia - Outback (South)",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -28.13,
+    "centroid_lng": 120.9615
+  },
+  {
+    "id": "601",
+    "name": "Hobart",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 62,
+    "centroid_lat": -42.8883,
+    "centroid_lng": 147.4818
+  },
+  {
+    "id": "101",
+    "name": "Capital Region",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -35.6965,
+    "centroid_lng": 149.045
+  },
+  {
+    "id": "202",
+    "name": "Bendigo",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -36.6824,
+    "centroid_lng": 144.0844
+  },
+  {
+    "id": "309",
+    "name": "Gold Coast",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -28.0251,
+    "centroid_lng": 153.2801
+  },
+  {
+    "id": "316",
+    "name": "Sunshine Coast",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -26.5609,
+    "centroid_lng": 152.8512
+  },
+  {
+    "id": "318",
+    "name": "Townsville",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -20.2092,
+    "centroid_lng": 145.9743
+  },
+  {
+    "id": "501",
+    "name": "Bunbury",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 61,
+    "centroid_lat": -33.912,
+    "centroid_lng": 115.9157
+  },
+  {
+    "id": "103",
+    "name": "Central West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 60,
+    "centroid_lat": -33.0479,
+    "centroid_lng": 148.3369
+  },
+  {
+    "id": "113",
+    "name": "Riverina",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 60,
+    "centroid_lat": -34.7387,
+    "centroid_lng": 146.8299
+  },
+  {
+    "id": "317",
+    "name": "Toowoomba",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 60,
+    "centroid_lat": -27.6595,
+    "centroid_lng": 152.0744
+  },
+  {
+    "id": "114",
+    "name": "Southern Highlands and Shoalhaven",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 59,
+    "centroid_lat": -34.8905,
+    "centroid_lng": 150.4135
+  },
+  {
+    "id": "201",
+    "name": "Ballarat",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 59,
+    "centroid_lat": -37.3436,
+    "centroid_lng": 143.7768
+  },
+  {
+    "id": "204",
+    "name": "Hume",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 59,
+    "centroid_lat": -36.8791,
+    "centroid_lng": 146.3755
+  },
+  {
+    "id": "208",
+    "name": "Melbourne - Inner South",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 59,
+    "centroid_lat": -37.9612,
+    "centroid_lng": 145.0698
+  },
+  {
+    "id": "217",
+    "name": "Warrnambool and South West",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 59,
+    "centroid_lat": -37.9725,
+    "centroid_lng": 142.456
+  },
+  {
+    "id": "105",
+    "name": "Far West and Orana",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -31.1828,
+    "centroid_lng": 145.555
+  },
+  {
+    "id": "205",
+    "name": "Latrobe - Gippsland",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -37.8858,
+    "centroid_lng": 147.5428
+  },
+  {
+    "id": "207",
+    "name": "Melbourne - Inner East",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -37.8049,
+    "centroid_lng": 145.0917
+  },
+  {
+    "id": "216",
+    "name": "Shepparton",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -36.2823,
+    "centroid_lng": 145.2529
+  },
+  {
+    "id": "313",
+    "name": "Moreton Bay - North",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -26.9079,
+    "centroid_lng": 152.771
+  },
+  {
+    "id": "502",
+    "name": "Mandurah",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -32.6232,
+    "centroid_lng": 115.8192
+  },
+  {
+    "id": "509",
+    "name": "Western Australia - Wheat Belt",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -32.4022,
+    "centroid_lng": 117.776
+  },
+  {
+    "id": "603",
+    "name": "South East",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 58,
+    "centroid_lat": -42.7204,
+    "centroid_lng": 147.0959
+  },
+  {
+    "id": "109",
+    "name": "Murray",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -34.4392,
+    "centroid_lng": 144.4107
+  },
+  {
+    "id": "110",
+    "name": "New England and North West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -30.0536,
+    "centroid_lng": 150.6538
+  },
+  {
+    "id": "112",
+    "name": "Richmond - Tweed",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -28.7493,
+    "centroid_lng": 153.0062
+  },
+  {
+    "id": "215",
+    "name": "North West",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -35.9086,
+    "centroid_lng": 142.6901
+  },
+  {
+    "id": "306",
+    "name": "Cairns",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -17.2405,
+    "centroid_lng": 145.5498
+  },
+  {
+    "id": "307",
+    "name": "Darling Downs - Maranoa",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -27.0302,
+    "centroid_lng": 149.678
+  },
+  {
+    "id": "315",
+    "name": "Queensland - Outback",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -19.0707,
+    "centroid_lng": 142.9746
+  },
+  {
+    "id": "503",
+    "name": "Perth - Inner",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -31.9663,
+    "centroid_lng": 115.8217
+  },
+  {
+    "id": "702",
+    "name": "Northern Territory - Outback",
+    "state_code": "NT",
+    "type": "sa4",
+    "opportunity_score": 57,
+    "centroid_lat": -18.4522,
+    "centroid_lng": 133.4998
+  },
+  {
+    "id": "104",
+    "name": "Coffs Harbour - Grafton",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -29.7685,
+    "centroid_lng": 152.7815
+  },
+  {
+    "id": "126",
+    "name": "Sydney - Ryde",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -33.782,
+    "centroid_lng": 151.1089
+  },
+  {
+    "id": "405",
+    "name": "Barossa - Yorke - Mid North",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -33.7493,
+    "centroid_lng": 137.8997
+  },
+  {
+    "id": "602",
+    "name": "Launceston and North East",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -40.7425,
+    "centroid_lng": 147.225
+  },
+  {
+    "id": "604",
+    "name": "West and North West",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -41.451,
+    "centroid_lng": 145.2905
+  },
+  {
+    "id": "901",
+    "name": "Other Territories",
+    "state_code": "OT",
+    "type": "sa4",
+    "opportunity_score": 56,
+    "centroid_lat": -22.8066,
+    "centroid_lng": 132.4074
+  },
+  {
+    "id": "118",
+    "name": "Sydney - Eastern Suburbs",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 55,
+    "centroid_lat": -33.9172,
+    "centroid_lng": 151.2495
+  },
+  {
+    "id": "407",
+    "name": "South Australia - South East",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 55,
+    "centroid_lat": -35.9316,
+    "centroid_lng": 138.7534
+  },
+  {
+    "id": "108",
+    "name": "Mid North Coast",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 54,
+    "centroid_lat": -31.5582,
+    "centroid_lng": 155.256
+  },
+  {
+    "id": "406",
+    "name": "South Australia - Outback",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 54,
+    "centroid_lat": -30.6684,
+    "centroid_lng": 135.0024
+  },
+  {
+    "id": "120",
+    "name": "Sydney - Inner West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 53,
+    "centroid_lat": -33.8696,
+    "centroid_lng": 151.1266
+  },
+  {
+    "id": "319",
+    "name": "Wide Bay",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 53,
+    "centroid_lat": -25.67,
+    "centroid_lng": 151.865
+  },
+  {
+    "id": "404",
+    "name": "Adelaide - West",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 53,
+    "centroid_lat": -34.8655,
+    "centroid_lng": 138.5318
+  },
+  {
+    "id": "397",
+    "name": "Migratory - Offshore - Shipping (Qld)",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 51,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "119",
+    "name": "Sydney - Inner South West",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 50,
+    "centroid_lat": -33.944,
+    "centroid_lng": 151.067
+  },
+  {
+    "id": "125",
+    "name": "Sydney - Parramatta",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 49,
+    "centroid_lat": -33.8281,
+    "centroid_lng": 150.9965
+  },
+  {
+    "id": "305",
+    "name": "Brisbane Inner City",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 48,
+    "centroid_lat": -27.4489,
+    "centroid_lng": 153.024
+  },
+  {
+    "id": "797",
+    "name": "Migratory - Offshore - Shipping (NT)",
+    "state_code": "NT",
+    "type": "sa4",
+    "opportunity_score": 45,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "117",
+    "name": "Sydney - City and Inner South",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 43,
+    "centroid_lat": -33.9178,
+    "centroid_lng": 151.1866
+  },
+  {
+    "id": "206",
+    "name": "Melbourne - Inner",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 43,
+    "centroid_lat": -37.8121,
+    "centroid_lng": 144.9671
+  },
+  {
+    "id": "597",
+    "name": "Migratory - Offshore - Shipping (WA)",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 41,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "197",
+    "name": "Migratory - Offshore - Shipping (NSW)",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "199",
+    "name": "No usual address (NSW)",
+    "state_code": "NSW",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "297",
+    "name": "Migratory - Offshore - Shipping (Vic.)",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "299",
+    "name": "No usual address (Vic.)",
+    "state_code": "VIC",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "399",
+    "name": "No usual address (Qld)",
+    "state_code": "QLD",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "499",
+    "name": "No usual address (SA)",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "599",
+    "name": "No usual address (WA)",
+    "state_code": "WA",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "699",
+    "name": "No usual address (Tas.)",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "799",
+    "name": "No usual address (NT)",
+    "state_code": "NT",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "897",
+    "name": "Migratory - Offshore - Shipping (ACT)",
+    "state_code": "ACT",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "899",
+    "name": "No usual address (ACT)",
+    "state_code": "ACT",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "997",
+    "name": "Migratory - Offshore - Shipping (OT)",
+    "state_code": "OT",
+    "type": "sa4",
+    "opportunity_score": 37,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "497",
+    "name": "Migratory - Offshore - Shipping (SA)",
+    "state_code": "SA",
+    "type": "sa4",
+    "opportunity_score": 36,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "697",
+    "name": "Migratory - Offshore - Shipping (Tas.)",
+    "state_code": "TAS",
+    "type": "sa4",
+    "opportunity_score": 36,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  },
+  {
+    "id": "999",
+    "name": "No usual address (OT)",
+    "state_code": "OT",
+    "type": "sa4",
+    "opportunity_score": 36,
+    "centroid_lat": 0,
+    "centroid_lng": 0
+  }
+]
