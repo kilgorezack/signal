@@ -121,7 +121,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
         // map.overlays. Stamp each ring with SA4 props using first-coordinate lookup.
         for (const overlay of map.overlays) {
           if (overlay.data?.id) continue; // already has our props (Polygon features)
-          const pt = overlay.points?.[0];
+          const pt = overlay.points?.[0]?.[0]; // points[ring][vertex]
           if (!pt) continue;
           const props = coordToProps.get(coordKey(pt.latitude, pt.longitude));
           if (props) overlay.data = props;
