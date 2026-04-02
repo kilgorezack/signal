@@ -168,7 +168,9 @@ function computeScore(d) {
   const children  = clamp(d.households_with_children_pct ?? 40, 0, 100);
   const ownership = clamp((d.owned_outright_pct ?? 0) + (d.owned_mortgage_pct ?? 0), 0, 100);
   const dwelling  = clamp(d.separate_house_pct ?? 55, 0, 100);
-  const density   = gaussian(d.population_density_per_sqkm, 500, 800);
+  // Higher density = better ISP economics (more customers per km of infrastructure).
+  // Cap at 1500/km² (inner-suburb density) — ultra-dense CBDs are already well-served.
+  const density   = normalize(d.population_density_per_sqkm, 0, 1500);
   const elderly   = clamp(d.elderly_pct ?? 15, 0, 100);
 
   const rawScore =
