@@ -153,8 +153,12 @@ export default function RegionPanel({
         {d.age_distribution && (
           <div className="panel-section">
             <DistributionChart
-              title="Age Ranges"
-              data={d.age_distribution}
+              title="Age Ranges (18+)"
+              data={Object.fromEntries(
+                Object.entries(d.age_distribution).filter(
+                  ([k]) => !['0–4', '5–14', '15–19'].includes(k)
+                )
+              )}
               unit="persons"
               height={160}
             />
