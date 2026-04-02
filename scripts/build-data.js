@@ -206,7 +206,7 @@ async function fetchBoundaries() {
 
   // ABS ArcGIS REST API — field names are lowercase, outFields=* to get all
   const url = 'https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA4/MapServer/0/query' +
-    '?where=1%3D1&outFields=*&f=geojson&geometryPrecision=4';
+    '?where=1%3D1&outFields=*&f=geojson&geometryPrecision=3&maxAllowableOffset=0.01';
 
   process.stdout.write('  [fetch] SA4 boundaries (ABS ArcGIS)\n');
   const res = await fetch(url, { signal: AbortSignal.timeout(60_000) });
