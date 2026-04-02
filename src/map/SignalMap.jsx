@@ -106,11 +106,12 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
 
         // MapKit overlays don't support DOM events — use map-level select
         map.addEventListener('select', (event) => {
-          const d = event.overlay?.data;
+          if (!event.overlay) return;
+          const d = event.overlay.data;
           if (!d) return;
-          // MapKit may set data to the full GeoJSON feature object; unwrap if so
-          const props = d.properties ?? d;
-          if (props.id) onRegionSelect?.(props);
+          // MapKit may overwrite overlay.data with the full GeoJSON feature after itemForFeature
+          const props = (d.type === 'Feature' && d.properties) ? d.properties : d;
+          if (props?.id) onRegionSelect?.(props);
         });
       },
 
