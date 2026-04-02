@@ -83,20 +83,19 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
     overlayMapRef.current = {};
 
     const delegate2 = {
-      styleForFeature(style, feature) {
-        const score = feature.properties?.opportunity_score;
-        style.fillColor = scoreToHex(score);
-        style.fillOpacity = 0.78;
-        style.strokeColor = '#ffffff';
-        style.strokeOpacity = 0.25;
-        style.lineWidth = 0.8;
-        return style;
-      },
-
       itemForFeature(overlay, feature) {
         if (!overlay) return null;
         const props = feature.properties ?? {};
-        overlay.data = props; // MapKit's built-in data property for user data
+        const score = props.opportunity_score;
+        // Apply choropleth style directly — styleForFeature is not reliably called in MapKit 5.x
+        overlay.style = new mapkit.Style({
+          fillColor: scoreToHex(score),
+          fillOpacity: 0.78,
+          strokeColor: '#ffffff',
+          strokeOpacity: 0.25,
+          lineWidth: 0.8,
+        });
+        overlay.data = props;
         overlayMapRef.current[props.id] = overlay;
         return overlay;
       },
