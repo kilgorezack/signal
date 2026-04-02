@@ -118,16 +118,14 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
         });
 
         // Hover handlers
-        overlay.addEventListener('mouseenter', (e) => {
-          const el = e.target;
-          overlay._style = new mapkit.Style({
+        overlay.addEventListener('mouseenter', () => {
+          overlay.style = new mapkit.Style({
             fillColor: scoreToHex(props.opportunity_score),
             fillOpacity: 0.82,
             strokeColor: '#ffffff',
             strokeOpacity: 0.4,
             lineWidth: 1.5,
           });
-          overlay.style = overlay._style;
         });
 
         overlay.addEventListener('mouseleave', () => {
@@ -142,6 +140,14 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
 
         overlayMapRef.current[props.id] = overlay;
         return overlay;
+      },
+
+      geoJSONDidComplete(result) {
+        map.addItems(result.items);
+      },
+
+      geoJSONDidError(error) {
+        console.error('GeoJSON import error:', error);
       },
     };
 
