@@ -96,7 +96,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       itemForFeature(overlay, feature) {
         if (!overlay) return null;
         const props = feature.properties ?? {};
-        overlay._signalProps = props;
+        overlay.data = props; // MapKit's built-in data property for user data
         overlayMapRef.current[props.id] = overlay;
         return overlay;
       },
@@ -106,7 +106,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
 
         // MapKit overlays don't support DOM events — use map-level select
         map.addEventListener('select', (event) => {
-          const props = event.overlay?._signalProps;
+          const props = event.overlay?.data;
           if (props) onRegionSelect?.(props);
         });
       },
@@ -124,7 +124,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
   useEffect(() => {
     if (!overlayMapRef.current) return;
     for (const [id, overlay] of Object.entries(overlayMapRef.current)) {
-      const score = overlay._signalProps?.opportunity_score;
+      const score = overlay.data?.opportunity_score;
       const isSelected = id === selectedId;
       overlay.style = new mapkit.Style({
         fillColor: scoreToHex(score),
