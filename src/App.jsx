@@ -111,7 +111,7 @@ export default function App() {
             className={`app-tab app-tab--business${activeTab === 'business' ? ' app-tab--active' : ''}`}
             onClick={() => handleTabChange('business')}
           >
-            SmartBiz
+            Business
           </button>
         </div>
 
