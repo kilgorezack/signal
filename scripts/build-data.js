@@ -626,11 +626,12 @@ async function main() {
 
   let wppIndustry = new Map();
   try {
-    // C21_G51_SA2: Industry of Employment by Sex — SEXP=3 (Persons), all INDP1D, SA4
-    const d = await fetchAbs('C21_G51_SA2', '3...SA4.');
+    // C21_G54_SA2: Industry (INDP) × Age (AGEP) × Sex (SEXP) — 6 dimensions
+    // Key: SEXP=3 (Persons) · INDP=all · AGEP=_T (all ages total) · REGION=all · REGION_TYPE=SA4 · STATE=all
+    const d = await fetchAbs('C21_G54_SA2', '3.._T..SA4.');
     wppIndustry = parseSdmx2Series(d);
-    console.log(`  ✓ G51 Industry of Employment WPP (${wppIndustry.size} regions)`);
-  } catch (e) { console.warn('  ⚠ G51 WPP Industry:', e.message); }
+    console.log(`  ✓ G54 Industry of Employment (${wppIndustry.size} regions)`);
+  } catch (e) { console.warn('  ⚠ G54 Industry:', e.message); }
 
   // ABS Counts of Australian Businesses (optional — SA4-level total counts)
   let businessCounts = new Map();
@@ -668,7 +669,8 @@ async function main() {
       let workingPop = 0;
       if (indMap) {
         for (const [dimKey, val] of indMap) {
-          const m = dimKey.match(/INDP1D=([A-Z]+)/i);
+          // Matches both INDP=X and INDP1D=X (future-proof across table versions)
+          const m = dimKey.match(/\bINDP1?D?=([A-Z]+)\b/i);
           const indCode = m?.[1]?.toUpperCase();
           if (indCode && ANZSIC_DIVISIONS[indCode] && val != null) {
             industryDist[indCode] = (industryDist[indCode] ?? 0) + val;
@@ -676,8 +678,8 @@ async function main() {
           }
         }
       }
-      // Total working pop from _T key (more reliable if present)
-      const totalWPRaw = find(indMap, 'INDP1D=_T');
+      // Total workforce from _T key (covers all industries including not-stated)
+      const totalWPRaw = find(indMap, 'INDP=_T') ?? find(indMap, 'INDP1D=_T');
       const totalWP = totalWPRaw ?? workingPop;
 
       // ── Industry percentages ──
