@@ -1,4 +1,7 @@
 import { useMemo } from 'react';
+import {
+  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
+} from 'recharts';
 import ScoreGauge from './ScoreGauge.jsx';
 import DistributionChart from './DistributionChart.jsx';
 import InsightsDrawer from './InsightsDrawer.jsx';
@@ -104,6 +107,73 @@ function TopIndustriesList({ distribution, total }) {
   );
 }
 
+// ── Industry mix horizontal bar chart ────────────────────────────────────────
+
+const IndTooltip = ({ active, payload, label }) => {
+  if (!active || !payload?.length) return null;
+  return (
+    <div style={{
+      background: 'var(--bg-raised)', border: '1px solid var(--border-subtle)',
+      borderRadius: 6, padding: '6px 10px', fontSize: 12, color: 'var(--text-primary)',
+    }}>
+      <div style={{ color: 'var(--text-muted)', marginBottom: 2 }}>{label}</div>
+      <div style={{ color: 'var(--accent-biz)', fontWeight: 600 }}>{payload[0].value}%</div>
+    </div>
+  );
+};
+
+function IndustryMixChart({ distribution, total }) {
+  const chartData = useMemo(() => {
+    if (!distribution || !total) return [];
+    return Object.entries(distribution)
+      .map(([code, count]) => ({
+        label: ANZSIC_SHORT[code] ?? code,
+        value: Math.round((count / total) * 1000) / 10,
+      }))
+      .sort((a, b) => b.value - a.value);
+  }, [distribution, total]);
+
+  if (!chartData.length) return null;
+
+  return (
+    <div>
+      <div className="section-label">Industry Mix (% of working population)</div>
+      <ResponsiveContainer width="100%" height={chartData.length * 22 + 8}>
+        <BarChart
+          layout="vertical"
+          data={chartData}
+          margin={{ top: 0, right: 40, left: 0, bottom: 0 }}
+          barCategoryGap="25%"
+        >
+          <XAxis
+            type="number"
+            domain={[0, 'dataMax']}
+            tick={{ fill: 'var(--text-muted)', fontSize: 9 }}
+            axisLine={false}
+            tickLine={false}
+            tickFormatter={v => `${v}%`}
+            width={32}
+          />
+          <YAxis
+            type="category"
+            dataKey="label"
+            width={100}
+            tick={{ fill: 'var(--text-secondary)', fontSize: 10 }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <Tooltip content={<IndTooltip />} cursor={{ fill: 'rgba(255,255,255,0.04)' }} />
+          <Bar dataKey="value" radius={[0, 3, 3, 0]}>
+            {chartData.map((_, i) => (
+              <Cell key={i} fill="var(--accent-biz)" fillOpacity={0.75} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
 // ── Business size distribution ────────────────────────────────────────────────
 
 function BizSizeChart({ sizeDist }) {
@@ -150,19 +220,6 @@ export default function BusinessPanel({
     { key: 'biz_density_component',  label: SMARTBIZ_SCORE_LABELS.biz_density_component },
   ], []);
 
-  // Build chart data from industry distribution (all divisions, short names)
-  const industryChartData = useMemo(() => {
-    if (!d.industry_distribution || !d.working_population) return null;
-    const total = d.working_population;
-    return Object.fromEntries(
-      Object.entries(d.industry_distribution)
-        .sort((a, b) => b[1] - a[1])
-        .map(([code, count]) => [
-          ANZSIC_SHORT[code] ?? code,
-          Math.round((count / total) * 1000) / 10, // pct with 1 decimal
-        ])
-    );
-  }, [d.industry_distribution, d.working_population]);
 
   // Top industry name
   const topIndustry = useMemo(() => {
@@ -232,14 +289,11 @@ export default function BusinessPanel({
         </div>
 
         {/* ── Industry Distribution Chart ── */}
-        {industryChartData && (
+        {d.industry_distribution && (
           <div className="panel-section">
-            <DistributionChart
-              title="Industry Mix (% of working population)"
-              data={industryChartData}
-              unit="%"
-              color="var(--accent-biz)"
-              height={180}
+            <IndustryMixChart
+              distribution={d.industry_distribution}
+              total={d.working_population ?? 0}
             />
           </div>
         )}
