@@ -86,43 +86,73 @@ html, body, #root {
   border-left: 1px solid var(--border-subtle);
 }
 
-/* ─── Mode Tabs ───────────────────────────────────────────────────────────── */
+/* ─── Mode Tabs — Liquid Glass (Apple HIG) ───────────────────────────────── */
 .app-tabs {
   display: flex;
   align-items: center;
-  gap: 2px;
-  background: var(--bg-raised);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
+  gap: 3px;
   padding: 3px;
+  border-radius: 12px;
+
+  /* Frosted glass container */
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+
+  /* Edge refraction: faint white border + subtle outer glow */
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),  /* top specular highlight */
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15),        /* bottom shadow depth */
+    0 4px 20px rgba(0, 0, 0, 0.30),             /* ambient lift shadow */
+    0 1px 4px rgba(0, 0, 0, 0.20);
 }
 
 .app-tab {
-  padding: 4px 16px;
-  border-radius: 5px;
+  position: relative;
+  padding: 5px 18px;
+  border-radius: 9px;
   font-size: 12px;
   font-weight: 600;
+  letter-spacing: -0.01em;
   cursor: pointer;
   border: none;
   background: transparent;
-  color: var(--text-muted);
-  transition: background 0.15s, color 0.15s;
+  color: rgba(255, 255, 255, 0.42);
+  transition:
+    color        0.22s ease,
+    background   0.22s ease,
+    box-shadow   0.22s ease,
+    transform    0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
 }
 
 .app-tab:hover {
-  color: var(--text-primary);
-  background: var(--bg-hover);
+  color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.06);
 }
 
+/* Active pill — thicker, brighter glass with specular rim */
 .app-tab--active {
-  background: var(--bg-surface);
-  color: var(--text-primary);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),   /* top specular rim */
+    inset 0 -1px 0 rgba(0, 0, 0, 0.18),          /* bottom depth */
+    0 2px 8px rgba(0, 0, 0, 0.28),               /* lift shadow */
+    0 0 0 0.5px rgba(255, 255, 255, 0.08);        /* hairline edge */
+  transform: translateY(-0.5px);
 }
 
+/* Business tab active — indigo tint baked into the glass */
 .app-tab--business.app-tab--active {
-  color: var(--accent-biz);
+  color: #c4b5fd;  /* violet-300 — soft, readable indigo on dark */
+  background: rgba(99, 102, 241, 0.20);
+  box-shadow:
+    inset 0 1px 0 rgba(167, 139, 250, 0.30),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.18),
+    0 2px 8px rgba(99, 102, 241, 0.25),
+    0 0 0 0.5px rgba(99, 102, 241, 0.20);
 }
 
 .app-data-badge {
