@@ -252,6 +252,103 @@ const HIND_TO_BUCKET = {
 
 const INCOME_BUCKET_ORDER = ['$0–$30k', '$30k–$75k', '$75k–$150k', '$150k+'];
 
+// ─── ANZSIC Industry Division codes (Census 2021 INDP1D) ──────────────────────
+const ANZSIC_DIVISIONS = {
+  A: 'Agriculture, Forestry & Fishing',
+  B: 'Mining',
+  C: 'Manufacturing',
+  D: 'Electricity, Gas, Water & Waste',
+  E: 'Construction',
+  F: 'Wholesale Trade',
+  G: 'Retail Trade',
+  H: 'Accommodation & Food',
+  I: 'Transport & Warehousing',
+  J: 'Information & Telecommunications',
+  K: 'Financial & Insurance',
+  L: 'Rental, Hiring & Real Estate',
+  M: 'Professional & Technical',
+  N: 'Administrative & Support',
+  O: 'Public Administration & Safety',
+  P: 'Education & Training',
+  Q: 'Health Care & Social Assistance',
+  R: 'Arts & Recreation',
+  S: 'Other Services',
+};
+
+// Broadband intensity weight per industry (0–1) for SmartBiz scoring.
+// Higher = more data-intensive / better SmartBiz prospect.
+const SMARTBIZ_IND_WEIGHTS = {
+  J: 1.00, // Information & Telecommunications — highest BW users
+  K: 0.95, // Financial & Insurance — data-intensive, compliance-driven
+  M: 0.90, // Professional, Scientific & Technical — cloud-first
+  Q: 0.85, // Health Care & Social Assistance — telehealth, EMR systems
+  P: 0.70, // Education & Training — digital learning
+  N: 0.65, // Administrative & Support — CRM, cloud tools
+  L: 0.60, // Rental, Hiring & Real Estate — property platforms
+  G: 0.55, // Retail Trade — e-commerce, POS
+  C: 0.50, // Manufacturing — Industry 4.0, IoT
+  H: 0.45, // Accommodation & Food — booking systems
+  O: 0.40, // Public Administration & Safety — gov services
+  R: 0.35, // Arts & Recreation — streaming, digital content
+  S: 0.35, // Other Services — general connectivity
+  I: 0.30, // Transport & Warehousing — logistics platforms
+  E: 0.30, // Construction — project mgmt, BIM
+  F: 0.25, // Wholesale Trade — inventory systems
+  D: 0.20, // Electricity, Gas, Water & Waste — SCADA, telemetry
+  B: 0.15, // Mining — remote sites
+  A: 0.10, // Agriculture — limited connectivity needs
+};
+
+// ─── SmartBiz score calculation ───────────────────────────────────────────────
+
+function computeSmartBizScore(d) {
+  const total = d.working_population ?? 0;
+  const dist  = d.industry_distribution ?? {};
+
+  // Industry mix: weighted-average broadband intensity across all employed workers
+  let industryScore = 50;
+  if (total > 0) {
+    let weighted = 0;
+    for (const [code, count] of Object.entries(dist)) {
+      const w = SMARTBIZ_IND_WEIGHTS[code] ?? 0.35;
+      weighted += (count / total) * w;
+    }
+    industryScore = weighted * 100; // 0–100
+  }
+
+  // Working-population density (proxy for business concentration)
+  const wpDensityScore = normalize(d.working_pop_density, 0, 400);
+
+  // High-value industries (J+K+M+Q) — strongest SmartBiz prospects
+  const highValue = (
+    (dist.J ?? 0) + (dist.K ?? 0) + (dist.M ?? 0) + (dist.Q ?? 0)
+  );
+  const highValuePct = total > 0 ? (highValue / total) * 100 : 0;
+  const highValueScore = normalize(highValuePct, 0, 45);
+
+  // Business density from ABS business counts (falls back to WP density)
+  const bizDensityScore = d.business_density != null
+    ? normalize(d.business_density, 0, 40)
+    : wpDensityScore;
+
+  const BW = { industry: 0.35, wpDensity: 0.25, highValue: 0.25, bizDensity: 0.15 };
+  const BWTOTAL = Object.values(BW).reduce((s, v) => s + v, 0);
+
+  const rawScore =
+    BW.industry   * industryScore   +
+    BW.wpDensity  * wpDensityScore  +
+    BW.highValue  * highValueScore  +
+    BW.bizDensity * bizDensityScore;
+
+  return {
+    smartbiz_score:          clamp(Math.round(rawScore / BWTOTAL), 0, 100),
+    industry_mix_component:  Math.round(industryScore),
+    wp_density_component:    Math.round(wpDensityScore),
+    high_value_component:    Math.round(highValueScore),
+    biz_density_component:   Math.round(bizDensityScore),
+  };
+}
+
 // ─── Age bracket mapping for G01 PCHAR ───────────────────────────────────────
 const AGE_PCHAR_CODES = {
   '0_4':  '0–4',
@@ -523,6 +620,152 @@ async function main() {
   console.log(`  ✓ Written public/data/regions.json (${regions.length} regions)`);
 
   console.log(`\n✅ Done! ${features.length} SA4 regions, ${withData} with demographic data\n`);
+
+  // ─── Business Data (SmartBiz) ───────────────────────────────────────────────
+  console.log('▶ Fetching Working Population Profile (industry data)...');
+
+  let wppIndustry = new Map();
+  try {
+    // C21_G51_SA2: Industry of Employment by Sex — SEXP=3 (Persons), all INDP1D, SA4
+    const d = await fetchAbs('C21_G51_SA2', '3...SA4.');
+    wppIndustry = parseSdmx2Series(d);
+    console.log(`  ✓ G51 Industry of Employment WPP (${wppIndustry.size} regions)`);
+  } catch (e) { console.warn('  ⚠ G51 WPP Industry:', e.message); }
+
+  // ABS Counts of Australian Businesses (optional — SA4-level total counts)
+  let businessCounts = new Map();
+  try {
+    const d = await fetchAbs('ABS_BUSINESS_COUNTS', '._T._T._T..SA4.');
+    businessCounts = parseSdmx2Series(d);
+    console.log(`  ✓ ABS Business Counts (${businessCounts.size} regions)`);
+  } catch (e) { console.warn('  ⚠ ABS Business Counts (optional):', e.message); }
+
+  // ABS Business Counts by employment size (optional)
+  let businessSizeDist = new Map();
+  try {
+    const d = await fetchAbs('ABS_BUSINESS_COUNTS', '.GE200+LT200_GE20+LT20_GE5+LT5_GE1+LT1_EQ0._T._T..SA4.');
+    businessSizeDist = parseSdmx2Series(d);
+    console.log(`  ✓ ABS Business Size Distribution (${businessSizeDist.size} regions)`);
+  } catch (e) { /* size dist is bonus — skip silently */ }
+
+  console.log('\n▶ Building business-sa4.geojson...');
+
+  const businessFeatures = boundaries.features
+    .filter(f => /^\d{3}$/.test(f.properties?.sa4_code_2021 ?? ''))
+    .map(feature => {
+      const props     = feature.properties ?? {};
+      const code      = String(props.sa4_code_2021 ?? '').trim();
+      const name      = props.sa4_name_2021 ?? code;
+      const stateCode = String(props.state_code_2021 ?? '');
+      const areaSqkm  = props.area_albers_sqkm ?? 0;
+
+      const indMap  = wppIndustry.get(code);
+      const bizMap  = businessCounts.get(code);
+      const sizeMap = businessSizeDist.get(code);
+
+      // ── Industry distribution ──
+      const industryDist = {};
+      let workingPop = 0;
+      if (indMap) {
+        for (const [dimKey, val] of indMap) {
+          const m = dimKey.match(/INDP1D=([A-Z]+)/i);
+          const indCode = m?.[1]?.toUpperCase();
+          if (indCode && ANZSIC_DIVISIONS[indCode] && val != null) {
+            industryDist[indCode] = (industryDist[indCode] ?? 0) + val;
+            workingPop += val;
+          }
+        }
+      }
+      // Total working pop from _T key (more reliable if present)
+      const totalWPRaw = find(indMap, 'INDP1D=_T');
+      const totalWP = totalWPRaw ?? workingPop;
+
+      // ── Industry percentages ──
+      const industryPcts = {};
+      if (totalWP > 0) {
+        for (const [code, cnt] of Object.entries(industryDist)) {
+          industryPcts[code] = Math.round((cnt / totalWP) * 1000) / 10; // 1 decimal %
+        }
+      }
+
+      // ── Key sector metrics ──
+      const highValueWorkers = (
+        (industryDist.J ?? 0) + (industryDist.K ?? 0) +
+        (industryDist.M ?? 0) + (industryDist.Q ?? 0)
+      );
+      const r1 = v => v != null ? Math.round(v * 10) / 10 : null;
+      const pct = (n) => totalWP > 0 ? r1((n / totalWP) * 100) : null;
+
+      const knowledgeWorkerPct      = pct(highValueWorkers + (industryDist.P ?? 0));
+      const healthcarePct           = pct(industryDist.Q ?? 0);
+      const professionalServicesPct = pct(industryDist.M ?? 0);
+      const finTechPct              = pct((industryDist.J ?? 0) + (industryDist.K ?? 0));
+      const constructionPct         = pct(industryDist.E ?? 0);
+      const retailPct               = pct(industryDist.G ?? 0);
+
+      // ── Business counts (from ABS if available) ──
+      let totalBusinesses = null;
+      if (bizMap && bizMap.size > 0) {
+        const bizTotal = bizMap.values().next().value;
+        if (bizTotal != null) totalBusinesses = Math.round(bizTotal);
+      }
+      const businessDensity = totalBusinesses != null && areaSqkm > 0
+        ? Math.round((totalBusinesses / areaSqkm) * 100) / 100
+        : null;
+
+      // ── Business size distribution ──
+      let bizSizeDistFinal = null;
+      if (sizeMap && sizeMap.size > 0) {
+        // Parse out size band values — keys depend on ABS dimension structure
+        const sizeBands = {};
+        for (const [dimKey, val] of sizeMap) {
+          if (dimKey.includes('EQ0'))       sizeBands['Non-employing'] = (sizeBands['Non-employing'] ?? 0) + (val ?? 0);
+          else if (dimKey.includes('LT5'))  sizeBands['1–4'] = (sizeBands['1–4'] ?? 0) + (val ?? 0);
+          else if (dimKey.includes('LT20')) sizeBands['5–19'] = (sizeBands['5–19'] ?? 0) + (val ?? 0);
+          else if (dimKey.includes('LT200'))sizeBands['20–199'] = (sizeBands['20–199'] ?? 0) + (val ?? 0);
+          else if (dimKey.includes('GE200'))sizeBands['200+'] = (sizeBands['200+'] ?? 0) + (val ?? 0);
+        }
+        if (Object.keys(sizeBands).length > 0) bizSizeDistFinal = sizeBands;
+      }
+
+      const wpDensity = totalWP > 0 && areaSqkm > 0
+        ? Math.round((totalWP / areaSqkm) * 10) / 10 : null;
+
+      const businessData = {
+        working_population:        totalWP > 0 ? Math.round(totalWP) : null,
+        working_pop_density:       wpDensity,
+        industry_distribution:     Object.keys(industryDist).length > 0 ? industryDist : null,
+        industry_pcts:             Object.keys(industryPcts).length > 0 ? industryPcts : null,
+        knowledge_worker_pct:      knowledgeWorkerPct,
+        healthcare_pct:            healthcarePct,
+        professional_services_pct: professionalServicesPct,
+        finance_tech_pct:          finTechPct,
+        construction_pct:          constructionPct,
+        retail_pct:                retailPct,
+        total_businesses:          totalBusinesses,
+        business_density:          businessDensity,
+        business_size_dist:        bizSizeDistFinal,
+        area_sqkm:                 areaSqkm ? Math.round(areaSqkm) : null,
+      };
+
+      const scores = computeSmartBizScore(businessData);
+
+      return {
+        ...feature,
+        properties: {
+          id:         code,
+          name,
+          state_code: STATE_ABBREV[stateCode] ?? stateCode,
+          type:       'sa4',
+          ...businessData,
+          ...scores,
+        },
+      };
+    });
+
+  const businessGeojson = { type: 'FeatureCollection', features: businessFeatures };
+  fs.writeFileSync(path.join(DATA_DIR, 'business-sa4.geojson'), JSON.stringify(businessGeojson));
+  console.log(`  ✓ Written public/data/business-sa4.geojson (${businessFeatures.length} features)\n`);
 }
 
 function collectCoords(geometry) {

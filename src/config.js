@@ -12,3 +12,32 @@ export const SCORE_WEIGHT_LABELS = {
 };
 
 export const MAX_COMPARISON = 5;
+
+export const SMARTBIZ_SCORE_LABELS = {
+  industry_mix_component: 'Industry Mix',
+  wp_density_component:   'Business Density',
+  high_value_component:   'High-Value Sectors',
+  biz_density_component:  'Business Concentration',
+};
+
+export const ANZSIC_SHORT = {
+  A: 'Agriculture',
+  B: 'Mining',
+  C: 'Manufacturing',
+  D: 'Utilities',
+  E: 'Construction',
+  F: 'Wholesale',
+  G: 'Retail',
+  H: 'Accommodation',
+  I: 'Transport',
+  J: 'Info & Media',
+  K: 'Finance',
+  L: 'Real Estate',
+  M: 'Prof Services',
+  N: 'Admin & Support',
+  O: 'Public Admin',
+  P: 'Education',
+  Q: 'Healthcare',
+  R: 'Arts & Recreation',
+  S: 'Other Services',
+};

@@ -6,11 +6,12 @@ import { MAP_CENTER, MAP_CAMERA_DISTANCE } from '../config.js';
  * SignalMap — Apple MapKit JS choropleth for SA4 broadband opportunity scores.
  *
  * Props:
- *   geojson        — FeatureCollection (sa4.geojson), null while loading
+ *   geojson        — FeatureCollection (sa4.geojson or business-sa4.geojson), null while loading
  *   selectedId     — currently selected region id (string)
  *   onRegionSelect — callback(properties) when a region is clicked
+ *   scoreField     — property name to use for choropleth coloring (default: 'opportunity_score')
  */
-export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
+export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreField = 'opportunity_score' }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   const overlayMapRef = useRef({}); // id → overlay item
@@ -101,7 +102,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
       itemForFeature(overlay, feature) {
         if (!overlay) return null;
         const props = feature.properties ?? {};
-        const score = props.opportunity_score;
+        const score = props[scoreField];
         overlay.style = new mapkit.Style({
           fillColor: scoreToHex(score),
           fillOpacity: 0.78,
@@ -127,7 +128,7 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
           if (props) {
             overlay.data = props;
             overlay.style = new mapkit.Style({
-              fillColor: scoreToHex(props.opportunity_score),
+              fillColor: scoreToHex(props[scoreField]),
               fillOpacity: 0.78,
               strokeColor: '#ffffff',
               strokeOpacity: 0.25,
@@ -149,13 +150,13 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect }) {
 
     mapkit.importGeoJSON(geojson, delegate2);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mapReady, geojson]);
+  }, [mapReady, geojson, scoreField]);
 
   // ── Update selected region highlight ────────────────────────────────────────
   useEffect(() => {
     if (!overlayMapRef.current) return;
     for (const [id, overlay] of Object.entries(overlayMapRef.current)) {
-      const score = overlay.data?.opportunity_score;
+      const score = overlay.data?.[scoreField];
       const isSelected = id === selectedId;
       overlay.style = new mapkit.Style({
         fillColor: scoreToHex(score),
