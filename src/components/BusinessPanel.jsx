@@ -180,7 +180,7 @@ export default function BusinessPanel({
           <div className="panel-subtitle">
             {d.type ? SA_TYPE_LABELS[d.type] : ''}
             {d.state_code ? ` · ${d.state_code}` : ''}
-            {' · SmartBiz'}
+            {' · Business'}
           </div>
         </div>
         <button className="btn-icon" onClick={onClose} title="Close">✕</button>
@@ -190,7 +190,7 @@ export default function BusinessPanel({
 
         {/* ── SmartBiz Score ── */}
         <div className="panel-section">
-          <div className="smartbiz-score-label">SmartBiz Opportunity Score</div>
+          <div className="smartbiz-score-label">Business Opportunity Score</div>
           <ScoreGauge score={d.smartbiz_score} />
           <div style={{ marginTop: 12 }}>
             {scoreComponents.map(({ key, label }) => (
@@ -264,7 +264,7 @@ export default function BusinessPanel({
 
         {/* ── SmartBiz Target Sectors ── */}
         <div className="panel-section">
-          <SectionLabel>SmartBiz Target Signals</SectionLabel>
+          <SectionLabel>Business Broadband Signals</SectionLabel>
           <OpportunityRow
             label="Knowledge Workers (J+K+M+Q+P)"
             value={d.knowledge_worker_pct}

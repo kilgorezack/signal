@@ -171,7 +171,7 @@ export default function App() {
         {activeGeojson && !regionData && (
           <div className="map-legend">
             <div className="map-legend-title">
-              {isBusiness ? 'SmartBiz Score' : 'Opportunity Score'}
+              {isBusiness ? 'Business Score' : 'Opportunity Score'}
             </div>
             <div className="map-legend-bar" />
             <div className="map-legend-labels">
