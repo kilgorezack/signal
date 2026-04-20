@@ -68,10 +68,18 @@ async function fetchOnsTableCsv(datasetId) {
   if (!items.length) throw new Error(`No versions for ONS dataset ${datasetId}`);
   const latestVersion = Math.max(...items.map(v => Number(v.version ?? 1)));
 
-  const csvUrl = `${ONS_BASE}/datasets/${datasetId}/editions/2021/versions/${latestVersion}/csv`;
-  process.stdout.write(`  [fetch] ${csvUrl}\n`);
+  // Get the CSV download URL from the version metadata
+  const verRes = await fetch(
+    `${ONS_BASE}/datasets/${datasetId}/editions/2021/versions/${latestVersion}`,
+    { signal: AbortSignal.timeout(30_000) }
+  );
+  if (!verRes.ok) throw new Error(`ONS version detail for ${datasetId} v${latestVersion}: ${verRes.status}`);
+  const verData = await verRes.json();
+  const csvUrl  = verData.downloads?.csv?.href;
+  if (!csvUrl) throw new Error(`No CSV download URL for ${datasetId} v${latestVersion}`);
 
-  const res = await fetch(csvUrl, { signal: AbortSignal.timeout(300_000) });
+  process.stdout.write(`  [fetch] ${csvUrl}\n`);
+  const res = await fetch(csvUrl, { signal: AbortSignal.timeout(300_000), redirect: 'follow' });
   if (!res.ok) throw new Error(`ONS CSV ${datasetId} v${latestVersion}: ${res.status} ${res.statusText}`);
 
   const text = await res.text();
@@ -105,28 +113,28 @@ function isEngWalesLad(code) {
 
 /**
  * Parse an ONS Census 2021 full-UK CSV into Map<geoCode, Map<categoryName, value>>.
- * ONS CSV structure: geography_code, geography_name, [cat_code_col], [cat_name_col], obs
+ * ONS CSV structure (5 cols): geo_code, geo_name, cat_code, cat_name, observation
  * Filters to England + Wales LADs only.
  */
 function parseOnsCsv(csvText) {
   const lines = csvText.split(/\r?\n/);
   if (lines.length < 2) throw new Error('Empty CSV');
 
-  const headers = parseCsvLine(lines[0]).map(h => h.toLowerCase().replace(/"/g, '').trim());
-  const geoIdx = headers.indexOf('geography_code');
-  const obsIdx = headers.indexOf('obs');
-  if (geoIdx === -1 || obsIdx === -1) {
-    throw new Error(`CSV missing required columns. Got: ${headers.slice(0, 8).join(', ')}`);
-  }
-  // ONS format: ...code_col, name_col, obs → name column is immediately before obs
-  const catNameIdx = obsIdx - 1;
+  const headers = parseCsvLine(lines[0]);
+  if (headers.length < 3) throw new Error(`Unexpected CSV structure (${headers.length} columns)`);
+
+  // ONS Census 2021 CSVs always have geo code in col 0, observation in last col,
+  // and category name in second-to-last col.
+  const geoIdx     = 0;
+  const obsIdx     = headers.length - 1;
+  const catNameIdx = headers.length - 2;
 
   const result = new Map();
   for (let i = 1; i < lines.length; i++) {
     const line = lines[i].trim();
     if (!line) continue;
     const cols    = parseCsvLine(line);
-    const geoCode = (cols[geoIdx] ?? '').replace(/"/g, '');
+    const geoCode = (cols[geoIdx] ?? '').replace(/"/g, '').trim();
     if (!isEngWalesLad(geoCode)) continue;
     const value   = parseFloat(cols[obsIdx]);
     if (isNaN(value)) continue;
@@ -143,11 +151,13 @@ function parseOnsCsv(csvText) {
 // ONS Geography Portal service name candidates for LAD Dec 2021 boundaries.
 // Tried in order; first successful response wins.
 const BOUNDARY_CANDIDATES = [
-  // BGC = Generalised Clipped (preferred: smaller file)
+  // _2022 suffix variants (current naming on the portal)
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BGC_2022/FeatureServer/0/query`,
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BFC_2022/FeatureServer/0/query`,
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BUC_2022/FeatureServer/0/query`,
+  // Legacy names (kept as final fallback)
   `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BGC/FeatureServer/0/query`,
-  // BFC = Full Clipped (fallback)
   `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BFC/FeatureServer/0/query`,
-  // BUC = Ultra-generalised (last resort)
   `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BUC/FeatureServer/0/query`,
 ];
 
@@ -208,7 +218,7 @@ async function fetchLadRegionMap() {
   }
 
   const url =
-    `${ONS_GEO_BASE}/LAD21_RGN21_EN_LU/FeatureServer/0/query` +
+    `${ONS_GEO_BASE}/LAD21_RGN21_EN_LU_e39114ca0d934551b012bba304cdd11f/FeatureServer/0/query` +
     `?where=1%3D1&outFields=LAD21CD,RGN21NM&f=json&resultRecordCount=500`;
 
   process.stdout.write('  [fetch] LAD→Region lookup\n');
@@ -299,17 +309,31 @@ const UK_SIC_BW_WEIGHTS = {
   A: 0.10, T: 0.10, U: 0.05,
 };
 
+// ONS TS060 uses numeric SIC 2007 division codes (e.g. "01 Crop and animal...").
+// Map division numbers to section letters.
+const SIC_DIV_TO_SECTION = (() => {
+  const ranges = [
+    [1,3,'A'],[5,9,'B'],[10,33,'C'],[35,35,'D'],[36,39,'E'],
+    [41,43,'F'],[45,47,'G'],[49,53,'H'],[55,56,'I'],[58,63,'J'],
+    [64,66,'K'],[68,68,'L'],[69,75,'M'],[77,82,'N'],[84,84,'O'],
+    [85,85,'P'],[86,88,'Q'],[90,93,'R'],[94,96,'S'],[97,98,'T'],[99,99,'U'],
+  ];
+  const map = {};
+  for (const [lo, hi, sec] of ranges) {
+    for (let c = lo; c <= hi; c++) map[c] = sec;
+  }
+  return map;
+})();
+
 /**
- * Extract UK SIC section letter from an ONS industry category name.
- * ONS TS060 format: "A : Agriculture, forestry and fishing"
+ * Extract UK SIC section letter from an ONS TS060 category name.
+ * Handles both letter-prefix ("A : Agriculture...") and numeric-prefix ("01 Crop...") formats.
  */
 function extractSicSection(name) {
-  const m = name.match(/^([a-u])\s*[:\-–]/i);
-  if (m) return m[1].toUpperCase();
-  // Fallback: match known section names
-  for (const [code, label] of Object.entries(UK_SIC_SECTIONS)) {
-    if (name.includes(label.toLowerCase().slice(0, 10))) return code;
-  }
+  const letterM = name.match(/^([a-u])\s*[:\-–]/i);
+  if (letterM) return letterM[1].toUpperCase();
+  const numM = name.match(/^(\d{1,2})\s/);
+  if (numM) return SIC_DIV_TO_SECTION[parseInt(numM[1])] ?? null;
   return null;
 }
 
@@ -441,11 +465,11 @@ async function main() {
   console.log('\n▶ Fetching ONS Census 2021 tables...');
   const tables = {};
   const TABLE_IDS = [
-    ['TS007A', 'age'],
-    ['TS038',  'tenure'],
-    ['TS044',  'accommodation'],
-    ['TS062',  'nssec'],
-    ['TS060',  'industry'],
+    ['TS007', 'age'],          // Age by single year (101 categories, not TS007A)
+    ['TS054', 'tenure'],       // Tenure of household (not TS038 which is Disability)
+    ['TS044', 'accommodation'],
+    ['TS062', 'nssec'],
+    ['TS060', 'industry'],
   ];
 
   for (const [datasetId, key] of TABLE_IDS) {
@@ -482,14 +506,29 @@ async function main() {
     const nsMap    = tables.nssec?.get(code);
 
     // ── Population + age distribution ──
+    // TS007 has single-year categories ("Aged X year(s)") — aggregate to 5-yr bands.
     let population = 0;
+    const ageByYear = new Array(101).fill(0);
+    if (ageMap) {
+      for (const [name, val] of ageMap) {
+        if (!name || name === 'does not apply') continue;
+        let age;
+        if (name.includes('under 1')) { age = 0; }
+        else if (name.includes('100') || name.includes('and over')) { age = 100; }
+        else { const m = name.match(/(\d+)/); age = m ? parseInt(m[1]) : null; }
+        if (age !== null && age >= 0 && age <= 100) { ageByYear[age] += val; population += val; }
+      }
+    }
+
     const ageDist  = {};
     let youthTotal = 0, elderlyTotal = 0;
-
-    for (const { label, subs } of AGE_GROUPS) {
-      const count = sumByName(ageMap, ...subs) ?? 0;
+    for (const { label } of AGE_GROUPS) {
+      let lo, hi;
+      if (label === '85+') { lo = 85; hi = 100; }
+      else { const m = label.match(/(\d+)[–-](\d+)/); lo = parseInt(m[1]); hi = parseInt(m[2]); }
+      let count = 0;
+      for (let a = lo; a <= hi; a++) count += ageByYear[a];
       ageDist[label] = count;
-      population    += count;
       if (YOUTH_LABELS.has(label))   youthTotal   += count;
       if (ELDERLY_LABELS.has(label)) elderlyTotal += count;
     }
@@ -499,14 +538,17 @@ async function main() {
     // Estimated households with children: youth fraction × 1.35
     const hhWithChildrenPct = youthPct != null ? Math.min(70, youthPct * 1.35) : null;
 
-    // ── Tenure ──
-    const ownedOutright = sumByName(tenMap, 'owned: outright', 'owned outright') ?? 0;
-    const ownedMortgage = sumByName(tenMap,
-      'owned: with a mortgage', 'owned with a mortgage', 'shared ownership') ?? 0;
-    const socialRented  = sumByName(tenMap, 'social rented') ?? 0;
-    const privateRented = sumByName(tenMap, 'private rented') ?? 0;
-    const tenureTotal   = sumByName(tenMap, 'total', 'all tenures') ??
-      (ownedOutright + ownedMortgage + socialRented + privateRented);
+    // ── Tenure (TS054 exact category names, lowercased) ──
+    const g = (m, k) => m?.get(k) ?? 0;
+    const ownedOutright = g(tenMap, 'owned: owns outright');
+    const ownedMortgage = g(tenMap, 'owned: owns with a mortgage or loan') +
+                          g(tenMap, 'shared ownership: shared ownership');
+    const socialRented  = g(tenMap, 'social rented: rents from council or local authority') +
+                          g(tenMap, 'social rented: other social rented');
+    const privateRented = g(tenMap, 'private rented: private landlord or letting agency') +
+                          g(tenMap, 'private rented: other private rented') +
+                          g(tenMap, 'lives rent free');
+    const tenureTotal   = ownedOutright + ownedMortgage + socialRented + privateRented;
 
     const ownedOutrightPct = tenureTotal > 0 ? (ownedOutright / tenureTotal) * 100 : null;
     const ownedMortgagePct = tenureTotal > 0 ? (ownedMortgage / tenureTotal) * 100 : null;
@@ -514,11 +556,14 @@ async function main() {
       ? ((socialRented + privateRented) / tenureTotal) * 100 : null;
     const dwellingCount    = tenureTotal > 0 ? Math.round(tenureTotal) : null;
 
-    // ── Accommodation type ──
-    const detached     = sumByName(accMap, 'detached') ?? 0;
-    const semiDetached = sumByName(accMap, 'semi-detached') ?? 0;
-    const terraced     = sumByName(accMap, 'terraced') ?? 0;
-    const flat         = sumByName(accMap, 'flat', 'maisonette', 'apartment') ?? 0;
+    // ── Accommodation type (TS044 exact category names, lowercased) ──
+    const detached     = g(accMap, 'detached');
+    const semiDetached = g(accMap, 'semi-detached');
+    const terraced     = g(accMap, 'terraced');
+    const flat         = g(accMap, 'in a purpose-built block of flats or tenement') +
+                         g(accMap, 'part of a converted or shared house, including bedsits') +
+                         g(accMap, 'part of another converted building, for example, former school, church or warehouse') +
+                         g(accMap, 'in a commercial building, for example, in an office building, hotel or over a shop');
     const accTotal     = detached + semiDetached + terraced + flat;
 
     const detachedPct     = accTotal > 0 ? (detached     / accTotal) * 100 : null;
