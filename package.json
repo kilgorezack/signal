@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build:data": "node scripts/build-data.js",
-    "build": "node scripts/build-data.js && vite build",
+    "build:data:uk": "node scripts/build-data-uk.js",
+    "build:data:all": "node scripts/build-data.js && node scripts/build-data-uk.js",
+    "build": "npm run build:data:all && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

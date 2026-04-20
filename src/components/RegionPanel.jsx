@@ -141,11 +141,20 @@ export default function RegionPanel({
           <SectionLabel>Market Summary</SectionLabel>
           <div className="stat-cards-grid">
             <StatCard label="Households" value={formatCount(d.dwelling_count)} />
-            <StatCard label="Avg Annual Income" value={formatAnnualIncome(d.median_household_income_weekly)} />
-            <StatCard label="Single Family Homes" value={formatPercent(d.separate_house_pct, 0)} />
+            {d.market === 'uk'
+              ? <StatCard label="Professional Workers" value={formatPercent(d.professional_pct, 1)} />
+              : <StatCard label="Avg Annual Income" value={formatAnnualIncome(d.median_household_income_weekly)} />
+            }
+            <StatCard
+              label={d.market === 'uk' ? 'Detached Houses' : 'Single Family Homes'}
+              value={formatPercent(d.market === 'uk' ? d.detached_pct : d.separate_house_pct, 0)}
+            />
             <StatCard label="Home Ownership" value={formatPercent(homeOwnershipPct, 0)} />
             <StatCard label="Median Age" value={formatAge(d.median_age)} />
-            <StatCard label="Internet Access" value={formatPercent(d.internet_access_pct, 0)} />
+            {d.market === 'uk'
+              ? <StatCard label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 0)} />
+              : <StatCard label="Internet Access" value={formatPercent(d.internet_access_pct, 0)} />
+            }
           </div>
         </div>
 
@@ -165,11 +174,11 @@ export default function RegionPanel({
           </div>
         )}
 
-        {/* ── Income Distribution Chart ── */}
+        {/* ── Income / Socioeconomic Distribution Chart ── */}
         {d.income_distribution && (
           <div className="panel-section">
             <DistributionChart
-              title="Income Ranges"
+              title={d.market === 'uk' ? 'Socioeconomic Profile (NS-SeC)' : 'Income Ranges'}
               data={d.income_distribution}
               unit="%"
               color="var(--score-mid)"
@@ -181,7 +190,10 @@ export default function RegionPanel({
         {/* ── Market Opportunities ── */}
         <div className="panel-section">
           <SectionLabel>Market Opportunities</SectionLabel>
-          <OpportunityRow label="Lower Income (<$1k/wk)" value={lowerIncomePct} />
+          <OpportunityRow
+            label={d.market === 'uk' ? 'Routine/Semi-routine Workers' : 'Lower Income (<$1k/wk)'}
+            value={lowerIncomePct}
+          />
           <OpportunityRow label="Parental Control Candidates" value={d.households_with_children_pct} />
           <OpportunityRow label="Elderly (65+)" value={d.elderly_pct} />
           <OpportunityRow label="Renter Households" value={d.renting_pct} />
@@ -192,12 +204,19 @@ export default function RegionPanel({
         <div className="panel-section">
           <SectionLabel>Demographics</SectionLabel>
           <MetricRow label="Population" value={formatPopulation(d.population)} />
-          <MetricRow label="Median Income" value={d.median_household_income_weekly ? `AU$${Math.round(d.median_household_income_weekly).toLocaleString('en-AU')}/wk` : '—'} />
+          {d.market === 'uk'
+            ? <MetricRow label="Professional Workers" value={formatPercent(d.professional_pct, 1)} />
+            : <MetricRow label="Median Income" value={d.median_household_income_weekly
+                ? `AU$${Math.round(d.median_household_income_weekly).toLocaleString('en-AU')}/wk` : '—'} />
+          }
           <MetricRow label="Avg Household Size" value={formatHouseholdSize(d.avg_household_size)} />
           <MetricRow label="Population Density" value={formatDensity(d.population_density_per_sqkm)} />
           <MetricRow label="Youth (0–19)" value={formatPercent(d.youth_pct, 1)} />
           <MetricRow label="Owned Outright" value={formatPercent(d.owned_outright_pct, 1)} />
           <MetricRow label="Renting" value={formatPercent(d.renting_pct, 1)} />
+          {d.market === 'uk' && (
+            <MetricRow label="Terraced Houses" value={formatPercent(d.terraced_pct, 1)} />
+          )}
           <MetricRow label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 1)} />
           <MetricRow label="Apartments" value={formatPercent(d.apartment_pct, 1)} />
         </div>
