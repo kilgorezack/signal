@@ -681,6 +681,17 @@ async function main() {
     const avgHouseholdSize = dwellingCount && population > 0 ? population / dwellingCount : null;
     const r1               = v => v != null ? Math.round(v * 10) / 10 : null;
 
+    // Median age: find age at which cumulative count crosses 50% of population
+    let medianAge = null;
+    if (population > 0) {
+      const half = population / 2;
+      let cum = 0;
+      for (let a = 0; a <= 100; a++) {
+        cum += ageByYear[a];
+        if (cum >= half) { medianAge = a; break; }
+      }
+    }
+
     if (population > 0) resWithData++;
 
     const demographics = {
@@ -689,7 +700,7 @@ async function main() {
       median_annual_earnings:       annualEarnings ? Math.round(annualEarnings) : null,
       // NS-SeC professional % retained as socioeconomic profile indicator
       professional_pct:             r1(professionalPct),
-      median_age:                   null,
+      median_age:                   medianAge,
       avg_household_size:           r1(avgHouseholdSize),
       households_with_children_pct: r1(hhWithChildrenPct),
       detached_pct:                 r1(detachedPct),
