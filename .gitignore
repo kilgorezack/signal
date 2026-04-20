@@ -13,6 +13,7 @@ dist-ssr
 *.local
 .env
 .abs-cache/
+.ons-cache/
 
 # Editor directories and files
 .vscode/*
