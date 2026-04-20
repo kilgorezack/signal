@@ -102,8 +102,9 @@ function buildPrompt(p) {
   const homeOwnership = ((p.owned_outright_pct ?? 0) + (p.owned_mortgage_pct ?? 0)).toFixed(0);
 
   const incomeBlock = isUk
-    ? `SOCIOECONOMIC PROFILE (NS-SeC proxy for income)
-  Professional/Managerial (classes 1–2): ${p.professional_pct?.toFixed(1) ?? 'N/A'}%
+    ? `EARNINGS & SOCIOECONOMIC PROFILE
+  Median full-time annual gross earnings (ASHE 2023): ${p.median_annual_earnings ? `£${p.median_annual_earnings.toLocaleString('en-GB')}` : 'N/A'}
+  Professional/Managerial workers (NS-SeC classes 1–2): ${p.professional_pct?.toFixed(1) ?? 'N/A'}%
   ${p.income_distribution
     ? Object.entries(p.income_distribution).map(([k, v]) => `  ${k}: ${v}%`).join('\n  ')
     : '  Not available'}`

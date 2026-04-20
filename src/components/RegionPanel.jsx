@@ -142,7 +142,12 @@ export default function RegionPanel({
           <div className="stat-cards-grid">
             <StatCard label="Households" value={formatCount(d.dwelling_count)} />
             {d.market === 'uk'
-              ? <StatCard label="Professional Workers" value={formatPercent(d.professional_pct, 1)} />
+              ? <StatCard
+                  label={d.median_annual_earnings ? 'Median Annual Earnings' : 'Professional Workers'}
+                  value={d.median_annual_earnings
+                    ? `£${d.median_annual_earnings.toLocaleString('en-GB')}`
+                    : formatPercent(d.professional_pct, 1)}
+                />
               : <StatCard label="Avg Annual Income" value={formatAnnualIncome(d.median_household_income_weekly)} />
             }
             <StatCard
@@ -205,7 +210,12 @@ export default function RegionPanel({
           <SectionLabel>Demographics</SectionLabel>
           <MetricRow label="Population" value={formatPopulation(d.population)} />
           {d.market === 'uk'
-            ? <MetricRow label="Professional Workers" value={formatPercent(d.professional_pct, 1)} />
+            ? <>
+                {d.median_annual_earnings &&
+                  <MetricRow label="Median Annual Earnings"
+                    value={`£${d.median_annual_earnings.toLocaleString('en-GB')}`} />}
+                <MetricRow label="Professional Workers (NS-SeC)" value={formatPercent(d.professional_pct, 1)} />
+              </>
             : <MetricRow label="Median Income" value={d.median_household_income_weekly
                 ? `AU$${Math.round(d.median_household_income_weekly).toLocaleString('en-AU')}/wk` : '—'} />
           }
