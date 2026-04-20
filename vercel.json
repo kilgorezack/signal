@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:data && npm run build:data:uk && vite build",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "functions": {
     "api/insights.js": {

@@ -140,6 +140,17 @@ function parseOnsCsv(csvText) {
 
 // ─── Boundary + region lookup ─────────────────────────────────────────────────
 
+// ONS Geography Portal service name candidates for LAD Dec 2021 boundaries.
+// Tried in order; first successful response wins.
+const BOUNDARY_CANDIDATES = [
+  // BGC = Generalised Clipped (preferred: smaller file)
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BGC/FeatureServer/0/query`,
+  // BFC = Full Clipped (fallback)
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BFC/FeatureServer/0/query`,
+  // BUC = Ultra-generalised (last resort)
+  `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BUC/FeatureServer/0/query`,
+];
+
 async function fetchUkBoundaries() {
   const cacheFile = path.join(CACHE_DIR, 'lad_boundaries.geojson');
   if (fs.existsSync(cacheFile)) {
@@ -150,19 +161,27 @@ async function fetchUkBoundaries() {
     }
   }
 
-  const url =
-    `${ONS_GEO_BASE}/Local_Authority_Districts_December_2021_UK_BGC/FeatureServer/0/query` +
-    `?where=1%3D1&outFields=*&f=geojson` +
-    `&geometryPrecision=3&maxAllowableOffset=0.01&resultRecordCount=500`;
+  // Note: maxAllowableOffset is not valid for FeatureServer — omit it.
+  // Use specific outFields to avoid schema-mismatch 400 errors.
+  const QS = '?where=1%3D1&outFields=LAD21CD,LAD21NM,Shape__Area&f=geojson&geometryPrecision=3&resultRecordCount=500';
 
-  process.stdout.write('  [fetch] UK LAD boundaries (ONS Geography Portal)\n');
-  const res = await fetch(url, { signal: AbortSignal.timeout(120_000) });
-  if (!res.ok) throw new Error(`LAD boundaries: ${res.status}`);
-  const data = await res.json();
-  if (data.error) throw new Error(`ArcGIS error: ${JSON.stringify(data.error)}`);
-
-  fs.writeFileSync(cacheFile, JSON.stringify(data));
-  return data;
+  let lastErr;
+  for (const base of BOUNDARY_CANDIDATES) {
+    const url = base + QS;
+    process.stdout.write(`  [fetch] ${url}\n`);
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(120_000) });
+      if (!res.ok) { lastErr = new Error(`HTTP ${res.status}`); continue; }
+      const data = await res.json();
+      if (data.error) { lastErr = new Error(`ArcGIS: ${JSON.stringify(data.error)}`); continue; }
+      if ((data.features?.length ?? 0) === 0) { lastErr = new Error('0 features'); continue; }
+      fs.writeFileSync(cacheFile, JSON.stringify(data));
+      return data;
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr ?? new Error('All boundary candidates failed');
 }
 
 const RGN_ABBREV = {
@@ -402,8 +421,10 @@ async function main() {
     console.log(`  ✓ ${count} LAD boundary features`);
     if (count === 0) throw new Error('No features returned');
   } catch (err) {
-    console.error(`  ✗ ${err.message}`);
-    process.exit(1);
+    console.error(`  ✗ Boundary fetch failed: ${err.message}`);
+    console.error('  ⚠ UK data files will not be generated this build.');
+    console.error('    Run "npm run build:data:uk" locally to generate them.\n');
+    process.exit(0); // non-fatal — AU data is still valid
   }
 
   // ── 2. Region lookup (England only; Wales = WLS) ───────────────────────────
@@ -699,6 +720,7 @@ async function main() {
 }
 
 main().catch(err => {
-  console.error('\n❌ UK build failed:', err);
-  process.exit(1);
+  console.error('\n⚠ UK build encountered an error:', err.message);
+  console.error('  UK data files may be incomplete. Run "npm run build:data:uk" locally.\n');
+  process.exit(0); // non-fatal — AU data remains valid
 });

@@ -8,7 +8,7 @@
     "build:data": "node scripts/build-data.js",
     "build:data:uk": "node scripts/build-data-uk.js",
     "build:data:all": "node scripts/build-data.js && node scripts/build-data-uk.js",
-    "build": "node scripts/build-data.js && vite build",
+    "build": "npm run build:data:all && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
