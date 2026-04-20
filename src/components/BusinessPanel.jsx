@@ -7,7 +7,7 @@ import DistributionChart from './DistributionChart.jsx';
 import InsightsDrawer from './InsightsDrawer.jsx';
 import { formatCount, formatPopulation, formatPercent, formatDensity, SA_TYPE_LABELS } from '../utils/formatters.js';
 import { scoreToHex } from '../utils/scoreColors.js';
-import { SMARTBIZ_SCORE_LABELS, ANZSIC_SHORT, UK_SIC_SHORT } from '../config.js';
+import { SMARTBIZ_SCORE_LABELS, ANZSIC_SHORT, UK_SIC_SHORT, NAICS_SHORT } from '../config.js';
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 
@@ -212,7 +212,7 @@ export default function BusinessPanel({
   onGenerateInsights,
 }) {
   const d            = data ?? {};
-  const industryShort = d.market === 'uk' ? UK_SIC_SHORT : ANZSIC_SHORT;
+  const industryShort = d.market === 'uk' ? UK_SIC_SHORT : d.market === 'ca' ? NAICS_SHORT : ANZSIC_SHORT;
 
   const scoreComponents = useMemo(() => [
     { key: 'industry_mix_component', label: SMARTBIZ_SCORE_LABELS.industry_mix_component },

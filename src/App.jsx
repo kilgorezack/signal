@@ -97,7 +97,7 @@ export default function App() {
   const activeGeoError = isBusiness ? businessGeoError : geoError;
   const scoreField     = isBusiness ? 'smartbiz_score' : 'opportunity_score';
   const regionCount    = activeGeojson?.features?.length ?? 0;
-  const buildCmd       = market === 'uk' ? 'build:data:uk' : 'build:data';
+  const buildCmd       = market === 'uk' ? 'build:data:uk' : market === 'ca' ? 'build:data:ca' : 'build:data';
 
   return (
     <div className="app">
@@ -143,7 +143,7 @@ export default function App() {
 
           {activeGeojson && (
             <span className="app-data-badge">
-              {regionCount} {market === 'uk' ? 'LADs' : 'SA4 regions'} · {mkt.dataBadge}
+              {regionCount} {market === 'uk' ? 'LADs' : market === 'ca' ? 'Census Divisions' : 'SA4 regions'} · {mkt.dataBadge}
             </span>
           )}
         </div>

@@ -26,6 +26,17 @@ export const MARKETS = {
     geojsonRes:      '/data/uk-lad.geojson',
     geojsonBiz:      '/data/uk-business-lad.geojson',
   },
+  ca: {
+    label:           'Canada',
+    flag:            '🇨🇦',
+    center:          { lat: 56.1, lng: -96.3 },
+    cameraDistance:  5_500_000,
+    boundaryCenter:  { lat: 56.1, lng: -96.3 },
+    boundarySpan:    { latDelta: 50, lngDelta: 70 },
+    dataBadge:       'StatCan Census 2021',
+    geojsonRes:      '/data/ca-cd.geojson',
+    geojsonBiz:      '/data/ca-business-cd.geojson',
+  },
 };
 
 // ─── Score labels ─────────────────────────────────────────────────────────────
@@ -71,6 +82,30 @@ export const ANZSIC_SHORT = {
   Q: 'Healthcare',
   R: 'Arts & Recreation',
   S: 'Other Services',
+};
+
+// Canada: NAICS 2017 (numeric codes, differs from AU/UK letter codes)
+export const NAICS_SHORT = {
+  '11':    'Agriculture',
+  '21':    'Mining & O&G',
+  '22':    'Utilities',
+  '23':    'Construction',
+  '31-33': 'Manufacturing',
+  '41':    'Wholesale',
+  '44-45': 'Retail',
+  '48-49': 'Transport',
+  '51':    'Info & Media',
+  '52':    'Finance',
+  '53':    'Real Estate',
+  '54':    'Prof Services',
+  '55':    'Management',
+  '56':    'Admin & Support',
+  '61':    'Education',
+  '62':    'Healthcare',
+  '71':    'Arts & Rec',
+  '72':    'Accommodation',
+  '81':    'Other Services',
+  '91':    'Public Admin',
 };
 
 // UK: SIC 2007 sections (A–U, note different letters vs ANZSIC for F/G/H/I)

@@ -1,0 +1,2932 @@
+[
+  {
+    "id": "4610",
+    "name": "Division No. 10",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 61,
+    "centroid_lat": 49.808,
+    "centroid_lng": -97.556
+  },
+  {
+    "id": "3524",
+    "name": "Halton",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 58,
+    "centroid_lat": 43.51,
+    "centroid_lng": -79.8925
+  },
+  {
+    "id": "3519",
+    "name": "York",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 57,
+    "centroid_lat": 44.105,
+    "centroid_lng": -79.466
+  },
+  {
+    "id": "3521",
+    "name": "Peel",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 57,
+    "centroid_lat": 43.7355,
+    "centroid_lng": -79.8425
+  },
+  {
+    "id": "4816",
+    "name": "Division No. 16",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 56,
+    "centroid_lat": 57.7745,
+    "centroid_lng": -112.7845
+  },
+  {
+    "id": "2482",
+    "name": "Les Collines-de-l'Outaouais",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 54,
+    "centroid_lat": 45.624,
+    "centroid_lng": -75.84
+  },
+  {
+    "id": "6103",
+    "name": "Region 3",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 54,
+    "centroid_lat": 63.916,
+    "centroid_lng": -115.657
+  },
+  {
+    "id": "6105",
+    "name": "Region 5",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 54,
+    "centroid_lat": 61.4625,
+    "centroid_lng": -109.4895
+  },
+  {
+    "id": "6106",
+    "name": "Region 6",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 54,
+    "centroid_lat": 64.24,
+    "centroid_lng": -111
+  },
+  {
+    "id": "2422",
+    "name": "La Jacques-Cartier",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 53,
+    "centroid_lat": 47.2785,
+    "centroid_lng": -71.663
+  },
+  {
+    "id": "3518",
+    "name": "Durham",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 52,
+    "centroid_lat": 44.155,
+    "centroid_lng": -78.8825
+  },
+  {
+    "id": "3522",
+    "name": "Dufferin",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 52,
+    "centroid_lat": 44.028,
+    "centroid_lng": -80.1945
+  },
+  {
+    "id": "4612",
+    "name": "Division No. 12",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 52,
+    "centroid_lat": 50.04,
+    "centroid_lng": -96.69
+  },
+  {
+    "id": "1010",
+    "name": "Division No. 10",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 50,
+    "centroid_lat": 53.92,
+    "centroid_lng": -61.7025
+  },
+  {
+    "id": "2464",
+    "name": "Les Moulins",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 50,
+    "centroid_lat": 45.7485,
+    "centroid_lng": -73.667
+  },
+  {
+    "id": "2465",
+    "name": "Laval",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 50,
+    "centroid_lat": 45.6055,
+    "centroid_lng": -73.7075
+  },
+  {
+    "id": "4613",
+    "name": "Division No. 13",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 49,
+    "centroid_lat": 50.239,
+    "centroid_lng": -96.7685
+  },
+  {
+    "id": "2457",
+    "name": "La Vallée-du-Richelieu",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 48,
+    "centroid_lat": 45.6225,
+    "centroid_lng": -73.223
+  },
+  {
+    "id": "2459",
+    "name": "Marguerite-D'Youville",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 48,
+    "centroid_lat": 45.766,
+    "centroid_lng": -73.323
+  },
+  {
+    "id": "4614",
+    "name": "Division No. 14",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 48,
+    "centroid_lat": 50.2115,
+    "centroid_lng": -97.5645
+  },
+  {
+    "id": "4819",
+    "name": "Division No. 19",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 48,
+    "centroid_lat": 55.5195,
+    "centroid_lng": -118.3845
+  },
+  {
+    "id": "6102",
+    "name": "Region 2",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 48,
+    "centroid_lat": 64.899,
+    "centroid_lng": -124.353
+  },
+  {
+    "id": "2467",
+    "name": "Roussillon",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 45.3315,
+    "centroid_lng": -73.6065
+  },
+  {
+    "id": "2471",
+    "name": "Vaudreuil-Soulanges",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 45.3795,
+    "centroid_lng": -74.162
+  },
+  {
+    "id": "2473",
+    "name": "Thérèse-De Blainville",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 45.7,
+    "centroid_lng": -73.831
+  },
+  {
+    "id": "3502",
+    "name": "Prescott and Russell",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 45.414,
+    "centroid_lng": -74.905
+  },
+  {
+    "id": "3543",
+    "name": "Simcoe",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 44.441,
+    "centroid_lng": -79.6875
+  },
+  {
+    "id": "4611",
+    "name": "Division No. 11",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 47,
+    "centroid_lat": 49.854,
+    "centroid_lng": -97.205
+  },
+  {
+    "id": "1305",
+    "name": "Kings",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 45.6605,
+    "centroid_lng": -65.7895
+  },
+  {
+    "id": "2420",
+    "name": "L'Île-d'Orléans",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 46.9365,
+    "centroid_lng": -70.9605
+  },
+  {
+    "id": "2458",
+    "name": "Longueuil",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 45.5345,
+    "centroid_lng": -73.41
+  },
+  {
+    "id": "2460",
+    "name": "L'Assomption",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 45.8245,
+    "centroid_lng": -73.432
+  },
+  {
+    "id": "3528",
+    "name": "Haldimand-Norfolk",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 42.8355,
+    "centroid_lng": -80.0915
+  },
+  {
+    "id": "3541",
+    "name": "Bruce",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 44.618,
+    "centroid_lng": -81.367
+  },
+  {
+    "id": "4806",
+    "name": "Division No.  6",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 51.1255,
+    "centroid_lng": -114.1855
+  },
+  {
+    "id": "4812",
+    "name": "Division No. 12",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 54.8515,
+    "centroid_lng": -111.4255
+  },
+  {
+    "id": "4814",
+    "name": "Division No. 14",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 53.387,
+    "centroid_lng": -117.4345
+  },
+  {
+    "id": "4818",
+    "name": "Division No. 18",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 46,
+    "centroid_lat": 54.7425,
+    "centroid_lng": -117.981
+  },
+  {
+    "id": "1011",
+    "name": "Division No. 11",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 56.9605,
+    "centroid_lng": -60.928
+  },
+  {
+    "id": "2472",
+    "name": "Deux-Montagnes",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 45.54,
+    "centroid_lng": -74.06
+  },
+  {
+    "id": "3506",
+    "name": "Ottawa",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 45.2495,
+    "centroid_lng": -75.8
+  },
+  {
+    "id": "3509",
+    "name": "Lanark",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 45.0575,
+    "centroid_lng": -76.295
+  },
+  {
+    "id": "3511",
+    "name": "Lennox and Addington",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 44.6425,
+    "centroid_lng": -77.08
+  },
+  {
+    "id": "3523",
+    "name": "Wellington",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 43.7065,
+    "centroid_lng": -80.4805
+  },
+  {
+    "id": "3530",
+    "name": "Waterloo",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 43.4785,
+    "centroid_lng": -80.5285
+  },
+  {
+    "id": "4602",
+    "name": "Division No.  2",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 49.399,
+    "centroid_lng": -96.8385
+  },
+  {
+    "id": "4701",
+    "name": "Division No.  1",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 49.5315,
+    "centroid_lng": -102.2985
+  },
+  {
+    "id": "4712",
+    "name": "Division No. 12",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 52.1355,
+    "centroid_lng": -107.7475
+  },
+  {
+    "id": "4713",
+    "name": "Division No. 13",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 52.2025,
+    "centroid_lng": -109.0835
+  },
+  {
+    "id": "6001",
+    "name": "Yukon",
+    "state_code": "YT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 64.8235,
+    "centroid_lng": -132.4035
+  },
+  {
+    "id": "6204",
+    "name": "Qikiqtaaluk",
+    "state_code": "NU",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 67.196,
+    "centroid_lng": -85.463
+  },
+  {
+    "id": "6205",
+    "name": "Kivalliq",
+    "state_code": "NU",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 45,
+    "centroid_lat": 62.0465,
+    "centroid_lng": -92.584
+  },
+  {
+    "id": "2426",
+    "name": "La Nouvelle-Beauce",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 46.4955,
+    "centroid_lng": -71.01
+  },
+  {
+    "id": "3513",
+    "name": "Prince Edward",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 44.006,
+    "centroid_lng": -77.097
+  },
+  {
+    "id": "3514",
+    "name": "Northumberland",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 44.174,
+    "centroid_lng": -78.0745
+  },
+  {
+    "id": "3516",
+    "name": "Kawartha Lakes",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 44.522,
+    "centroid_lng": -78.817
+  },
+  {
+    "id": "3520",
+    "name": "Toronto",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 43.717,
+    "centroid_lng": -79.377
+  },
+  {
+    "id": "3532",
+    "name": "Oxford",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 43.0885,
+    "centroid_lng": -80.784
+  },
+  {
+    "id": "3534",
+    "name": "Elgin",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 42.693,
+    "centroid_lng": -81.276
+  },
+  {
+    "id": "3544",
+    "name": "Muskoka",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 45.1535,
+    "centroid_lng": -79.4705
+  },
+  {
+    "id": "4804",
+    "name": "Division No.  4",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 51.4205,
+    "centroid_lng": -111.258
+  },
+  {
+    "id": "4807",
+    "name": "Division No.  7",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 52.5,
+    "centroid_lng": -111.549
+  },
+  {
+    "id": "4810",
+    "name": "Division No. 10",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 53.276,
+    "centroid_lng": -111.5945
+  },
+  {
+    "id": "4811",
+    "name": "Division No. 11",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 53.3895,
+    "centroid_lng": -114.226
+  },
+  {
+    "id": "4813",
+    "name": "Division No. 13",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 54.53,
+    "centroid_lng": -114.507
+  },
+  {
+    "id": "4817",
+    "name": "Division No. 17",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 57.25,
+    "centroid_lng": -116.256
+  },
+  {
+    "id": "5901",
+    "name": "East Kootenay",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 50.1655,
+    "centroid_lng": -115.4255
+  },
+  {
+    "id": "5951",
+    "name": "Bulkley-Nechako",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 54.498,
+    "centroid_lng": -125.882
+  },
+  {
+    "id": "5955",
+    "name": "Peace River",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 44,
+    "centroid_lat": 55.911,
+    "centroid_lng": -123.869
+  },
+  {
+    "id": "1303",
+    "name": "Sunbury",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 45.9475,
+    "centroid_lng": -66.395
+  },
+  {
+    "id": "2421",
+    "name": "La Côte-de-Beaupré",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 47.418,
+    "centroid_lng": -71.347
+  },
+  {
+    "id": "2498",
+    "name": "Minganie--Le Golfe-du-Saint-Laurent",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 50.9695,
+    "centroid_lng": -61.328
+  },
+  {
+    "id": "3507",
+    "name": "Leeds and Grenville",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 44.7105,
+    "centroid_lng": -75.9435
+  },
+  {
+    "id": "3525",
+    "name": "Hamilton",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 43.261,
+    "centroid_lng": -79.935
+  },
+  {
+    "id": "3529",
+    "name": "Brant",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 43.14,
+    "centroid_lng": -80.2965
+  },
+  {
+    "id": "3537",
+    "name": "Essex",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 42.0335,
+    "centroid_lng": -82.782
+  },
+  {
+    "id": "3540",
+    "name": "Huron",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 43.6455,
+    "centroid_lng": -81.364
+  },
+  {
+    "id": "3546",
+    "name": "Haliburton",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 45.1575,
+    "centroid_lng": -78.481
+  },
+  {
+    "id": "3552",
+    "name": "Sudbury",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 47.161,
+    "centroid_lng": -82.078
+  },
+  {
+    "id": "4601",
+    "name": "Division No.  1",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 49.889,
+    "centroid_lng": -95.969
+  },
+  {
+    "id": "4702",
+    "name": "Division No.  2",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 49.523,
+    "centroid_lng": -104.3565
+  },
+  {
+    "id": "4705",
+    "name": "Division No.  5",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 50.586,
+    "centroid_lng": -102.4145
+  },
+  {
+    "id": "4802",
+    "name": "Division No.  2",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 50.105,
+    "centroid_lng": -112.309
+  },
+  {
+    "id": "4803",
+    "name": "Division No.  3",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 49.7055,
+    "centroid_lng": -113.5065
+  },
+  {
+    "id": "4805",
+    "name": "Division No.  5",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 51.0155,
+    "centroid_lng": -112.9215
+  },
+  {
+    "id": "5915",
+    "name": "Greater Vancouver",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 49.288,
+    "centroid_lng": -122.9195
+  },
+  {
+    "id": "5949",
+    "name": "Kitimat-Stikine",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 43,
+    "centroid_lat": 55.6365,
+    "centroid_lng": -129.8575
+  },
+  {
+    "id": "2481",
+    "name": "Gatineau",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 45.4875,
+    "centroid_lng": -75.627
+  },
+  {
+    "id": "3526",
+    "name": "Niagara",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 43.0475,
+    "centroid_lng": -79.3315
+  },
+  {
+    "id": "3531",
+    "name": "Perth",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 43.524,
+    "centroid_lng": -81.0895
+  },
+  {
+    "id": "3538",
+    "name": "Lambton",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 42.9005,
+    "centroid_lng": -82.212
+  },
+  {
+    "id": "3542",
+    "name": "Grey",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 44.4135,
+    "centroid_lng": -80.6845
+  },
+  {
+    "id": "3547",
+    "name": "Renfrew",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 45.696,
+    "centroid_lng": -77.354
+  },
+  {
+    "id": "3549",
+    "name": "Parry Sound",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 45.668,
+    "centroid_lng": -79.839
+  },
+  {
+    "id": "3559",
+    "name": "Rainy River",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 48.7065,
+    "centroid_lng": -92.88
+  },
+  {
+    "id": "4603",
+    "name": "Division No.  3",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 49.3105,
+    "centroid_lng": -97.7875
+  },
+  {
+    "id": "4604",
+    "name": "Division No.  4",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 49.27,
+    "centroid_lng": -98.8815
+  },
+  {
+    "id": "4703",
+    "name": "Division No.  3",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 49.5235,
+    "centroid_lng": -106.427
+  },
+  {
+    "id": "4706",
+    "name": "Division No.  6",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 50.615,
+    "centroid_lng": -104.4345
+  },
+  {
+    "id": "4708",
+    "name": "Division No.  8",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 50.659,
+    "centroid_lng": -108.8245
+  },
+  {
+    "id": "4715",
+    "name": "Division No. 15",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 53.061,
+    "centroid_lng": -105.7785
+  },
+  {
+    "id": "4808",
+    "name": "Division No.  8",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 52.385,
+    "centroid_lng": -113.781
+  },
+  {
+    "id": "4809",
+    "name": "Division No.  9",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 52.3445,
+    "centroid_lng": -115.7605
+  },
+  {
+    "id": "5919",
+    "name": "Cowichan Valley",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 48.835,
+    "centroid_lng": -124.185
+  },
+  {
+    "id": "5931",
+    "name": "Squamish-Lillooet",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 50.3505,
+    "centroid_lng": -122.814
+  },
+  {
+    "id": "5953",
+    "name": "Fraser-Fort George",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 42,
+    "centroid_lat": 54.067,
+    "centroid_lng": -121.123
+  },
+  {
+    "id": "1208",
+    "name": "Hants",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 45.0485,
+    "centroid_lng": -63.907
+  },
+  {
+    "id": "1306",
+    "name": "Albert",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 45.806,
+    "centroid_lng": -64.898
+  },
+  {
+    "id": "2401",
+    "name": "Communauté maritime des Îles-de-la-Madeleine",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 47.5075,
+    "centroid_lng": -61.705
+  },
+  {
+    "id": "2419",
+    "name": "Bellechasse",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 46.654,
+    "centroid_lng": -70.738
+  },
+  {
+    "id": "2433",
+    "name": "Lotbinière",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 46.489,
+    "centroid_lng": -71.5695
+  },
+  {
+    "id": "2463",
+    "name": "Montcalm",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 45.923,
+    "centroid_lng": -73.7185
+  },
+  {
+    "id": "2468",
+    "name": "Les Jardins-de-Napierville",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 45.166,
+    "centroid_lng": -73.5535
+  },
+  {
+    "id": "2474",
+    "name": "Mirabel",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 45.652,
+    "centroid_lng": -74.059
+  },
+  {
+    "id": "2499",
+    "name": "Nord-du-Québec",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 55.7545,
+    "centroid_lng": -71.5415
+  },
+  {
+    "id": "3560",
+    "name": "Kenora",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 52.931,
+    "centroid_lng": -88.33
+  },
+  {
+    "id": "4605",
+    "name": "Division No.  5",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.266,
+    "centroid_lng": -100.3765
+  },
+  {
+    "id": "4608",
+    "name": "Division No.  8",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 50.0855,
+    "centroid_lng": -98.915
+  },
+  {
+    "id": "4621",
+    "name": "Division No. 21",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 54.313,
+    "centroid_lng": -99.6475
+  },
+  {
+    "id": "4704",
+    "name": "Division No.  4",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.655,
+    "centroid_lng": -108.608
+  },
+  {
+    "id": "4711",
+    "name": "Division No. 11",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 51.7655,
+    "centroid_lng": -106.049
+  },
+  {
+    "id": "4717",
+    "name": "Division No. 17",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 53.766,
+    "centroid_lng": -108.675
+  },
+  {
+    "id": "4801",
+    "name": "Division No.  1",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.916,
+    "centroid_lng": -110.9525
+  },
+  {
+    "id": "5909",
+    "name": "Fraser Valley",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.577,
+    "centroid_lng": -121.907
+  },
+  {
+    "id": "5926",
+    "name": "Comox Valley",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.6625,
+    "centroid_lng": -125.0685
+  },
+  {
+    "id": "5929",
+    "name": "Sunshine Coast",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 49.8615,
+    "centroid_lng": -123.7505
+  },
+  {
+    "id": "5939",
+    "name": "Columbia-Shuswap",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 41,
+    "centroid_lat": 51.451,
+    "centroid_lng": -117.9805
+  },
+  {
+    "id": "1009",
+    "name": "Division No.  9",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 50.6485,
+    "centroid_lng": -56.7615
+  },
+  {
+    "id": "1218",
+    "name": "Victoria",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 46.57,
+    "centroid_lng": -60.594
+  },
+  {
+    "id": "2425",
+    "name": "Lévis",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 46.7025,
+    "centroid_lng": -71.2475
+  },
+  {
+    "id": "2434",
+    "name": "Portneuf",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 46.9945,
+    "centroid_lng": -72.0355
+  },
+  {
+    "id": "3515",
+    "name": "Peterborough",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 44.499,
+    "centroid_lng": -78.191
+  },
+  {
+    "id": "3558",
+    "name": "Thunder Bay",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 49.4485,
+    "centroid_lng": -88.148
+  },
+  {
+    "id": "4606",
+    "name": "Division No.  6",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 49.798,
+    "centroid_lng": -100.955
+  },
+  {
+    "id": "4615",
+    "name": "Division No. 15",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 50.395,
+    "centroid_lng": -100.4385
+  },
+  {
+    "id": "4707",
+    "name": "Division No.  7",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 50.66,
+    "centroid_lng": -106.55
+  },
+  {
+    "id": "4709",
+    "name": "Division No.  9",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 51.7205,
+    "centroid_lng": -102.4155
+  },
+  {
+    "id": "4714",
+    "name": "Division No. 14",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 52.973,
+    "centroid_lng": -103.384
+  },
+  {
+    "id": "5905",
+    "name": "Kootenay Boundary",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 49.406,
+    "centroid_lng": -118.4205
+  },
+  {
+    "id": "5933",
+    "name": "Thompson-Nicola",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 51.244,
+    "centroid_lng": -120.7315
+  },
+  {
+    "id": "5937",
+    "name": "North Okanagan",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 50.3735,
+    "centroid_lng": -118.9625
+  },
+  {
+    "id": "6101",
+    "name": "Region 1",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 71.541,
+    "centroid_lng": -123.15
+  },
+  {
+    "id": "6104",
+    "name": "Region 4",
+    "state_code": "NT",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 62.0505,
+    "centroid_lng": -121.661
+  },
+  {
+    "id": "6208",
+    "name": "Kitikmeot",
+    "state_code": "NU",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 40,
+    "centroid_lat": 69.107,
+    "centroid_lng": -104.855
+  },
+  {
+    "id": "1003",
+    "name": "Division No.  3",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 47.8905,
+    "centroid_lng": -57.001
+  },
+  {
+    "id": "1101",
+    "name": "Kings",
+    "state_code": "PE",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 46.2225,
+    "centroid_lng": -62.4185
+  },
+  {
+    "id": "1302",
+    "name": "Charlotte",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 45.039,
+    "centroid_lng": -66.981
+  },
+  {
+    "id": "2455",
+    "name": "Rouville",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 45.4,
+    "centroid_lng": -73.0485
+  },
+  {
+    "id": "3501",
+    "name": "Stormont, Dundas and Glengarry",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 45.155,
+    "centroid_lng": -74.969
+  },
+  {
+    "id": "3512",
+    "name": "Hastings",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 44.7275,
+    "centroid_lng": -77.6085
+  },
+  {
+    "id": "3536",
+    "name": "Chatham-Kent",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 42.3565,
+    "centroid_lng": -82.0765
+  },
+  {
+    "id": "3553",
+    "name": "Greater Sudbury / Grand Sudbury",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 46.584,
+    "centroid_lng": -81.073
+  },
+  {
+    "id": "3554",
+    "name": "Timiskaming",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 47.6675,
+    "centroid_lng": -80.6335
+  },
+  {
+    "id": "3556",
+    "name": "Cochrane",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 50.2845,
+    "centroid_lng": -83.0325
+  },
+  {
+    "id": "4609",
+    "name": "Division No.  9",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 49.963,
+    "centroid_lng": -98.1465
+  },
+  {
+    "id": "4710",
+    "name": "Division No. 10",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 51.6195,
+    "centroid_lng": -104.137
+  },
+  {
+    "id": "4716",
+    "name": "Division No. 16",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 53.3475,
+    "centroid_lng": -107.216
+  },
+  {
+    "id": "4815",
+    "name": "Division No. 15",
+    "state_code": "AB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 51.49,
+    "centroid_lng": -116.77
+  },
+  {
+    "id": "5903",
+    "name": "Central Kootenay",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 50.032,
+    "centroid_lng": -117.2605
+  },
+  {
+    "id": "5921",
+    "name": "Nanaimo",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 49.2245,
+    "centroid_lng": -124.329
+  },
+  {
+    "id": "5924",
+    "name": "Strathcona",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 50.4385,
+    "centroid_lng": -125.8155
+  },
+  {
+    "id": "5935",
+    "name": "Central Okanagan",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 49.954,
+    "centroid_lng": -119.427
+  },
+  {
+    "id": "5941",
+    "name": "Cariboo",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 52.204,
+    "centroid_lng": -123.3945
+  },
+  {
+    "id": "5947",
+    "name": "Skeena-Queen Charlotte",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 53.344,
+    "centroid_lng": -131.211
+  },
+  {
+    "id": "5959",
+    "name": "Northern Rockies",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 39,
+    "centroid_lat": 59,
+    "centroid_lng": -123.9055
+  },
+  {
+    "id": "1001",
+    "name": "Division No.  1",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 47.392,
+    "centroid_lng": -53.4105
+  },
+  {
+    "id": "1002",
+    "name": "Division No.  2",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 47.5245,
+    "centroid_lng": -54.9815
+  },
+  {
+    "id": "1206",
+    "name": "Lunenburg",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 44.5165,
+    "centroid_lng": -64.4755
+  },
+  {
+    "id": "1215",
+    "name": "Inverness",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 46.326,
+    "centroid_lng": -61.081
+  },
+  {
+    "id": "1304",
+    "name": "Queens",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 45.825,
+    "centroid_lng": -65.953
+  },
+  {
+    "id": "1308",
+    "name": "Kent",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 46.6555,
+    "centroid_lng": -65.181
+  },
+  {
+    "id": "2427",
+    "name": "Robert-Cliche",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 46.244,
+    "centroid_lng": -70.852
+  },
+  {
+    "id": "2438",
+    "name": "Bécancour",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 46.3765,
+    "centroid_lng": -72.241
+  },
+  {
+    "id": "2441",
+    "name": "Le Haut-Saint-François",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 45.516,
+    "centroid_lng": -71.482
+  },
+  {
+    "id": "2442",
+    "name": "Le Val-Saint-François",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 45.568,
+    "centroid_lng": -72.0445
+  },
+  {
+    "id": "2488",
+    "name": "Abitibi",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 48.6205,
+    "centroid_lng": -77.8525
+  },
+  {
+    "id": "4616",
+    "name": "Division No. 16",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 51.1075,
+    "centroid_lng": -101.051
+  },
+  {
+    "id": "4618",
+    "name": "Division No. 18",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 38,
+    "centroid_lat": 51.035,
+    "centroid_lng": -97.569
+  },
+  {
+    "id": "1007",
+    "name": "Division No.  7",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 48.587,
+    "centroid_lng": -54.148
+  },
+  {
+    "id": "1008",
+    "name": "Division No.  8",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 49.607,
+    "centroid_lng": -55.26
+  },
+  {
+    "id": "1102",
+    "name": "Queens",
+    "state_code": "PE",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.244,
+    "centroid_lng": -63.136
+  },
+  {
+    "id": "1103",
+    "name": "Prince",
+    "state_code": "PE",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.6315,
+    "centroid_lng": -63.9495
+  },
+  {
+    "id": "1201",
+    "name": "Shelburne",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 43.811,
+    "centroid_lng": -65.364
+  },
+  {
+    "id": "1214",
+    "name": "Antigonish",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.636,
+    "centroid_lng": -61.8355
+  },
+  {
+    "id": "1216",
+    "name": "Richmond",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.6445,
+    "centroid_lng": -60.8005
+  },
+  {
+    "id": "1309",
+    "name": "Northumberland",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.9225,
+    "centroid_lng": -65.9235
+  },
+  {
+    "id": "1310",
+    "name": "York",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.215,
+    "centroid_lng": -67.003
+  },
+  {
+    "id": "1311",
+    "name": "Carleton",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.3545,
+    "centroid_lng": -67.3275
+  },
+  {
+    "id": "2403",
+    "name": "La Côte-de-Gaspé",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 48.955,
+    "centroid_lng": -64.8455
+  },
+  {
+    "id": "2423",
+    "name": "Québec",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.8485,
+    "centroid_lng": -71.375
+  },
+  {
+    "id": "2428",
+    "name": "Les Etchemins",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.352,
+    "centroid_lng": -70.3595
+  },
+  {
+    "id": "2445",
+    "name": "Memphrémagog",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.227,
+    "centroid_lng": -72.175
+  },
+  {
+    "id": "2452",
+    "name": "D'Autray",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.217,
+    "centroid_lng": -73.272
+  },
+  {
+    "id": "2469",
+    "name": "Le Haut-Saint-Laurent",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.105,
+    "centroid_lng": -74.1655
+  },
+  {
+    "id": "2475",
+    "name": "La Rivière-du-Nord",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.834,
+    "centroid_lng": -74.0095
+  },
+  {
+    "id": "2477",
+    "name": "Les Pays-d'en-Haut",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.9355,
+    "centroid_lng": -74.2485
+  },
+  {
+    "id": "2480",
+    "name": "Papineau",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.8765,
+    "centroid_lng": -75.248
+  },
+  {
+    "id": "2484",
+    "name": "Pontiac",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 46.373,
+    "centroid_lng": -77.041
+  },
+  {
+    "id": "2485",
+    "name": "Témiscamingue",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 47.058,
+    "centroid_lng": -78.5055
+  },
+  {
+    "id": "2487",
+    "name": "Abitibi-Ouest",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 48.7195,
+    "centroid_lng": -79.0805
+  },
+  {
+    "id": "2497",
+    "name": "Sept-Rivières--Caniapiscau",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 52.2935,
+    "centroid_lng": -66.7915
+  },
+  {
+    "id": "3510",
+    "name": "Frontenac",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 44.658,
+    "centroid_lng": -76.694
+  },
+  {
+    "id": "3539",
+    "name": "Middlesex",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 42.9505,
+    "centroid_lng": -81.3675
+  },
+  {
+    "id": "3551",
+    "name": "Manitoulin",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 45.754,
+    "centroid_lng": -82.4775
+  },
+  {
+    "id": "3557",
+    "name": "Algoma",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 47.871,
+    "centroid_lng": -83.6385
+  },
+  {
+    "id": "4607",
+    "name": "Division No.  7",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 49.8865,
+    "centroid_lng": -99.7915
+  },
+  {
+    "id": "4620",
+    "name": "Division No. 20",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 52.102,
+    "centroid_lng": -100.855
+  },
+  {
+    "id": "4622",
+    "name": "Division No. 22",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 54.8565,
+    "centroid_lng": -95.3385
+  },
+  {
+    "id": "4718",
+    "name": "Division No. 18",
+    "state_code": "SK",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 56.814,
+    "centroid_lng": -105.8885
+  },
+  {
+    "id": "5917",
+    "name": "Capital",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 48.66,
+    "centroid_lng": -123.7725
+  },
+  {
+    "id": "5923",
+    "name": "Alberni-Clayoquot",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 49.156,
+    "centroid_lng": -125.5585
+  },
+  {
+    "id": "5927",
+    "name": "Powell River",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 37,
+    "centroid_lat": 50.1495,
+    "centroid_lng": -124.3375
+  },
+  {
+    "id": "1005",
+    "name": "Division No.  5",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 49.3695,
+    "centroid_lng": -57.5745
+  },
+  {
+    "id": "1202",
+    "name": "Yarmouth",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 43.811,
+    "centroid_lng": -65.784
+  },
+  {
+    "id": "1204",
+    "name": "Queens",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 44.163,
+    "centroid_lng": -64.9565
+  },
+  {
+    "id": "1207",
+    "name": "Kings",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 44.9995,
+    "centroid_lng": -64.5945
+  },
+  {
+    "id": "1212",
+    "name": "Pictou",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 45.5525,
+    "centroid_lng": -62.6225
+  },
+  {
+    "id": "1213",
+    "name": "Guysborough",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 45.287,
+    "centroid_lng": -61.8285
+  },
+  {
+    "id": "1307",
+    "name": "Westmorland",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 46,
+    "centroid_lng": -64.594
+  },
+  {
+    "id": "2414",
+    "name": "Kamouraska",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 47.485,
+    "centroid_lng": -69.7005
+  },
+  {
+    "id": "2416",
+    "name": "Charlevoix",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 47.614,
+    "centroid_lng": -70.8125
+  },
+  {
+    "id": "2417",
+    "name": "L'Islet",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 47.037,
+    "centroid_lng": -70.0295
+  },
+  {
+    "id": "2444",
+    "name": "Coaticook",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 45.1785,
+    "centroid_lng": -71.7475
+  },
+  {
+    "id": "2446",
+    "name": "Brome-Missisquoi",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 45.1805,
+    "centroid_lng": -72.7575
+  },
+  {
+    "id": "2450",
+    "name": "Nicolet-Yamaska",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 46.1405,
+    "centroid_lng": -72.5605
+  },
+  {
+    "id": "2456",
+    "name": "Le Haut-Richelieu",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 45.2115,
+    "centroid_lng": -73.2035
+  },
+  {
+    "id": "2462",
+    "name": "Matawinie",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 46.8695,
+    "centroid_lng": -74.086
+  },
+  {
+    "id": "2493",
+    "name": "Lac-Saint-Jean-Est",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 48.4565,
+    "centroid_lng": -71.722
+  },
+  {
+    "id": "2496",
+    "name": "Manicouagan",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 50.251,
+    "centroid_lng": -68.6255
+  },
+  {
+    "id": "3548",
+    "name": "Nipissing",
+    "state_code": "ON",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 46.2725,
+    "centroid_lng": -78.9285
+  },
+  {
+    "id": "4617",
+    "name": "Division No. 17",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 51.282,
+    "centroid_lng": -99.806
+  },
+  {
+    "id": "5907",
+    "name": "Okanagan-Similkameen",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 49.456,
+    "centroid_lng": -120.1385
+  },
+  {
+    "id": "5943",
+    "name": "Mount Waddington",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 36,
+    "centroid_lat": 50.9595,
+    "centroid_lng": -127.148
+  },
+  {
+    "id": "1006",
+    "name": "Division No.  6",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 48.7895,
+    "centroid_lng": -56.1025
+  },
+  {
+    "id": "1203",
+    "name": "Digby",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 44.3455,
+    "centroid_lng": -65.863
+  },
+  {
+    "id": "1205",
+    "name": "Annapolis",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 44.6895,
+    "centroid_lng": -65.2665
+  },
+  {
+    "id": "1209",
+    "name": "Halifax",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 44.6005,
+    "centroid_lng": -61.954
+  },
+  {
+    "id": "1312",
+    "name": "Victoria",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 47.082,
+    "centroid_lng": -67.2675
+  },
+  {
+    "id": "1315",
+    "name": "Gloucester",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 47.6275,
+    "centroid_lng": -65.3425
+  },
+  {
+    "id": "2405",
+    "name": "Bonaventure",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 48.3395,
+    "centroid_lng": -65.6185
+  },
+  {
+    "id": "2406",
+    "name": "Avignon",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 48.1635,
+    "centroid_lng": -66.786
+  },
+  {
+    "id": "2415",
+    "name": "Charlevoix-Est",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 47.8455,
+    "centroid_lng": -70.118
+  },
+  {
+    "id": "2429",
+    "name": "Beauce-Sartigan",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 46.021,
+    "centroid_lng": -70.673
+  },
+  {
+    "id": "2430",
+    "name": "Le Granit",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 45.593,
+    "centroid_lng": -70.8885
+  },
+  {
+    "id": "2448",
+    "name": "Acton",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 45.6205,
+    "centroid_lng": -72.522
+  },
+  {
+    "id": "2451",
+    "name": "Maskinongé",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 46.5225,
+    "centroid_lng": -73.077
+  },
+  {
+    "id": "2483",
+    "name": "La Vallée-de-la-Gatineau",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 46.7985,
+    "centroid_lng": -76.1555
+  },
+  {
+    "id": "2491",
+    "name": "Le Domaine-du-Roy",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 49.012,
+    "centroid_lng": -73.1625
+  },
+  {
+    "id": "2492",
+    "name": "Maria-Chapdelaine",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 50.479,
+    "centroid_lng": -72.3265
+  },
+  {
+    "id": "4623",
+    "name": "Division No. 23",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 35,
+    "centroid_lat": 57.579,
+    "centroid_lng": -95.4935
+  },
+  {
+    "id": "1210",
+    "name": "Colchester",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 45.398,
+    "centroid_lng": -63.424
+  },
+  {
+    "id": "1211",
+    "name": "Cumberland",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 45.6265,
+    "centroid_lng": -64.126
+  },
+  {
+    "id": "1217",
+    "name": "Cape Breton",
+    "state_code": "NS",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 46.0325,
+    "centroid_lng": -60.238
+  },
+  {
+    "id": "1313",
+    "name": "Madawaska",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 47.425,
+    "centroid_lng": -68.36
+  },
+  {
+    "id": "2402",
+    "name": "Le Rocher-Percé",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 48.4015,
+    "centroid_lng": -64.8235
+  },
+  {
+    "id": "2413",
+    "name": "Témiscouata",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 47.682,
+    "centroid_lng": -68.986
+  },
+  {
+    "id": "2432",
+    "name": "L'Érable",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 46.239,
+    "centroid_lng": -71.679
+  },
+  {
+    "id": "2439",
+    "name": "Arthabaska",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 46.057,
+    "centroid_lng": -71.891
+  },
+  {
+    "id": "2466",
+    "name": "Montréal",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 45.5515,
+    "centroid_lng": -73.7265
+  },
+  {
+    "id": "2486",
+    "name": "Rouyn-Noranda",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 48.1385,
+    "centroid_lng": -78.8685
+  },
+  {
+    "id": "2489",
+    "name": "La Vallée-de-l'Or",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 48.0725,
+    "centroid_lng": -76.9145
+  },
+  {
+    "id": "2495",
+    "name": "La Haute-Côte-Nord",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 49.0645,
+    "centroid_lng": -69.3485
+  },
+  {
+    "id": "5945",
+    "name": "Central Coast",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 34,
+    "centroid_lat": 52.234,
+    "centroid_lng": -126.931
+  },
+  {
+    "id": "1314",
+    "name": "Restigouche",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 47.7175,
+    "centroid_lng": -67.0885
+  },
+  {
+    "id": "2407",
+    "name": "La Matapédia",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 48.4135,
+    "centroid_lng": -66.965
+  },
+  {
+    "id": "2409",
+    "name": "La Mitis",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 48.345,
+    "centroid_lng": -68.006
+  },
+  {
+    "id": "2411",
+    "name": "Les Basques",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 48.064,
+    "centroid_lng": -68.9675
+  },
+  {
+    "id": "2412",
+    "name": "Rivière-du-Loup",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 47.865,
+    "centroid_lng": -69.255
+  },
+  {
+    "id": "2431",
+    "name": "Les Appalaches",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 46.0585,
+    "centroid_lng": -71.328
+  },
+  {
+    "id": "2435",
+    "name": "Mékinac",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 47.052,
+    "centroid_lng": -73.0985
+  },
+  {
+    "id": "2453",
+    "name": "Pierre-De Saurel",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 45.964,
+    "centroid_lng": -72.9785
+  },
+  {
+    "id": "2476",
+    "name": "Argenteuil",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 45.72,
+    "centroid_lng": -74.456
+  },
+  {
+    "id": "2478",
+    "name": "Les Laurentides",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 46.18,
+    "centroid_lng": -74.5615
+  },
+  {
+    "id": "2494",
+    "name": "Le Saguenay-et-son-Fjord",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 33,
+    "centroid_lat": 50.348,
+    "centroid_lng": -70.7555
+  },
+  {
+    "id": "1004",
+    "name": "Division No.  4",
+    "state_code": "NL",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 48.312,
+    "centroid_lng": -58.403
+  },
+  {
+    "id": "2404",
+    "name": "La Haute-Gaspésie",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 48.9125,
+    "centroid_lng": -66.048
+  },
+  {
+    "id": "2410",
+    "name": "Rimouski-Neigette",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 48.204,
+    "centroid_lng": -68.461
+  },
+  {
+    "id": "2418",
+    "name": "Montmagny",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 46.8165,
+    "centroid_lng": -70.3715
+  },
+  {
+    "id": "2447",
+    "name": "La Haute-Yamaska",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 45.4115,
+    "centroid_lng": -72.6625
+  },
+  {
+    "id": "2470",
+    "name": "Beauharnois-Salaberry",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 45.2375,
+    "centroid_lng": -73.925
+  },
+  {
+    "id": "2479",
+    "name": "Antoine-Labelle",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 46.862,
+    "centroid_lng": -75.247
+  },
+  {
+    "id": "2490",
+    "name": "La Tuque",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 48.031,
+    "centroid_lng": -73.709
+  },
+  {
+    "id": "5957",
+    "name": "Stikine",
+    "state_code": "BC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 32,
+    "centroid_lat": 57.9995,
+    "centroid_lng": -131.7465
+  },
+  {
+    "id": "2408",
+    "name": "La Matanie",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 48.788,
+    "centroid_lng": -67.0225
+  },
+  {
+    "id": "2440",
+    "name": "Les Sources",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 45.7425,
+    "centroid_lng": -71.7855
+  },
+  {
+    "id": "2449",
+    "name": "Drummond",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 45.8435,
+    "centroid_lng": -72.473
+  },
+  {
+    "id": "2454",
+    "name": "Les Maskoutains",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 45.68,
+    "centroid_lng": -72.878
+  },
+  {
+    "id": "2461",
+    "name": "Joliette",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 46.0555,
+    "centroid_lng": -73.436
+  },
+  {
+    "id": "4619",
+    "name": "Division No. 19",
+    "state_code": "MB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 31,
+    "centroid_lat": 51.872,
+    "centroid_lng": -97.971
+  },
+  {
+    "id": "2443",
+    "name": "Sherbrooke",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 30,
+    "centroid_lat": 45.413,
+    "centroid_lng": -71.956
+  },
+  {
+    "id": "1301",
+    "name": "Saint John",
+    "state_code": "NB",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 29,
+    "centroid_lat": 45.3365,
+    "centroid_lng": -65.772
+  },
+  {
+    "id": "2437",
+    "name": "Francheville",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 29,
+    "centroid_lat": 46.4975,
+    "centroid_lng": -72.44
+  },
+  {
+    "id": "2436",
+    "name": "Shawinigan",
+    "state_code": "QC",
+    "type": "cd",
+    "market": "ca",
+    "opportunity_score": 26,
+    "centroid_lat": 46.6895,
+    "centroid_lng": -72.881
+  }
+]
