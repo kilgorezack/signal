@@ -238,6 +238,76 @@ async function fetchLadRegionMap() {
   return map;
 }
 
+/**
+ * Fetch ASHE Tables 7&8 (latest year) and return Map<LAD21CD, medianAnnualPay>.
+ * Filters: median, all sex, full-time, annual-pay-gross, residence-based.
+ * Source: ONS Annual Survey of Hours and Earnings (ASHE)
+ */
+async function fetchAsheEarnings() {
+  const cacheFile = path.join(CACHE_DIR, 'ashe_annual_pay.json');
+  if (fs.existsSync(cacheFile)) {
+    const age = Date.now() - fs.statSync(cacheFile).mtimeMs;
+    if (age < 30 * 24 * 60 * 60 * 1000) {
+      process.stdout.write('  [cache] ASHE earnings\n');
+      return new Map(Object.entries(JSON.parse(fs.readFileSync(cacheFile, 'utf8'))));
+    }
+  }
+
+  // Discover latest edition
+  const edRes = await fetch(`${ONS_BASE}/datasets/ashe-tables-7-and-8/editions`,
+    { signal: AbortSignal.timeout(30_000) });
+  if (!edRes.ok) throw new Error(`ASHE editions: ${edRes.status}`);
+  const edData = await edRes.json();
+  const editions = (edData.items ?? []).map(e => parseInt(e.edition)).filter(Boolean);
+  const latestEd = Math.max(...editions);
+
+  const verRes = await fetch(
+    `${ONS_BASE}/datasets/ashe-tables-7-and-8/editions/${latestEd}/versions/1`,
+    { signal: AbortSignal.timeout(30_000) });
+  if (!verRes.ok) throw new Error(`ASHE version: ${verRes.status}`);
+  const verData = await verRes.json();
+  const csvUrl  = verData.downloads?.csv?.href;
+  if (!csvUrl) throw new Error('No ASHE CSV download URL');
+
+  process.stdout.write(`  [fetch] ASHE ${latestEd} earnings by LAD\n`);
+  const res = await fetch(csvUrl, { signal: AbortSignal.timeout(300_000), redirect: 'follow' });
+  if (!res.ok) throw new Error(`ASHE CSV: ${res.status}`);
+  const text = await res.text();
+
+  // Parse: median, all sex, full-time, annual-pay-gross, residence
+  const lines = text.split(/\r?\n/);
+  const headers = parseCsvLine(lines[0]);
+  const idx = h => headers.indexOf(h);
+  const valI = 0;  // v4_2 — observation value
+  const markI = 1; // Data Marking — 'x' = suppressed
+  const codeI = idx('administrative-geography');
+  const avgI  = idx('averages-and-percentiles');
+  const sexI  = idx('sex');
+  const wpI   = idx('working-pattern');
+  const heI   = idx('hours-and-earnings');
+  const wrI   = idx('workplace-or-residence');
+
+  const result = {};
+  for (let i = 1; i < lines.length; i++) {
+    const cols = parseCsvLine(lines[i].trim());
+    if (cols.length < 10) continue;
+    const code = cols[codeI];
+    if (!isEngWalesLad(code)) continue;
+    if (cols[avgI] !== 'median')           continue;
+    if (cols[sexI] !== 'all')              continue;
+    if (cols[wpI]  !== 'full-time')        continue;
+    if (cols[heI]  !== 'annual-pay-gross') continue;
+    if (cols[wrI]  !== 'residence')        continue;
+    if (cols[markI] === 'x') continue; // suppressed
+    const val = parseFloat(cols[valI]);
+    if (!isNaN(val) && val > 0) result[code] = val;
+  }
+
+  fs.writeFileSync(cacheFile, JSON.stringify(result));
+  process.stdout.write(`  ✓ ASHE ${latestEd}: ${Object.keys(result).length} LADs with earnings data\n`);
+  return new Map(Object.entries(result));
+}
+
 // ─── Data helpers ─────────────────────────────────────────────────────────────
 
 /** Sum values whose category name contains any of the given substrings. */
@@ -352,9 +422,11 @@ const UK_RES_WEIGHTS = {
 const UK_RES_W_TOTAL = Object.values(UK_RES_WEIGHTS).reduce((s, v) => s + v, 0);
 
 function computeUkOpportunityScore(d) {
-  // Income proxy: % in NS-SeC classes 1+2 (professional/managerial)
-  // UK LAD range roughly 10–60% → normalize accordingly
-  const income    = normalize(d.professional_pct, 10, 55);
+  // Income: use ASHE median annual earnings if available (range £22k–£55k);
+  // fall back to NS-SeC professional % (range 10–55%) if earnings are null.
+  const income = d.median_annual_earnings != null
+    ? normalize(d.median_annual_earnings, 22_000, 55_000)
+    : normalize(d.professional_pct, 10, 55);
   const children  = clamp(d.households_with_children_pct ?? 35, 0, 100);
   const ownership = clamp((d.owned_outright_pct ?? 0) + (d.owned_mortgage_pct ?? 0), 0, 100);
   // Detached + semi-detached: good ISP prospects vs flats/terraces
@@ -461,7 +533,16 @@ async function main() {
     console.warn(`  ⚠ Region lookup failed (continuing without): ${err.message}`);
   }
 
-  // ── 3. ONS Census 2021 tables ──────────────────────────────────────────────
+  // ── 3. ASHE earnings (median full-time annual gross pay by LAD) ───────────
+  console.log('\n▶ Fetching ASHE earnings data...');
+  let asheEarnings = new Map();
+  try {
+    asheEarnings = await fetchAsheEarnings();
+  } catch (err) {
+    console.warn(`  ⚠ ASHE fetch failed (continuing without): ${err.message}`);
+  }
+
+  // ── 4. ONS Census 2021 tables ──────────────────────────────────────────────
   console.log('\n▶ Fetching ONS Census 2021 tables...');
   const tables = {};
   const TABLE_IDS = [
@@ -592,6 +673,9 @@ async function main() {
       'Professional/Managerial': Math.round(((higherProf + lowerProf) / nsTotal) * 100),
     } : null;
 
+    // ── ASHE earnings ──
+    const annualEarnings = asheEarnings.get(code) ?? null;
+
     // ── Derived ──
     const popDensity       = population > 0 && areaSqkm > 0 ? population / areaSqkm : null;
     const avgHouseholdSize = dwellingCount && population > 0 ? population / dwellingCount : null;
@@ -602,8 +686,8 @@ async function main() {
     const demographics = {
       population:                   population > 0 ? Math.round(population) : null,
       dwelling_count:               dwellingCount,
-      // Income: not collected in UK Census — professional_pct used for scoring instead
-      median_household_income_weekly: null,
+      median_annual_earnings:       annualEarnings ? Math.round(annualEarnings) : null,
+      // NS-SeC professional % retained as socioeconomic profile indicator
       professional_pct:             r1(professionalPct),
       median_age:                   null,
       avg_household_size:           r1(avgHouseholdSize),

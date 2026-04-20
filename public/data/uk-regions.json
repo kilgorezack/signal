@@ -1,35 +1,5 @@
 [
   {
-    "id": "E09000027",
-    "name": "Richmond upon Thames",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 67,
-    "centroid_lat": 51.44,
-    "centroid_lng": -0.308
-  },
-  {
-    "id": "E07000208",
-    "name": "Epsom and Ewell",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 66,
-    "centroid_lat": 51.336,
-    "centroid_lng": -0.2615
-  },
-  {
-    "id": "E07000207",
-    "name": "Elmbridge",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 65,
-    "centroid_lat": 51.3535,
-    "centroid_lng": -0.394
-  },
-  {
     "id": "E06000041",
     "name": "Wokingham",
     "state_code": "SE",
@@ -40,24 +10,14 @@
     "centroid_lng": -0.9005
   },
   {
-    "id": "E07000240",
-    "name": "St Albans",
-    "state_code": "EE",
+    "id": "E07000207",
+    "name": "Elmbridge",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 62,
-    "centroid_lat": 51.769,
-    "centroid_lng": -0.3415
-  },
-  {
-    "id": "E08000009",
-    "name": "Trafford",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 62,
-    "centroid_lat": 53.4185,
-    "centroid_lng": -2.3655
+    "opportunity_score": 63,
+    "centroid_lat": 51.3535,
+    "centroid_lng": -0.394
   },
   {
     "id": "E09000006",
@@ -70,44 +30,34 @@
     "centroid_lng": 0.0405
   },
   {
-    "id": "E09000021",
-    "name": "Kingston upon Thames",
+    "id": "E09000027",
+    "name": "Richmond upon Thames",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 61,
-    "centroid_lat": 51.3815,
-    "centroid_lng": -0.285
+    "centroid_lat": 51.44,
+    "centroid_lng": -0.308
   },
   {
-    "id": "E07000008",
-    "name": "Cambridge",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 60,
-    "centroid_lat": 52.1975,
-    "centroid_lng": 0.127
-  },
-  {
-    "id": "E07000217",
-    "name": "Woking",
+    "id": "E07000208",
+    "name": "Epsom and Ewell",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 60,
-    "centroid_lat": 51.308,
-    "centroid_lng": -0.5555
+    "centroid_lat": 51.336,
+    "centroid_lng": -0.2615
   },
   {
-    "id": "E08000007",
-    "name": "Stockport",
-    "state_code": "NW",
+    "id": "E09000004",
+    "name": "Bexley",
+    "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 60,
-    "centroid_lat": 53.391,
-    "centroid_lng": -2.1195
+    "centroid_lat": 51.4605,
+    "centroid_lng": 0.1465
   },
   {
     "id": "E07000087",
@@ -120,24 +70,44 @@
     "centroid_lng": -1.2105
   },
   {
-    "id": "E07000135",
-    "name": "Oadby and Wigston",
-    "state_code": "EM",
+    "id": "E09000021",
+    "name": "Kingston upon Thames",
+    "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 59,
-    "centroid_lat": 52.587,
-    "centroid_lng": -1.093
+    "centroid_lat": 51.3815,
+    "centroid_lng": -0.285
   },
   {
-    "id": "E07000078",
-    "name": "Cheltenham",
-    "state_code": "SW",
+    "id": "E07000068",
+    "name": "Brentwood",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 58,
-    "centroid_lat": 51.8985,
-    "centroid_lng": -2.0765
+    "centroid_lat": 51.6405,
+    "centroid_lng": 0.2945
+  },
+  {
+    "id": "E07000240",
+    "name": "St Albans",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 58,
+    "centroid_lat": 51.769,
+    "centroid_lng": -0.3415
+  },
+  {
+    "id": "E09000016",
+    "name": "Havering",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 58,
+    "centroid_lat": 51.56,
+    "centroid_lng": 0.236
   },
   {
     "id": "E07000089",
@@ -145,79 +115,9 @@
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 58,
+    "opportunity_score": 57,
     "centroid_lat": 51.276,
     "centroid_lng": -0.8825
-  },
-  {
-    "id": "E07000102",
-    "name": "Three Rivers",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 58,
-    "centroid_lat": 51.6705,
-    "centroid_lng": -0.451
-  },
-  {
-    "id": "E07000176",
-    "name": "Rushcliffe",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 58,
-    "centroid_lat": 52.9125,
-    "centroid_lng": -1.045
-  },
-  {
-    "id": "E07000211",
-    "name": "Reigate and Banstead",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 58,
-    "centroid_lat": 51.252,
-    "centroid_lng": -0.198
-  },
-  {
-    "id": "E07000214",
-    "name": "Surrey Heath",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 58,
-    "centroid_lat": 51.3355,
-    "centroid_lng": -0.6615
-  },
-  {
-    "id": "E09000032",
-    "name": "Wandsworth",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 58,
-    "centroid_lat": 51.4515,
-    "centroid_lng": -0.1925
-  },
-  {
-    "id": "E07000069",
-    "name": "Castle Point",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 57,
-    "centroid_lat": 51.548,
-    "centroid_lng": 0.5775
-  },
-  {
-    "id": "E07000086",
-    "name": "Eastleigh",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 57,
-    "centroid_lat": 50.9265,
-    "centroid_lng": -1.329
   },
   {
     "id": "E07000213",
@@ -230,74 +130,64 @@
     "centroid_lng": -0.462
   },
   {
-    "id": "E07000216",
-    "name": "Waverley",
+    "id": "E07000214",
+    "name": "Surrey Heath",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 57,
-    "centroid_lat": 51.158,
-    "centroid_lng": -0.631
+    "centroid_lat": 51.3355,
+    "centroid_lng": -0.6615
   },
   {
-    "id": "E06000040",
-    "name": "Windsor and Maidenhead",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 56,
-    "centroid_lat": 51.4805,
-    "centroid_lng": -0.6885
-  },
-  {
-    "id": "E07000012",
-    "name": "South Cambridgeshire",
+    "id": "E07000069",
+    "name": "Castle Point",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 56,
-    "centroid_lat": 52.1795,
-    "centroid_lng": 0.093
+    "centroid_lat": 51.548,
+    "centroid_lng": 0.5775
   },
   {
-    "id": "E07000178",
-    "name": "Oxford",
+    "id": "E07000217",
+    "name": "Woking",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 56,
-    "centroid_lat": 51.7535,
-    "centroid_lng": -1.24
+    "centroid_lat": 51.308,
+    "centroid_lng": -0.5555
   },
   {
-    "id": "E09000029",
-    "name": "Sutton",
-    "state_code": "LON",
+    "id": "E08000007",
+    "name": "Stockport",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 56,
-    "centroid_lat": 51.357,
-    "centroid_lng": -0.181
+    "centroid_lat": 53.391,
+    "centroid_lng": -2.1195
   },
   {
-    "id": "E07000172",
-    "name": "Broxtowe",
-    "state_code": "EM",
+    "id": "E08000009",
+    "name": "Trafford",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 56,
+    "centroid_lat": 53.4185,
+    "centroid_lng": -2.3655
+  },
+  {
+    "id": "E07000075",
+    "name": "Rochford",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 55,
-    "centroid_lat": 52.973,
-    "centroid_lng": -1.259
-  },
-  {
-    "id": "E07000209",
-    "name": "Guildford",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 55,
-    "centroid_lat": 51.2525,
-    "centroid_lng": -0.5675
+    "centroid_lat": 51.5885,
+    "centroid_lng": 0.7535
   },
   {
     "id": "E07000210",
@@ -320,44 +210,14 @@
     "centroid_lng": -0.539
   },
   {
-    "id": "E07000234",
-    "name": "Bromsgrove",
-    "state_code": "WM",
+    "id": "E07000216",
+    "name": "Waverley",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 55,
-    "centroid_lat": 52.3615,
-    "centroid_lng": -2.0065
-  },
-  {
-    "id": "E08000029",
-    "name": "Solihull",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 55,
-    "centroid_lat": 52.431,
-    "centroid_lng": -1.7325
-  },
-  {
-    "id": "E09000003",
-    "name": "Barnet",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 55,
-    "centroid_lat": 51.6125,
-    "centroid_lng": -0.2175
-  },
-  {
-    "id": "E09000004",
-    "name": "Bexley",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 55,
-    "centroid_lat": 51.4605,
-    "centroid_lng": 0.1465
+    "centroid_lat": 51.158,
+    "centroid_lng": -0.631
   },
   {
     "id": "E09000015",
@@ -370,104 +230,44 @@
     "centroid_lng": -0.3355
   },
   {
-    "id": "E09000024",
-    "name": "Merton",
+    "id": "E09000017",
+    "name": "Hillingdon",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 55,
-    "centroid_lat": 51.4105,
-    "centroid_lng": -0.189
+    "centroid_lat": 51.5425,
+    "centroid_lng": -0.443
   },
   {
-    "id": "E06000036",
-    "name": "Bracknell Forest",
+    "id": "E09000032",
+    "name": "Wandsworth",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 55,
+    "centroid_lat": 51.4515,
+    "centroid_lng": -0.1925
+  },
+  {
+    "id": "E07000086",
+    "name": "Eastleigh",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 54,
-    "centroid_lat": 51.4005,
-    "centroid_lng": -0.734
+    "centroid_lat": 50.9265,
+    "centroid_lng": -1.329
   },
   {
-    "id": "E07000068",
-    "name": "Brentwood",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 51.6405,
-    "centroid_lng": 0.2945
-  },
-  {
-    "id": "E07000094",
-    "name": "Winchester",
+    "id": "E07000211",
+    "name": "Reigate and Banstead",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 54,
-    "centroid_lat": 51.026,
-    "centroid_lng": -1.2455
-  },
-  {
-    "id": "E07000179",
-    "name": "South Oxfordshire",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 51.637,
-    "centroid_lng": -1.08
-  },
-  {
-    "id": "E07000215",
-    "name": "Tandridge",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 51.238,
-    "centroid_lng": -0.0485
-  },
-  {
-    "id": "E07000222",
-    "name": "Warwick",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 52.3015,
-    "centroid_lng": -1.593
-  },
-  {
-    "id": "E07000228",
-    "name": "Mid Sussex",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 51.0055,
-    "centroid_lng": -0.102
-  },
-  {
-    "id": "E07000229",
-    "name": "Worthing",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 50.833,
-    "centroid_lng": -0.39
-  },
-  {
-    "id": "E08000002",
-    "name": "Bury",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 53.5895,
-    "centroid_lng": -2.3085
+    "centroid_lat": 51.252,
+    "centroid_lng": -0.198
   },
   {
     "id": "E09000001",
@@ -480,54 +280,34 @@
     "centroid_lng": -0.0935
   },
   {
-    "id": "E09000016",
-    "name": "Havering",
+    "id": "E09000029",
+    "name": "Sutton",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 54,
-    "centroid_lat": 51.56,
-    "centroid_lng": 0.236
+    "centroid_lat": 51.357,
+    "centroid_lng": -0.181
   },
   {
-    "id": "W06000015",
-    "name": "Cardiff",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 54,
-    "centroid_lat": 51.468,
-    "centroid_lng": -3.2065
-  },
-  {
-    "id": "E06000043",
-    "name": "Brighton and Hove",
-    "state_code": "SE",
+    "id": "E06000033",
+    "name": "Southend-on-Sea",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 53,
-    "centroid_lat": 50.8455,
-    "centroid_lng": -0.1305
+    "centroid_lat": 51.549,
+    "centroid_lng": 0.722
   },
   {
-    "id": "E06000058",
-    "name": "Bournemouth, Christchurch and Poole",
-    "state_code": "SW",
+    "id": "E07000095",
+    "name": "Broxbourne",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 53,
-    "centroid_lat": 50.7465,
-    "centroid_lng": -1.8615
-  },
-  {
-    "id": "E07000090",
-    "name": "Havant",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 50.8435,
-    "centroid_lng": -0.9905
+    "centroid_lat": 51.731,
+    "centroid_lng": -0.0495
   },
   {
     "id": "E07000098",
@@ -540,54 +320,14 @@
     "centroid_lng": -0.275
   },
   {
-    "id": "E07000103",
-    "name": "Watford",
-    "state_code": "EE",
+    "id": "E07000199",
+    "name": "Tamworth",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 53,
-    "centroid_lat": 51.6695,
-    "centroid_lng": -0.4045
-  },
-  {
-    "id": "E07000126",
-    "name": "South Ribble",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 53.727,
-    "centroid_lng": -2.7005
-  },
-  {
-    "id": "E07000129",
-    "name": "Blaby",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 52.5785,
-    "centroid_lng": -1.199
-  },
-  {
-    "id": "E07000131",
-    "name": "Harborough",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 52.5385,
-    "centroid_lng": -1.0095
-  },
-  {
-    "id": "E07000180",
-    "name": "Vale of White Horse",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 51.654,
-    "centroid_lng": -1.451
+    "centroid_lat": 52.6235,
+    "centroid_lng": -1.6845
   },
   {
     "id": "E07000237",
@@ -600,214 +340,24 @@
     "centroid_lng": -2.21
   },
   {
-    "id": "E08000015",
-    "name": "Wirral",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 53.366,
-    "centroid_lng": -3.079
-  },
-  {
-    "id": "E08000022",
-    "name": "North Tyneside",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 53,
-    "centroid_lat": 55.029,
-    "centroid_lng": -1.522
-  },
-  {
-    "id": "E06000007",
-    "name": "Warrington",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 53.4015,
-    "centroid_lng": -2.5615
-  },
-  {
-    "id": "E06000023",
-    "name": "Bristol, City of",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.4705,
-    "centroid_lng": -2.642
-  },
-  {
-    "id": "E06000033",
-    "name": "Southend-on-Sea",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.549,
-    "centroid_lng": 0.722
-  },
-  {
-    "id": "E06000038",
-    "name": "Reading",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.4515,
-    "centroid_lng": -0.9905
-  },
-  {
-    "id": "E06000060",
-    "name": "Buckinghamshire",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.7835,
-    "centroid_lng": -0.809
-  },
-  {
-    "id": "E07000041",
-    "name": "Exeter",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 50.718,
-    "centroid_lng": -3.511
-  },
-  {
-    "id": "E07000075",
-    "name": "Rochford",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.5885,
-    "centroid_lng": 0.7535
-  },
-  {
-    "id": "E07000077",
-    "name": "Uttlesford",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.93,
-    "centroid_lng": 0.2935
-  },
-  {
-    "id": "E07000085",
-    "name": "East Hampshire",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.04,
-    "centroid_lng": -0.9385
-  },
-  {
-    "id": "E07000095",
-    "name": "Broxbourne",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.731,
-    "centroid_lng": -0.0495
-  },
-  {
-    "id": "E07000107",
-    "name": "Dartford",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.4335,
-    "centroid_lng": 0.247
-  },
-  {
-    "id": "E07000111",
-    "name": "Sevenoaks",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.275,
-    "centroid_lng": 0.1895
-  },
-  {
-    "id": "E07000173",
-    "name": "Gedling",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 53.026,
-    "centroid_lng": -1.119
-  },
-  {
-    "id": "E07000223",
-    "name": "Adur",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 50.846,
-    "centroid_lng": -0.2935
-  },
-  {
-    "id": "E07000227",
-    "name": "Horsham",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.0025,
-    "centroid_lng": -0.3845
-  },
-  {
     "id": "E07000242",
     "name": "East Hertfordshire",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 52,
+    "opportunity_score": 53,
     "centroid_lat": 51.8655,
     "centroid_lng": 0.006
   },
   {
-    "id": "E08000014",
-    "name": "Sefton",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 53.568,
-    "centroid_lng": -2.993
-  },
-  {
-    "id": "E08000027",
-    "name": "Dudley",
+    "id": "E08000029",
+    "name": "Solihull",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 52.492,
-    "centroid_lng": -2.102
-  },
-  {
-    "id": "E09000007",
-    "name": "Camden",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 52,
-    "centroid_lat": 51.543,
-    "centroid_lng": -0.159
+    "opportunity_score": 53,
+    "centroid_lat": 52.431,
+    "centroid_lng": -1.7325
   },
   {
     "id": "E09000008",
@@ -815,19 +365,29 @@
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 52,
+    "opportunity_score": 53,
     "centroid_lat": 51.355,
     "centroid_lng": -0.0795
   },
   {
-    "id": "E09000017",
-    "name": "Hillingdon",
+    "id": "E07000102",
+    "name": "Three Rivers",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 52,
+    "centroid_lat": 51.6705,
+    "centroid_lng": -0.451
+  },
+  {
+    "id": "E09000003",
+    "name": "Barnet",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 52,
-    "centroid_lat": 51.5425,
-    "centroid_lng": -0.443
+    "centroid_lat": 51.6125,
+    "centroid_lng": -0.2175
   },
   {
     "id": "E09000026",
@@ -840,44 +400,34 @@
     "centroid_lng": 0.0795
   },
   {
-    "id": "E06000015",
-    "name": "Derby",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 51,
-    "centroid_lat": 52.9145,
-    "centroid_lng": -1.47
-  },
-  {
-    "id": "E07000070",
-    "name": "Chelmsford",
+    "id": "E07000072",
+    "name": "Epping Forest",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 51.737,
-    "centroid_lng": 0.4895
+    "centroid_lat": 51.713,
+    "centroid_lng": 0.164
   },
   {
-    "id": "E07000081",
-    "name": "Gloucester",
+    "id": "E07000078",
+    "name": "Cheltenham",
     "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 51.8465,
-    "centroid_lng": -2.239
+    "centroid_lat": 51.8985,
+    "centroid_lng": -2.0765
   },
   {
-    "id": "E07000092",
-    "name": "Rushmoor",
-    "state_code": "SE",
+    "id": "E07000103",
+    "name": "Watford",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 51.275,
-    "centroid_lng": -0.7685
+    "centroid_lat": 51.6695,
+    "centroid_lng": -0.4045
   },
   {
     "id": "E07000115",
@@ -890,34 +440,24 @@
     "centroid_lng": 0.364
   },
   {
-    "id": "E07000116",
-    "name": "Tunbridge Wells",
-    "state_code": "SE",
+    "id": "E07000135",
+    "name": "Oadby and Wigston",
+    "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 51.1025,
-    "centroid_lng": 0.3985
+    "centroid_lat": 52.587,
+    "centroid_lng": -1.093
   },
   {
-    "id": "E07000199",
-    "name": "Tamworth",
-    "state_code": "WM",
+    "id": "E08000015",
+    "name": "Wirral",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 52.6235,
-    "centroid_lng": -1.6845
-  },
-  {
-    "id": "E09000013",
-    "name": "Hammersmith and Fulham",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 51,
-    "centroid_lat": 51.499,
-    "centroid_lng": -0.217
+    "centroid_lat": 53.366,
+    "centroid_lng": -3.079
   },
   {
     "id": "E09000020",
@@ -930,74 +470,44 @@
     "centroid_lng": -0.1895
   },
   {
-    "id": "E09000022",
-    "name": "Lambeth",
+    "id": "E09000033",
+    "name": "Westminster",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 51,
-    "centroid_lat": 51.4595,
-    "centroid_lng": -0.1145
+    "centroid_lat": 51.5125,
+    "centroid_lng": -0.1635
   },
   {
-    "id": "E06000014",
-    "name": "York",
-    "state_code": "YH",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 50,
-    "centroid_lat": 53.966,
-    "centroid_lng": -1.072
-  },
-  {
-    "id": "E06000017",
-    "name": "Rutland",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 50,
-    "centroid_lat": 52.6425,
-    "centroid_lng": -0.625
-  },
-  {
-    "id": "E06000037",
-    "name": "West Berkshire",
+    "id": "E06000040",
+    "name": "Windsor and Maidenhead",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.4465,
-    "centroid_lng": -1.285
+    "centroid_lat": 51.4805,
+    "centroid_lng": -0.6885
   },
   {
-    "id": "E06000049",
-    "name": "Cheshire East",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 50,
-    "centroid_lat": 53.167,
-    "centroid_lng": -2.364
-  },
-  {
-    "id": "E06000056",
-    "name": "Central Bedfordshire",
+    "id": "E07000008",
+    "name": "Cambridge",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.998,
-    "centroid_lng": -0.423
+    "centroid_lat": 52.1975,
+    "centroid_lng": 0.127
   },
   {
-    "id": "E07000065",
-    "name": "Wealden",
-    "state_code": "SE",
+    "id": "E07000012",
+    "name": "South Cambridgeshire",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 50.9425,
-    "centroid_lng": 0.207
+    "centroid_lat": 52.1795,
+    "centroid_lng": 0.093
   },
   {
     "id": "E07000066",
@@ -1010,54 +520,34 @@
     "centroid_lng": 0.472
   },
   {
-    "id": "E07000082",
-    "name": "Stroud",
-    "state_code": "SW",
+    "id": "E07000092",
+    "name": "Rushmoor",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.72,
-    "centroid_lng": -2.302
+    "centroid_lat": 51.275,
+    "centroid_lng": -0.7685
   },
   {
-    "id": "E07000083",
-    "name": "Tewkesbury",
-    "state_code": "SW",
+    "id": "E07000107",
+    "name": "Dartford",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.935,
-    "centroid_lng": -2.0775
+    "centroid_lat": 51.4335,
+    "centroid_lng": 0.247
   },
   {
-    "id": "E07000099",
-    "name": "North Hertfordshire",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 50,
-    "centroid_lat": 51.957,
-    "centroid_lng": -0.166
-  },
-  {
-    "id": "E07000124",
-    "name": "Ribble Valley",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 50,
-    "centroid_lat": 53.9025,
-    "centroid_lng": -2.418
-  },
-  {
-    "id": "E07000130",
-    "name": "Charnwood",
+    "id": "E07000172",
+    "name": "Broxtowe",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 52.7395,
-    "centroid_lng": -1.141
+    "centroid_lat": 52.973,
+    "centroid_lng": -1.259
   },
   {
     "id": "E07000194",
@@ -1070,14 +560,44 @@
     "centroid_lng": -1.7745
   },
   {
-    "id": "E07000221",
-    "name": "Stratford-on-Avon",
+    "id": "E07000215",
+    "name": "Tandridge",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 50,
+    "centroid_lat": 51.238,
+    "centroid_lng": -0.0485
+  },
+  {
+    "id": "E07000228",
+    "name": "Mid Sussex",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 50,
+    "centroid_lat": 51.0055,
+    "centroid_lng": -0.102
+  },
+  {
+    "id": "E07000234",
+    "name": "Bromsgrove",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 52.1615,
-    "centroid_lng": -1.597
+    "centroid_lat": 52.3615,
+    "centroid_lng": -2.0065
+  },
+  {
+    "id": "E08000002",
+    "name": "Bury",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 50,
+    "centroid_lat": 53.5895,
+    "centroid_lng": -2.3085
   },
   {
     "id": "E08000010",
@@ -1090,144 +610,124 @@
     "centroid_lng": -2.573
   },
   {
-    "id": "E08000035",
-    "name": "Leeds",
-    "state_code": "YH",
+    "id": "E08000027",
+    "name": "Dudley",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 53.8225,
-    "centroid_lng": -1.545
+    "centroid_lat": 52.492,
+    "centroid_lng": -2.102
   },
   {
-    "id": "E09000019",
-    "name": "Islington",
+    "id": "E09000010",
+    "name": "Enfield",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.5475,
-    "centroid_lng": -0.109
+    "centroid_lat": 51.649,
+    "centroid_lng": -0.0975
   },
   {
-    "id": "E09000023",
-    "name": "Lewisham",
+    "id": "E09000024",
+    "name": "Merton",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 50,
-    "centroid_lat": 51.4535,
-    "centroid_lng": -0.018
+    "centroid_lat": 51.4105,
+    "centroid_lng": -0.189
   },
   {
-    "id": "E06000022",
-    "name": "Bath and North East Somerset",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.3565,
-    "centroid_lng": -2.4935
-  },
-  {
-    "id": "E06000024",
-    "name": "North Somerset",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.3965,
-    "centroid_lng": -2.851
-  },
-  {
-    "id": "E06000025",
-    "name": "South Gloucestershire",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.5465,
-    "centroid_lng": -2.4735
-  },
-  {
-    "id": "E06000042",
-    "name": "Milton Keynes",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 52.0825,
-    "centroid_lng": -0.7395
-  },
-  {
-    "id": "E07000039",
-    "name": "South Derbyshire",
+    "id": "E06000015",
+    "name": "Derby",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 52.8225,
-    "centroid_lng": -1.5345
+    "centroid_lat": 52.9145,
+    "centroid_lng": -1.47
   },
   {
-    "id": "E07000088",
-    "name": "Gosport",
+    "id": "E06000036",
+    "name": "Bracknell Forest",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 50.806,
-    "centroid_lng": -1.163
+    "centroid_lat": 51.4005,
+    "centroid_lng": -0.734
   },
   {
-    "id": "E07000093",
-    "name": "Test Valley",
+    "id": "E06000056",
+    "name": "Central Bedfordshire",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 49,
+    "centroid_lat": 51.998,
+    "centroid_lng": -0.423
+  },
+  {
+    "id": "E06000058",
+    "name": "Bournemouth, Christchurch and Poole",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 49,
+    "centroid_lat": 50.7465,
+    "centroid_lng": -1.8615
+  },
+  {
+    "id": "E07000061",
+    "name": "Eastbourne",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 51.1335,
-    "centroid_lng": -1.5015
+    "centroid_lat": 50.7735,
+    "centroid_lng": 0.274
   },
   {
-    "id": "E07000096",
-    "name": "Dacorum",
+    "id": "E07000077",
+    "name": "Uttlesford",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 51.769,
-    "centroid_lng": -0.5755
+    "centroid_lat": 51.93,
+    "centroid_lng": 0.2935
   },
   {
-    "id": "E07000118",
-    "name": "Chorley",
-    "state_code": "NW",
+    "id": "E07000090",
+    "name": "Havant",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 53.6725,
-    "centroid_lng": -2.6675
+    "centroid_lat": 50.8435,
+    "centroid_lng": -0.9905
   },
   {
-    "id": "E07000119",
-    "name": "Fylde",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 53.7975,
-    "centroid_lng": -2.919
-  },
-  {
-    "id": "E07000149",
-    "name": "South Norfolk",
+    "id": "E07000099",
+    "name": "North Hertfordshire",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 52.517,
-    "centroid_lng": 1.3145
+    "centroid_lat": 51.957,
+    "centroid_lng": -0.166
+  },
+  {
+    "id": "E07000111",
+    "name": "Sevenoaks",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 49,
+    "centroid_lat": 51.275,
+    "centroid_lng": 0.1895
   },
   {
     "id": "E07000165",
@@ -1240,104 +740,104 @@
     "centroid_lng": -1.59
   },
   {
-    "id": "E07000181",
-    "name": "West Oxfordshire",
+    "id": "E07000179",
+    "name": "South Oxfordshire",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 51.8405,
-    "centroid_lng": -1.5025
+    "centroid_lat": 51.637,
+    "centroid_lng": -1.08
   },
   {
-    "id": "E07000219",
-    "name": "Nuneaton and Bedworth",
-    "state_code": "WM",
+    "id": "E07000209",
+    "name": "Guildford",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 52.501,
-    "centroid_lng": -1.4795
+    "centroid_lat": 51.2525,
+    "centroid_lng": -0.5675
   },
   {
-    "id": "E07000235",
-    "name": "Malvern Hills",
-    "state_code": "WM",
+    "id": "E07000229",
+    "name": "Worthing",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 52.168,
-    "centroid_lng": -2.406
+    "centroid_lat": 50.833,
+    "centroid_lng": -0.39
   },
   {
-    "id": "E07000236",
-    "name": "Redditch",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 52.2795,
-    "centroid_lng": -1.947
-  },
-  {
-    "id": "E07000243",
-    "name": "Stevenage",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.9005,
-    "centroid_lng": -0.1905
-  },
-  {
-    "id": "E08000001",
-    "name": "Bolton",
+    "id": "E08000014",
+    "name": "Sefton",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 53.5845,
-    "centroid_lng": -2.483
+    "centroid_lat": 53.568,
+    "centroid_lng": -2.993
   },
   {
-    "id": "E09000011",
-    "name": "Greenwich",
-    "state_code": "LON",
+    "id": "E08000022",
+    "name": "North Tyneside",
+    "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 49,
-    "centroid_lat": 51.4675,
-    "centroid_lng": 0.049
+    "centroid_lat": 55.029,
+    "centroid_lng": -1.522
   },
   {
-    "id": "E09000028",
-    "name": "Southwark",
-    "state_code": "LON",
+    "id": "E06000032",
+    "name": "Luton",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.465,
-    "centroid_lng": -0.0715
+    "opportunity_score": 48,
+    "centroid_lat": 51.891,
+    "centroid_lng": -0.428
   },
   {
-    "id": "E09000033",
-    "name": "Westminster",
-    "state_code": "LON",
+    "id": "E06000035",
+    "name": "Medway",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.5125,
-    "centroid_lng": -0.1635
+    "opportunity_score": 48,
+    "centroid_lat": 51.4075,
+    "centroid_lng": 0.5605
   },
   {
-    "id": "W06000021",
-    "name": "Monmouthshire",
-    "state_code": "WLS",
+    "id": "E06000038",
+    "name": "Reading",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 49,
-    "centroid_lat": 51.754,
-    "centroid_lng": -2.9035
+    "opportunity_score": 48,
+    "centroid_lat": 51.4515,
+    "centroid_lng": -0.9905
+  },
+  {
+    "id": "E06000039",
+    "name": "Slough",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 48,
+    "centroid_lat": 51.5035,
+    "centroid_lng": -0.575
+  },
+  {
+    "id": "E06000060",
+    "name": "Buckinghamshire",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 48,
+    "centroid_lat": 51.7835,
+    "centroid_lng": -0.809
   },
   {
     "id": "E07000009",
@@ -1350,16 +850,6 @@
     "centroid_lng": 0.274
   },
   {
-    "id": "E07000011",
-    "name": "Huntingdonshire",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 52.371,
-    "centroid_lng": -0.2245
-  },
-  {
     "id": "E07000034",
     "name": "Chesterfield",
     "state_code": "EM",
@@ -1370,134 +860,44 @@
     "centroid_lng": -1.3925
   },
   {
-    "id": "E07000035",
-    "name": "Derbyshire Dales",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 53.1305,
-    "centroid_lng": -1.707
-  },
-  {
-    "id": "E07000036",
-    "name": "Erewash",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 52.938,
-    "centroid_lng": -1.359
-  },
-  {
-    "id": "E07000044",
-    "name": "South Hams",
+    "id": "E07000081",
+    "name": "Gloucester",
     "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 50.3725,
-    "centroid_lng": -3.849
+    "centroid_lat": 51.8465,
+    "centroid_lng": -2.239
   },
   {
-    "id": "E07000061",
-    "name": "Eastbourne",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 50.7735,
-    "centroid_lng": 0.274
-  },
-  {
-    "id": "E07000063",
-    "name": "Lewes",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 50.8795,
-    "centroid_lng": 0.009
-  },
-  {
-    "id": "E07000072",
-    "name": "Epping Forest",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 51.713,
-    "centroid_lng": 0.164
-  },
-  {
-    "id": "E07000079",
-    "name": "Cotswold",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 51.8455,
-    "centroid_lng": -1.9695
-  },
-  {
-    "id": "E07000084",
-    "name": "Basingstoke and Deane",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 51.259,
-    "centroid_lng": -1.2175
-  },
-  {
-    "id": "E07000132",
-    "name": "Hinckley and Bosworth",
+    "id": "E07000129",
+    "name": "Blaby",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 52.608,
-    "centroid_lng": -1.3855
+    "centroid_lat": 52.5785,
+    "centroid_lng": -1.199
   },
   {
-    "id": "E07000139",
-    "name": "North Kesteven",
+    "id": "E07000176",
+    "name": "Rushcliffe",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 53.0725,
-    "centroid_lng": -0.477
+    "centroid_lat": 52.9125,
+    "centroid_lng": -1.045
   },
   {
-    "id": "E07000144",
-    "name": "Broadland",
-    "state_code": "EE",
+    "id": "E07000178",
+    "name": "Oxford",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 52.693,
-    "centroid_lng": 1.334
-  },
-  {
-    "id": "E07000196",
-    "name": "South Staffordshire",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 52.6045,
-    "centroid_lng": -2.1545
-  },
-  {
-    "id": "E07000197",
-    "name": "Stafford",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 52.848,
-    "centroid_lng": -2.1745
+    "centroid_lat": 51.7535,
+    "centroid_lng": -1.24
   },
   {
     "id": "E07000202",
@@ -1510,64 +910,24 @@
     "centroid_lng": 1.1655
   },
   {
-    "id": "E07000203",
-    "name": "Mid Suffolk",
-    "state_code": "EE",
+    "id": "E07000222",
+    "name": "Warwick",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 52.2345,
-    "centroid_lng": 1.104
+    "centroid_lat": 52.3015,
+    "centroid_lng": -1.593
   },
   {
-    "id": "E07000241",
-    "name": "Welwyn Hatfield",
-    "state_code": "EE",
+    "id": "E07000223",
+    "name": "Adur",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 51.773,
-    "centroid_lng": -0.185
-  },
-  {
-    "id": "E08000006",
-    "name": "Salford",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 53.479,
-    "centroid_lng": -2.3675
-  },
-  {
-    "id": "E08000008",
-    "name": "Tameside",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 53.4785,
-    "centroid_lng": -2.0665
-  },
-  {
-    "id": "E08000019",
-    "name": "Sheffield",
-    "state_code": "YH",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 53.404,
-    "centroid_lng": -1.563
-  },
-  {
-    "id": "E08000021",
-    "name": "Newcastle upon Tyne",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 55.0195,
-    "centroid_lng": -1.6535
+    "centroid_lat": 50.846,
+    "centroid_lng": -0.2935
   },
   {
     "id": "E08000026",
@@ -1580,124 +940,74 @@
     "centroid_lng": -1.519
   },
   {
-    "id": "E09000009",
-    "name": "Ealing",
+    "id": "E09000011",
+    "name": "Greenwich",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 51.525,
-    "centroid_lng": -0.3325
+    "centroid_lat": 51.4675,
+    "centroid_lng": 0.049
   },
   {
-    "id": "E09000010",
-    "name": "Enfield",
+    "id": "E09000018",
+    "name": "Hounslow",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 51.649,
-    "centroid_lng": -0.0975
+    "centroid_lat": 51.462,
+    "centroid_lng": -0.3525
   },
   {
-    "id": "E09000031",
-    "name": "Waltham Forest",
-    "state_code": "LON",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 48,
-    "centroid_lat": 51.5985,
-    "centroid_lng": -0.018
-  },
-  {
-    "id": "W06000014",
-    "name": "Vale of Glamorgan",
+    "id": "W06000015",
+    "name": "Cardiff",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 48,
-    "centroid_lat": 51.448,
-    "centroid_lng": -3.403
+    "centroid_lat": 51.468,
+    "centroid_lng": -3.2065
   },
   {
-    "id": "E06000004",
-    "name": "Stockton-on-Tees",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 54.5545,
-    "centroid_lng": -1.306
-  },
-  {
-    "id": "E06000026",
-    "name": "Plymouth",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 50.3885,
-    "centroid_lng": -4.1125
-  },
-  {
-    "id": "E06000027",
-    "name": "Torbay",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 50.446,
-    "centroid_lng": -3.5545
-  },
-  {
-    "id": "E06000035",
-    "name": "Medway",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 51.4075,
-    "centroid_lng": 0.5605
-  },
-  {
-    "id": "E06000050",
-    "name": "Cheshire West and Chester",
+    "id": "E06000007",
+    "name": "Warrington",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 53.164,
-    "centroid_lng": -2.7345
+    "centroid_lat": 53.4015,
+    "centroid_lng": -2.5615
   },
   {
-    "id": "E06000054",
-    "name": "Wiltshire",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 51.324,
-    "centroid_lng": -1.926
-  },
-  {
-    "id": "E07000062",
-    "name": "Hastings",
+    "id": "E06000037",
+    "name": "West Berkshire",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 50.8685,
-    "centroid_lng": 0.58
+    "centroid_lat": 51.4465,
+    "centroid_lng": -1.285
   },
   {
-    "id": "E07000071",
-    "name": "Colchester",
-    "state_code": "EE",
+    "id": "E07000036",
+    "name": "Erewash",
+    "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 51.8735,
-    "centroid_lng": 0.863
+    "centroid_lat": 52.938,
+    "centroid_lng": -1.359
+  },
+  {
+    "id": "E07000039",
+    "name": "South Derbyshire",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 47,
+    "centroid_lat": 52.8225,
+    "centroid_lng": -1.5345
   },
   {
     "id": "E07000074",
@@ -1710,14 +1020,24 @@
     "centroid_lng": 0.769
   },
   {
-    "id": "E07000091",
-    "name": "New Forest",
+    "id": "E07000080",
+    "name": "Forest of Dean",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 47,
+    "centroid_lat": 51.8165,
+    "centroid_lng": -2.4775
+  },
+  {
+    "id": "E07000094",
+    "name": "Winchester",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 50.8575,
-    "centroid_lng": -1.632
+    "centroid_lat": 51.026,
+    "centroid_lng": -1.2455
   },
   {
     "id": "E07000106",
@@ -1730,24 +1050,14 @@
     "centroid_lng": 1.1
   },
   {
-    "id": "E07000110",
-    "name": "Maidstone",
-    "state_code": "SE",
+    "id": "E07000126",
+    "name": "South Ribble",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 51.2365,
-    "centroid_lng": 0.587
-  },
-  {
-    "id": "E07000134",
-    "name": "North West Leicestershire",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 52.7705,
-    "centroid_lng": -1.4225
+    "centroid_lat": 53.727,
+    "centroid_lng": -2.7005
   },
   {
     "id": "E07000164",
@@ -1770,34 +1080,24 @@
     "centroid_lng": -1.1285
   },
   {
-    "id": "E07000192",
-    "name": "Cannock Chase",
+    "id": "E07000173",
+    "name": "Gedling",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 47,
+    "centroid_lat": 53.026,
+    "centroid_lng": -1.119
+  },
+  {
+    "id": "E07000196",
+    "name": "South Staffordshire",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 52.707,
-    "centroid_lng": -1.983
-  },
-  {
-    "id": "E07000220",
-    "name": "Rugby",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 52.3935,
-    "centroid_lng": -1.3185
-  },
-  {
-    "id": "E07000225",
-    "name": "Chichester",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 50.908,
-    "centroid_lng": -0.7155
+    "centroid_lat": 52.6045,
+    "centroid_lng": -2.1545
   },
   {
     "id": "E07000226",
@@ -1810,24 +1110,14 @@
     "centroid_lng": -0.194
   },
   {
-    "id": "E07000238",
-    "name": "Wychavon",
-    "state_code": "WM",
+    "id": "E08000001",
+    "name": "Bolton",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 52.18,
-    "centroid_lng": -2.0165
-  },
-  {
-    "id": "E08000025",
-    "name": "Birmingham",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 52.495,
-    "centroid_lng": -1.8815
+    "centroid_lat": 53.5845,
+    "centroid_lng": -2.483
   },
   {
     "id": "E08000030",
@@ -1840,54 +1130,54 @@
     "centroid_lng": -1.9755
   },
   {
-    "id": "E08000034",
-    "name": "Kirklees",
-    "state_code": "YH",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 47,
-    "centroid_lat": 53.6425,
-    "centroid_lng": -1.79
-  },
-  {
-    "id": "E09000012",
-    "name": "Hackney",
+    "id": "E09000007",
+    "name": "Camden",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 51.549,
-    "centroid_lng": -0.0605
+    "centroid_lat": 51.543,
+    "centroid_lng": -0.159
   },
   {
-    "id": "E09000014",
-    "name": "Haringey",
+    "id": "E09000009",
+    "name": "Ealing",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 51.588,
-    "centroid_lng": -0.106
+    "centroid_lat": 51.525,
+    "centroid_lng": -0.3325
   },
   {
-    "id": "E09000018",
-    "name": "Hounslow",
+    "id": "E09000013",
+    "name": "Hammersmith and Fulham",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 47,
-    "centroid_lat": 51.462,
-    "centroid_lng": -0.3525
+    "centroid_lat": 51.499,
+    "centroid_lng": -0.217
   },
   {
-    "id": "E06000002",
-    "name": "Middlesbrough",
-    "state_code": "NE",
+    "id": "E09000023",
+    "name": "Lewisham",
+    "state_code": "LON",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 54.546,
-    "centroid_lng": -1.211
+    "opportunity_score": 47,
+    "centroid_lat": 51.4535,
+    "centroid_lng": -0.018
+  },
+  {
+    "id": "E09000031",
+    "name": "Waltham Forest",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 47,
+    "centroid_lat": 51.5985,
+    "centroid_lng": -0.018
   },
   {
     "id": "E06000006",
@@ -1900,44 +1190,64 @@
     "centroid_lng": -2.7135
   },
   {
-    "id": "E06000030",
-    "name": "Swindon",
+    "id": "E06000017",
+    "name": "Rutland",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 52.6425,
+    "centroid_lng": -0.625
+  },
+  {
+    "id": "E06000021",
+    "name": "Stoke-on-Trent",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 53.0195,
+    "centroid_lng": -2.159
+  },
+  {
+    "id": "E06000023",
+    "name": "Bristol, City of",
     "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 51.5875,
-    "centroid_lng": -1.734
+    "centroid_lat": 51.4705,
+    "centroid_lng": -2.642
   },
   {
-    "id": "E06000032",
-    "name": "Luton",
+    "id": "E06000025",
+    "name": "South Gloucestershire",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.5465,
+    "centroid_lng": -2.4735
+  },
+  {
+    "id": "E06000034",
+    "name": "Thurrock",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 51.891,
-    "centroid_lng": -0.428
+    "centroid_lat": 51.5095,
+    "centroid_lng": 0.376
   },
   {
-    "id": "E06000039",
-    "name": "Slough",
+    "id": "E06000042",
+    "name": "Milton Keynes",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 51.5035,
-    "centroid_lng": -0.575
-  },
-  {
-    "id": "E06000045",
-    "name": "Southampton",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 50.918,
-    "centroid_lng": -1.3995
+    "centroid_lat": 52.0825,
+    "centroid_lng": -0.7395
   },
   {
     "id": "E06000055",
@@ -1950,26 +1260,6 @@
     "centroid_lng": -0.455
   },
   {
-    "id": "E07000032",
-    "name": "Amber Valley",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 53.029,
-    "centroid_lng": -1.4585
-  },
-  {
-    "id": "E07000038",
-    "name": "North East Derbyshire",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 53.2225,
-    "centroid_lng": -1.4405
-  },
-  {
     "id": "E07000040",
     "name": "East Devon",
     "state_code": "SW",
@@ -1980,34 +1270,74 @@
     "centroid_lng": -3.236
   },
   {
-    "id": "E07000127",
-    "name": "West Lancashire",
-    "state_code": "NW",
+    "id": "E07000041",
+    "name": "Exeter",
+    "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 53.6085,
-    "centroid_lng": -2.868
+    "centroid_lat": 50.718,
+    "centroid_lng": -3.511
   },
   {
-    "id": "E07000133",
-    "name": "Melton",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 52.812,
-    "centroid_lng": -0.8555
-  },
-  {
-    "id": "E07000177",
-    "name": "Cherwell",
+    "id": "E07000085",
+    "name": "East Hampshire",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 51.9745,
-    "centroid_lng": -1.285
+    "centroid_lat": 51.04,
+    "centroid_lng": -0.9385
+  },
+  {
+    "id": "E07000088",
+    "name": "Gosport",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 50.806,
+    "centroid_lng": -1.163
+  },
+  {
+    "id": "E07000096",
+    "name": "Dacorum",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.769,
+    "centroid_lng": -0.5755
+  },
+  {
+    "id": "E07000124",
+    "name": "Ribble Valley",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 53.9025,
+    "centroid_lng": -2.418
+  },
+  {
+    "id": "E07000180",
+    "name": "Vale of White Horse",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.654,
+    "centroid_lng": -1.451
+  },
+  {
+    "id": "E07000192",
+    "name": "Cannock Chase",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 52.707,
+    "centroid_lng": -1.983
   },
   {
     "id": "E07000198",
@@ -2020,134 +1350,174 @@
     "centroid_lng": -1.9935
   },
   {
-    "id": "E07000200",
-    "name": "Babergh",
+    "id": "E07000219",
+    "name": "Nuneaton and Bedworth",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 52.501,
+    "centroid_lng": -1.4795
+  },
+  {
+    "id": "E07000235",
+    "name": "Malvern Hills",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 52.168,
+    "centroid_lng": -2.406
+  },
+  {
+    "id": "E07000241",
+    "name": "Welwyn Hatfield",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 52.065,
-    "centroid_lng": 0.953
+    "centroid_lat": 51.773,
+    "centroid_lng": -0.185
   },
   {
-    "id": "E08000013",
-    "name": "St. Helens",
+    "id": "E07000243",
+    "name": "Stevenage",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.9005,
+    "centroid_lng": -0.1905
+  },
+  {
+    "id": "E08000008",
+    "name": "Tameside",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 53.458,
-    "centroid_lng": -2.701
+    "centroid_lat": 53.4785,
+    "centroid_lng": -2.0665
   },
   {
-    "id": "E08000023",
-    "name": "South Tyneside",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 54.9695,
-    "centroid_lng": -1.4435
-  },
-  {
-    "id": "E08000024",
-    "name": "Sunderland",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 54.8715,
-    "centroid_lng": -1.458
-  },
-  {
-    "id": "E08000031",
-    "name": "Wolverhampton",
+    "id": "E08000025",
+    "name": "Birmingham",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 52.591,
-    "centroid_lng": -2.1275
+    "centroid_lat": 52.495,
+    "centroid_lng": -1.8815
   },
   {
-    "id": "E08000032",
-    "name": "Bradford",
-    "state_code": "YH",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 46,
-    "centroid_lat": 53.8435,
-    "centroid_lng": -1.8505
-  },
-  {
-    "id": "E09000030",
-    "name": "Tower Hamlets",
+    "id": "E09000014",
+    "name": "Haringey",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 46,
-    "centroid_lat": 51.5155,
-    "centroid_lng": -0.035
+    "centroid_lat": 51.588,
+    "centroid_lng": -0.106
   },
   {
-    "id": "E06000011",
-    "name": "East Riding of Yorkshire",
-    "state_code": "YH",
+    "id": "E09000019",
+    "name": "Islington",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.5475,
+    "centroid_lng": -0.109
+  },
+  {
+    "id": "E09000022",
+    "name": "Lambeth",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.4595,
+    "centroid_lng": -0.1145
+  },
+  {
+    "id": "E09000028",
+    "name": "Southwark",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 46,
+    "centroid_lat": 51.465,
+    "centroid_lng": -0.0715
+  },
+  {
+    "id": "E06000002",
+    "name": "Middlesbrough",
+    "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 53.874,
-    "centroid_lng": -0.478
+    "centroid_lat": 54.546,
+    "centroid_lng": -1.211
   },
   {
-    "id": "E06000018",
-    "name": "Nottingham",
-    "state_code": "EM",
+    "id": "E06000004",
+    "name": "Stockton-on-Tees",
+    "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 52.954,
-    "centroid_lng": -1.1665
+    "centroid_lat": 54.5545,
+    "centroid_lng": -1.306
   },
   {
-    "id": "E06000044",
-    "name": "Portsmouth",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 50.8045,
-    "centroid_lng": -1.097
-  },
-  {
-    "id": "E06000051",
-    "name": "Shropshire",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 52.652,
-    "centroid_lng": -2.7345
-  },
-  {
-    "id": "E06000059",
-    "name": "Dorset",
+    "id": "E06000022",
+    "name": "Bath and North East Somerset",
     "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 50.797,
-    "centroid_lng": -2.3765
+    "centroid_lat": 51.3565,
+    "centroid_lng": -2.4935
   },
   {
-    "id": "E06000062",
-    "name": "West Northamptonshire",
-    "state_code": "EM",
+    "id": "E06000024",
+    "name": "North Somerset",
+    "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 52.227,
-    "centroid_lng": -1.0185
+    "centroid_lat": 51.3965,
+    "centroid_lng": -2.851
+  },
+  {
+    "id": "E06000026",
+    "name": "Plymouth",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 50.3885,
+    "centroid_lng": -4.1125
+  },
+  {
+    "id": "E06000030",
+    "name": "Swindon",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 51.5875,
+    "centroid_lng": -1.734
+  },
+  {
+    "id": "E06000049",
+    "name": "Cheshire East",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 53.167,
+    "centroid_lng": -2.364
   },
   {
     "id": "E07000031",
@@ -2160,84 +1530,94 @@
     "centroid_lng": -2.776
   },
   {
-    "id": "E07000045",
-    "name": "Teignbridge",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 50.6125,
-    "centroid_lng": -3.653
-  },
-  {
-    "id": "E07000064",
-    "name": "Rother",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 50.952,
-    "centroid_lng": 0.595
-  },
-  {
-    "id": "E07000073",
-    "name": "Harlow",
+    "id": "E07000070",
+    "name": "Chelmsford",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 51.766,
-    "centroid_lng": 0.111
+    "centroid_lat": 51.737,
+    "centroid_lng": 0.4895
   },
   {
-    "id": "E07000105",
-    "name": "Ashford",
+    "id": "E07000084",
+    "name": "Basingstoke and Deane",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 51.1295,
-    "centroid_lng": 0.8095
+    "centroid_lat": 51.259,
+    "centroid_lng": -1.2175
   },
   {
-    "id": "E07000128",
-    "name": "Wyre",
+    "id": "E07000091",
+    "name": "New Forest",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 50.8575,
+    "centroid_lng": -1.632
+  },
+  {
+    "id": "E07000093",
+    "name": "Test Valley",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 51.1335,
+    "centroid_lng": -1.5015
+  },
+  {
+    "id": "E07000119",
+    "name": "Fylde",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 53.9,
-    "centroid_lng": -2.832
+    "centroid_lat": 53.7975,
+    "centroid_lng": -2.919
   },
   {
-    "id": "E07000138",
-    "name": "Lincoln",
+    "id": "E07000130",
+    "name": "Charnwood",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 53.2205,
-    "centroid_lng": -0.5585
+    "centroid_lat": 52.7395,
+    "centroid_lng": -1.141
   },
   {
-    "id": "E07000141",
-    "name": "South Kesteven",
+    "id": "E07000131",
+    "name": "Harborough",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 52.85,
-    "centroid_lng": -0.5085
+    "centroid_lat": 52.5385,
+    "centroid_lng": -1.0095
   },
   {
-    "id": "E07000148",
-    "name": "Norwich",
+    "id": "E07000134",
+    "name": "North West Leicestershire",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 52.7705,
+    "centroid_lng": -1.4225
+  },
+  {
+    "id": "E07000144",
+    "name": "Broadland",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 52.62,
-    "centroid_lng": 1.3725
+    "centroid_lat": 52.693,
+    "centroid_lng": 1.334
   },
   {
     "id": "E07000163",
@@ -2250,74 +1630,44 @@
     "centroid_lng": -2.191
   },
   {
-    "id": "E07000170",
-    "name": "Ashfield",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 53.0895,
-    "centroid_lng": -1.2545
-  },
-  {
-    "id": "E07000174",
-    "name": "Mansfield",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 53.1755,
-    "centroid_lng": -1.1775
-  },
-  {
-    "id": "E07000195",
-    "name": "Newcastle-under-Lyme",
+    "id": "E07000197",
+    "name": "Stafford",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 52.995,
-    "centroid_lng": -2.326
+    "centroid_lat": 52.848,
+    "centroid_lng": -2.1745
   },
   {
-    "id": "E07000224",
-    "name": "Arun",
+    "id": "E07000220",
+    "name": "Rugby",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 52.3935,
+    "centroid_lng": -1.3185
+  },
+  {
+    "id": "E07000227",
+    "name": "Horsham",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 50.8315,
-    "centroid_lng": -0.5645
+    "centroid_lat": 51.0025,
+    "centroid_lng": -0.3845
   },
   {
-    "id": "E08000003",
-    "name": "Manchester",
-    "state_code": "NW",
+    "id": "E07000236",
+    "name": "Redditch",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 53.4425,
-    "centroid_lng": -2.2335
-  },
-  {
-    "id": "E08000004",
-    "name": "Oldham",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 53.5575,
-    "centroid_lng": -2.048
-  },
-  {
-    "id": "E08000005",
-    "name": "Rochdale",
-    "state_code": "NW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 45,
-    "centroid_lat": 53.6075,
-    "centroid_lng": -2.1545
+    "centroid_lat": 52.2795,
+    "centroid_lng": -1.947
   },
   {
     "id": "E08000011",
@@ -2330,74 +1680,164 @@
     "centroid_lng": -2.833
   },
   {
-    "id": "E08000037",
-    "name": "Gateshead",
+    "id": "E08000013",
+    "name": "St. Helens",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 53.458,
+    "centroid_lng": -2.701
+  },
+  {
+    "id": "E08000019",
+    "name": "Sheffield",
+    "state_code": "YH",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 53.404,
+    "centroid_lng": -1.563
+  },
+  {
+    "id": "E08000023",
+    "name": "South Tyneside",
     "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 54.931,
-    "centroid_lng": -1.6815
+    "centroid_lat": 54.9695,
+    "centroid_lng": -1.4435
   },
   {
-    "id": "W06000005",
-    "name": "Flintshire",
-    "state_code": "WLS",
+    "id": "E08000024",
+    "name": "Sunderland",
+    "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 45,
-    "centroid_lat": 53.214,
-    "centroid_lng": -3.1605
+    "centroid_lat": 54.8715,
+    "centroid_lng": -1.458
   },
   {
-    "id": "E06000021",
-    "name": "Stoke-on-Trent",
+    "id": "E08000028",
+    "name": "Sandwell",
     "state_code": "WM",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 44,
-    "centroid_lat": 53.0195,
-    "centroid_lng": -2.159
+    "opportunity_score": 45,
+    "centroid_lat": 52.515,
+    "centroid_lng": -2.0075
   },
   {
-    "id": "E07000037",
-    "name": "High Peak",
+    "id": "E08000031",
+    "name": "Wolverhampton",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 52.591,
+    "centroid_lng": -2.1275
+  },
+  {
+    "id": "E08000035",
+    "name": "Leeds",
+    "state_code": "YH",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 53.8225,
+    "centroid_lng": -1.545
+  },
+  {
+    "id": "E09000002",
+    "name": "Barking and Dagenham",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 51.5555,
+    "centroid_lng": 0.1285
+  },
+  {
+    "id": "E09000030",
+    "name": "Tower Hamlets",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 45,
+    "centroid_lat": 51.5155,
+    "centroid_lng": -0.035
+  },
+  {
+    "id": "E06000027",
+    "name": "Torbay",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 50.446,
+    "centroid_lng": -3.5545
+  },
+  {
+    "id": "E06000043",
+    "name": "Brighton and Hove",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 50.8455,
+    "centroid_lng": -0.1305
+  },
+  {
+    "id": "E06000045",
+    "name": "Southampton",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 50.918,
+    "centroid_lng": -1.3995
+  },
+  {
+    "id": "E07000035",
+    "name": "Derbyshire Dales",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 53.3675,
-    "centroid_lng": -1.844
+    "centroid_lat": 53.1305,
+    "centroid_lng": -1.707
   },
   {
-    "id": "E07000047",
-    "name": "West Devon",
-    "state_code": "SW",
+    "id": "E07000062",
+    "name": "Hastings",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 50.6545,
-    "centroid_lng": -4.0335
+    "centroid_lat": 50.8685,
+    "centroid_lng": 0.58
   },
   {
-    "id": "E07000067",
-    "name": "Braintree",
+    "id": "E07000065",
+    "name": "Wealden",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 50.9425,
+    "centroid_lng": 0.207
+  },
+  {
+    "id": "E07000071",
+    "name": "Colchester",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 51.9185,
-    "centroid_lng": 0.581
-  },
-  {
-    "id": "E07000080",
-    "name": "Forest of Dean",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 44,
-    "centroid_lat": 51.8165,
-    "centroid_lng": -2.4775
+    "centroid_lat": 51.8735,
+    "centroid_lng": 0.863
   },
   {
     "id": "E07000109",
@@ -2410,24 +1850,34 @@
     "centroid_lng": 0.401
   },
   {
-    "id": "E07000114",
-    "name": "Thanet",
+    "id": "E07000113",
+    "name": "Swale",
     "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 51.351,
-    "centroid_lng": 1.3305
+    "centroid_lat": 51.336,
+    "centroid_lng": 0.809
   },
   {
-    "id": "E07000123",
-    "name": "Preston",
-    "state_code": "NW",
+    "id": "E07000132",
+    "name": "Hinckley and Bosworth",
+    "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 53.822,
-    "centroid_lng": -2.7105
+    "centroid_lat": 52.608,
+    "centroid_lng": -1.3855
+  },
+  {
+    "id": "E07000138",
+    "name": "Lincoln",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 53.2205,
+    "centroid_lng": -0.5585
   },
   {
     "id": "E07000142",
@@ -2440,6 +1890,16 @@
     "centroid_lng": -0.476
   },
   {
+    "id": "E07000149",
+    "name": "South Norfolk",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 52.517,
+    "centroid_lng": 1.3145
+  },
+  {
     "id": "E07000166",
     "name": "Richmondshire",
     "state_code": "YH",
@@ -2450,14 +1910,34 @@
     "centroid_lng": -1.918
   },
   {
-    "id": "E07000175",
-    "name": "Newark and Sherwood",
+    "id": "E07000170",
+    "name": "Ashfield",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 53.109,
-    "centroid_lng": -0.922
+    "centroid_lat": 53.0895,
+    "centroid_lng": -1.2545
+  },
+  {
+    "id": "E07000174",
+    "name": "Mansfield",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 53.1755,
+    "centroid_lng": -1.1775
+  },
+  {
+    "id": "E07000177",
+    "name": "Cherwell",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 51.9745,
+    "centroid_lng": -1.285
   },
   {
     "id": "E07000187",
@@ -2470,6 +1950,26 @@
     "centroid_lng": -2.5435
   },
   {
+    "id": "E07000218",
+    "name": "North Warwickshire",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 52.561,
+    "centroid_lng": -1.624
+  },
+  {
+    "id": "E07000221",
+    "name": "Stratford-on-Avon",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 52.1615,
+    "centroid_lng": -1.597
+  },
+  {
     "id": "E07000239",
     "name": "Wyre Forest",
     "state_code": "WM",
@@ -2480,44 +1980,44 @@
     "centroid_lng": -2.278
   },
   {
-    "id": "E08000012",
-    "name": "Liverpool",
-    "state_code": "NW",
+    "id": "E08000021",
+    "name": "Newcastle upon Tyne",
+    "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 53.401,
-    "centroid_lng": -2.9135
+    "centroid_lat": 55.0195,
+    "centroid_lng": -1.6535
   },
   {
-    "id": "E08000028",
-    "name": "Sandwell",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 44,
-    "centroid_lat": 52.515,
-    "centroid_lng": -2.0075
-  },
-  {
-    "id": "E08000036",
-    "name": "Wakefield",
+    "id": "E08000032",
+    "name": "Bradford",
     "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 53.6585,
-    "centroid_lng": -1.412
+    "centroid_lat": 53.8435,
+    "centroid_lng": -1.8505
   },
   {
-    "id": "W06000013",
-    "name": "Bridgend",
-    "state_code": "WLS",
+    "id": "E09000005",
+    "name": "Brent",
+    "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 44,
-    "centroid_lat": 51.558,
-    "centroid_lng": -3.613
+    "centroid_lat": 51.564,
+    "centroid_lng": -0.2635
+  },
+  {
+    "id": "E09000012",
+    "name": "Hackney",
+    "state_code": "LON",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 44,
+    "centroid_lat": 51.549,
+    "centroid_lng": -0.0605
   },
   {
     "id": "W06000022",
@@ -2530,44 +2030,44 @@
     "centroid_lng": -2.9635
   },
   {
-    "id": "E06000009",
-    "name": "Blackpool",
+    "id": "E06000050",
+    "name": "Cheshire West and Chester",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 53.8245,
-    "centroid_lng": -3.021
+    "centroid_lat": 53.164,
+    "centroid_lng": -2.7345
   },
   {
-    "id": "E06000019",
-    "name": "Herefordshire, County of",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 43,
-    "centroid_lat": 52.1105,
-    "centroid_lng": -2.74
-  },
-  {
-    "id": "E06000020",
-    "name": "Telford and Wrekin",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 43,
-    "centroid_lat": 52.7215,
-    "centroid_lng": -2.4895
-  },
-  {
-    "id": "E06000034",
-    "name": "Thurrock",
+    "id": "E07000011",
+    "name": "Huntingdonshire",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 51.5095,
-    "centroid_lng": 0.376
+    "centroid_lat": 52.371,
+    "centroid_lng": -0.2245
+  },
+  {
+    "id": "E07000032",
+    "name": "Amber Valley",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.029,
+    "centroid_lng": -1.4585
+  },
+  {
+    "id": "E07000038",
+    "name": "North East Derbyshire",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.2225,
+    "centroid_lng": -1.4405
   },
   {
     "id": "E07000042",
@@ -2580,14 +2080,114 @@
     "centroid_lng": -3.534
   },
   {
-    "id": "E07000125",
-    "name": "Rossendale",
+    "id": "E07000063",
+    "name": "Lewes",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 50.8795,
+    "centroid_lng": 0.009
+  },
+  {
+    "id": "E07000067",
+    "name": "Braintree",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.9185,
+    "centroid_lng": 0.581
+  },
+  {
+    "id": "E07000073",
+    "name": "Harlow",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.766,
+    "centroid_lng": 0.111
+  },
+  {
+    "id": "E07000076",
+    "name": "Tendring",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.865,
+    "centroid_lng": 1.1135
+  },
+  {
+    "id": "E07000082",
+    "name": "Stroud",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.72,
+    "centroid_lng": -2.302
+  },
+  {
+    "id": "E07000083",
+    "name": "Tewkesbury",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.935,
+    "centroid_lng": -2.0775
+  },
+  {
+    "id": "E07000114",
+    "name": "Thanet",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.351,
+    "centroid_lng": 1.3305
+  },
+  {
+    "id": "E07000116",
+    "name": "Tunbridge Wells",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.1025,
+    "centroid_lng": 0.3985
+  },
+  {
+    "id": "E07000118",
+    "name": "Chorley",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 53.685,
-    "centroid_lng": -2.278
+    "centroid_lat": 53.6725,
+    "centroid_lng": -2.6675
+  },
+  {
+    "id": "E07000127",
+    "name": "West Lancashire",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.6085,
+    "centroid_lng": -2.868
+  },
+  {
+    "id": "E07000139",
+    "name": "North Kesteven",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.0725,
+    "centroid_lng": -0.477
   },
   {
     "id": "E07000167",
@@ -2600,6 +2200,26 @@
     "centroid_lng": -0.842
   },
   {
+    "id": "E07000175",
+    "name": "Newark and Sherwood",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.109,
+    "centroid_lng": -0.922
+  },
+  {
+    "id": "E07000181",
+    "name": "West Oxfordshire",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 51.8405,
+    "centroid_lng": -1.5025
+  },
+  {
     "id": "E07000189",
     "name": "South Somerset",
     "state_code": "SW",
@@ -2610,24 +2230,14 @@
     "centroid_lng": -2.709
   },
   {
-    "id": "E07000218",
-    "name": "North Warwickshire",
-    "state_code": "WM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 43,
-    "centroid_lat": 52.561,
-    "centroid_lng": -1.624
-  },
-  {
-    "id": "E07000244",
-    "name": "East Suffolk",
+    "id": "E07000203",
+    "name": "Mid Suffolk",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 52.241,
-    "centroid_lng": 1.461
+    "centroid_lat": 52.2345,
+    "centroid_lng": 1.104
   },
   {
     "id": "E07000246",
@@ -2640,6 +2250,46 @@
     "centroid_lng": -3.362
   },
   {
+    "id": "E08000004",
+    "name": "Oldham",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.5575,
+    "centroid_lng": -2.048
+  },
+  {
+    "id": "E08000005",
+    "name": "Rochdale",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.6075,
+    "centroid_lng": -2.1545
+  },
+  {
+    "id": "E08000006",
+    "name": "Salford",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.479,
+    "centroid_lng": -2.3675
+  },
+  {
+    "id": "E08000012",
+    "name": "Liverpool",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 43,
+    "centroid_lat": 53.401,
+    "centroid_lng": -2.9135
+  },
+  {
     "id": "E08000018",
     "name": "Rotherham",
     "state_code": "YH",
@@ -2650,74 +2300,64 @@
     "centroid_lng": -1.286
   },
   {
-    "id": "E08000033",
-    "name": "Calderdale",
+    "id": "E08000034",
+    "name": "Kirklees",
     "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 53.7205,
-    "centroid_lng": -1.95
+    "centroid_lat": 53.6425,
+    "centroid_lng": -1.79
   },
   {
-    "id": "E09000005",
-    "name": "Brent",
+    "id": "E09000025",
+    "name": "Newham",
     "state_code": "LON",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 51.564,
-    "centroid_lng": -0.2635
+    "centroid_lat": 51.531,
+    "centroid_lng": 0.038
   },
   {
-    "id": "W06000008",
-    "name": "Ceredigion",
+    "id": "W06000005",
+    "name": "Flintshire",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 52.2945,
-    "centroid_lng": -4.177
+    "centroid_lat": 53.214,
+    "centroid_lng": -3.1605
   },
   {
-    "id": "W06000011",
-    "name": "Swansea",
+    "id": "W06000021",
+    "name": "Monmouthshire",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 43,
-    "centroid_lat": 51.655,
-    "centroid_lng": -4.0885
+    "centroid_lat": 51.754,
+    "centroid_lng": -2.9035
   },
   {
-    "id": "E06000005",
-    "name": "Darlington",
-    "state_code": "NE",
+    "id": "E06000020",
+    "name": "Telford and Wrekin",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 54.535,
-    "centroid_lng": -1.5585
+    "centroid_lat": 52.7215,
+    "centroid_lng": -2.4895
   },
   {
-    "id": "E06000016",
-    "name": "Leicester",
-    "state_code": "EM",
+    "id": "E06000044",
+    "name": "Portsmouth",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 52.6365,
-    "centroid_lng": -1.131
-  },
-  {
-    "id": "E06000061",
-    "name": "North Northamptonshire",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 42,
-    "centroid_lat": 52.418,
-    "centroid_lng": -0.624
+    "centroid_lat": 50.8045,
+    "centroid_lng": -1.097
   },
   {
     "id": "E07000027",
@@ -2740,64 +2380,124 @@
     "centroid_lng": -2.6265
   },
   {
-    "id": "E07000121",
-    "name": "Lancaster",
+    "id": "E07000079",
+    "name": "Cotswold",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 42,
+    "centroid_lat": 51.8455,
+    "centroid_lng": -1.9695
+  },
+  {
+    "id": "E07000123",
+    "name": "Preston",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 54.079,
-    "centroid_lng": -2.6915
+    "centroid_lat": 53.822,
+    "centroid_lng": -2.7105
   },
   {
-    "id": "E07000193",
-    "name": "East Staffordshire",
-    "state_code": "WM",
+    "id": "E07000128",
+    "name": "Wyre",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 52.888,
-    "centroid_lng": -1.8145
+    "centroid_lat": 53.9,
+    "centroid_lng": -2.832
   },
   {
-    "id": "E07000245",
-    "name": "West Suffolk",
+    "id": "E07000148",
+    "name": "Norwich",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 52.2585,
-    "centroid_lng": 0.6535
+    "centroid_lat": 52.62,
+    "centroid_lng": 1.3725
   },
   {
-    "id": "W06000001",
-    "name": "Isle of Anglesey",
+    "id": "E07000195",
+    "name": "Newcastle-under-Lyme",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 42,
+    "centroid_lat": 52.995,
+    "centroid_lng": -2.326
+  },
+  {
+    "id": "E07000238",
+    "name": "Wychavon",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 42,
+    "centroid_lat": 52.18,
+    "centroid_lng": -2.0165
+  },
+  {
+    "id": "E08000003",
+    "name": "Manchester",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 42,
+    "centroid_lat": 53.4425,
+    "centroid_lng": -2.2335
+  },
+  {
+    "id": "E08000037",
+    "name": "Gateshead",
+    "state_code": "NE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 42,
+    "centroid_lat": 54.931,
+    "centroid_lng": -1.6815
+  },
+  {
+    "id": "W06000010",
+    "name": "Carmarthenshire",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 53.281,
-    "centroid_lng": -4.3585
+    "centroid_lat": 51.8985,
+    "centroid_lng": -4.185
   },
   {
-    "id": "W06000003",
-    "name": "Conwy",
+    "id": "W06000013",
+    "name": "Bridgend",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 53.146,
-    "centroid_lng": -3.743
+    "centroid_lat": 51.558,
+    "centroid_lng": -3.613
   },
   {
-    "id": "W06000004",
-    "name": "Denbighshire",
+    "id": "W06000014",
+    "name": "Vale of Glamorgan",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 42,
-    "centroid_lat": 53.108,
-    "centroid_lng": -3.346
+    "centroid_lat": 51.448,
+    "centroid_lng": -3.403
+  },
+  {
+    "id": "E06000001",
+    "name": "Hartlepool",
+    "state_code": "NE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 54.6745,
+    "centroid_lng": -1.271
   },
   {
     "id": "E06000008",
@@ -2810,54 +2510,114 @@
     "centroid_lng": -2.464
   },
   {
-    "id": "E06000031",
-    "name": "Peterborough",
-    "state_code": "EE",
+    "id": "E06000009",
+    "name": "Blackpool",
+    "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 52.5905,
-    "centroid_lng": -0.2555
+    "centroid_lat": 53.8245,
+    "centroid_lng": -3.021
   },
   {
-    "id": "E06000046",
-    "name": "Isle of Wight",
-    "state_code": "SE",
+    "id": "E06000011",
+    "name": "East Riding of Yorkshire",
+    "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 50.671,
-    "centroid_lng": -1.3285
+    "centroid_lat": 53.874,
+    "centroid_lng": -0.478
   },
   {
-    "id": "E06000052",
-    "name": "Cornwall",
+    "id": "E06000014",
+    "name": "York",
+    "state_code": "YH",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 53.966,
+    "centroid_lng": -1.072
+  },
+  {
+    "id": "E06000016",
+    "name": "Leicester",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 52.6365,
+    "centroid_lng": -1.131
+  },
+  {
+    "id": "E06000018",
+    "name": "Nottingham",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 52.954,
+    "centroid_lng": -1.1665
+  },
+  {
+    "id": "E06000051",
+    "name": "Shropshire",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 52.652,
+    "centroid_lng": -2.7345
+  },
+  {
+    "id": "E06000054",
+    "name": "Wiltshire",
     "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 50.445,
-    "centroid_lng": -4.9415
+    "centroid_lat": 51.324,
+    "centroid_lng": -1.926
   },
   {
-    "id": "E06000057",
-    "name": "Northumberland",
-    "state_code": "NE",
+    "id": "E06000059",
+    "name": "Dorset",
+    "state_code": "SW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 55.2965,
-    "centroid_lng": -2.076
+    "centroid_lat": 50.797,
+    "centroid_lng": -2.3765
   },
   {
-    "id": "E07000076",
-    "name": "Tendring",
+    "id": "E06000062",
+    "name": "West Northamptonshire",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 52.227,
+    "centroid_lng": -1.0185
+  },
+  {
+    "id": "E07000010",
+    "name": "Fenland",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 51.865,
-    "centroid_lng": 1.1135
+    "centroid_lat": 52.563,
+    "centroid_lng": 0.019
+  },
+  {
+    "id": "E07000044",
+    "name": "South Hams",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 50.3725,
+    "centroid_lng": -3.849
   },
   {
     "id": "E07000108",
@@ -2870,6 +2630,16 @@
     "centroid_lng": 1.2745
   },
   {
+    "id": "E07000110",
+    "name": "Maidstone",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 51.2365,
+    "centroid_lng": 0.587
+  },
+  {
     "id": "E07000112",
     "name": "Folkestone and Hythe",
     "state_code": "SE",
@@ -2878,36 +2648,6 @@
     "opportunity_score": 41,
     "centroid_lat": 51.058,
     "centroid_lng": 0.999
-  },
-  {
-    "id": "E07000113",
-    "name": "Swale",
-    "state_code": "SE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 41,
-    "centroid_lat": 51.336,
-    "centroid_lng": 0.809
-  },
-  {
-    "id": "E07000143",
-    "name": "Breckland",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 41,
-    "centroid_lat": 52.5905,
-    "centroid_lng": 0.8195
-  },
-  {
-    "id": "E07000147",
-    "name": "North Norfolk",
-    "state_code": "EE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 41,
-    "centroid_lat": 52.83,
-    "centroid_lng": 1.1915
   },
   {
     "id": "E07000171",
@@ -2930,44 +2670,44 @@
     "centroid_lng": -2.963
   },
   {
-    "id": "E08000016",
-    "name": "Barnsley",
+    "id": "E07000225",
+    "name": "Chichester",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 50.908,
+    "centroid_lng": -0.7155
+  },
+  {
+    "id": "E07000244",
+    "name": "East Suffolk",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 41,
+    "centroid_lat": 52.241,
+    "centroid_lng": 1.461
+  },
+  {
+    "id": "E08000017",
+    "name": "Doncaster",
     "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 53.5255,
-    "centroid_lng": -1.5495
+    "centroid_lat": 53.5335,
+    "centroid_lng": -1.107
   },
   {
-    "id": "E09000002",
-    "name": "Barking and Dagenham",
-    "state_code": "LON",
+    "id": "E08000036",
+    "name": "Wakefield",
+    "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 41,
-    "centroid_lat": 51.5555,
-    "centroid_lng": 0.1285
-  },
-  {
-    "id": "W06000010",
-    "name": "Carmarthenshire",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 41,
-    "centroid_lat": 51.8985,
-    "centroid_lng": -4.185
-  },
-  {
-    "id": "W06000018",
-    "name": "Caerphilly",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 41,
-    "centroid_lat": 51.6725,
-    "centroid_lng": -3.199
+    "centroid_lat": 53.6585,
+    "centroid_lng": -1.412
   },
   {
     "id": "W06000023",
@@ -2980,34 +2720,34 @@
     "centroid_lng": -3.4395
   },
   {
-    "id": "E06000001",
-    "name": "Hartlepool",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 54.6745,
-    "centroid_lng": -1.271
-  },
-  {
-    "id": "E06000003",
-    "name": "Redcar and Cleveland",
-    "state_code": "NE",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 54.568,
-    "centroid_lng": -0.9955
-  },
-  {
-    "id": "E06000013",
-    "name": "North Lincolnshire",
+    "id": "E06000010",
+    "name": "Kingston upon Hull, City of",
     "state_code": "YH",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 40,
-    "centroid_lat": 53.585,
-    "centroid_lng": -0.5755
+    "centroid_lat": 53.7665,
+    "centroid_lng": -0.332
+  },
+  {
+    "id": "E06000031",
+    "name": "Peterborough",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 52.5905,
+    "centroid_lng": -0.2555
+  },
+  {
+    "id": "E06000061",
+    "name": "North Northamptonshire",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 52.418,
+    "centroid_lng": -0.624
   },
   {
     "id": "E07000029",
@@ -3020,16 +2760,6 @@
     "centroid_lng": -3.377
   },
   {
-    "id": "E07000033",
-    "name": "Bolsover",
-    "state_code": "EM",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 53.197,
-    "centroid_lng": -1.272
-  },
-  {
     "id": "E07000043",
     "name": "North Devon",
     "state_code": "SW",
@@ -3038,6 +2768,16 @@
     "opportunity_score": 40,
     "centroid_lat": 51.061,
     "centroid_lng": -3.928
+  },
+  {
+    "id": "E07000105",
+    "name": "Ashford",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 51.1295,
+    "centroid_lng": 0.8095
   },
   {
     "id": "E07000120",
@@ -3060,6 +2800,16 @@
     "centroid_lng": -0.0175
   },
   {
+    "id": "E07000141",
+    "name": "South Kesteven",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 52.85,
+    "centroid_lng": -0.5085
+  },
+  {
     "id": "E07000146",
     "name": "King's Lynn and West Norfolk",
     "state_code": "EE",
@@ -3070,54 +2820,74 @@
     "centroid_lng": 0.488
   },
   {
-    "id": "W06000002",
-    "name": "Gwynedd",
-    "state_code": "WLS",
+    "id": "E07000224",
+    "name": "Arun",
+    "state_code": "SE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 40,
-    "centroid_lat": 52.8945,
-    "centroid_lng": -4.1205
+    "centroid_lat": 50.8315,
+    "centroid_lng": -0.5645
   },
   {
-    "id": "W06000006",
-    "name": "Wrexham",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 53.0005,
-    "centroid_lng": -3.05
-  },
-  {
-    "id": "W06000009",
-    "name": "Pembrokeshire",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 51.857,
-    "centroid_lng": -5.0775
-  },
-  {
-    "id": "W06000020",
-    "name": "Torfaen",
-    "state_code": "WLS",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 40,
-    "centroid_lat": 51.7015,
-    "centroid_lng": -3.0515
-  },
-  {
-    "id": "E06000010",
-    "name": "Kingston upon Hull, City of",
+    "id": "E08000016",
+    "name": "Barnsley",
     "state_code": "YH",
     "type": "lad",
     "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 53.5255,
+    "centroid_lng": -1.5495
+  },
+  {
+    "id": "W06000001",
+    "name": "Isle of Anglesey",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 53.281,
+    "centroid_lng": -4.3585
+  },
+  {
+    "id": "W06000011",
+    "name": "Swansea",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 51.655,
+    "centroid_lng": -4.0885
+  },
+  {
+    "id": "W06000012",
+    "name": "Neath Port Talbot",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 51.6685,
+    "centroid_lng": -3.7495
+  },
+  {
+    "id": "W06000018",
+    "name": "Caerphilly",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 40,
+    "centroid_lat": 51.6725,
+    "centroid_lng": -3.199
+  },
+  {
+    "id": "E06000003",
+    "name": "Redcar and Cleveland",
+    "state_code": "NE",
+    "type": "lad",
+    "market": "uk",
     "opportunity_score": 39,
-    "centroid_lat": 53.7665,
-    "centroid_lng": -0.332
+    "centroid_lat": 54.568,
+    "centroid_lng": -0.9955
   },
   {
     "id": "E06000012",
@@ -3128,6 +2898,36 @@
     "opportunity_score": 39,
     "centroid_lat": 53.537,
     "centroid_lng": -0.137
+  },
+  {
+    "id": "E06000013",
+    "name": "North Lincolnshire",
+    "state_code": "YH",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 53.585,
+    "centroid_lng": -0.5755
+  },
+  {
+    "id": "E06000052",
+    "name": "Cornwall",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 50.445,
+    "centroid_lng": -4.9415
+  },
+  {
+    "id": "E06000057",
+    "name": "Northumberland",
+    "state_code": "NE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 55.2965,
+    "centroid_lng": -2.076
   },
   {
     "id": "E07000026",
@@ -3150,54 +2950,104 @@
     "centroid_lng": -2.8045
   },
   {
-    "id": "E07000046",
-    "name": "Torridge",
-    "state_code": "SW",
-    "type": "lad",
-    "market": "uk",
-    "opportunity_score": 39,
-    "centroid_lat": 50.9245,
-    "centroid_lng": -4.2825
-  },
-  {
-    "id": "E07000137",
-    "name": "East Lindsey",
+    "id": "E07000037",
+    "name": "High Peak",
     "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 39,
-    "centroid_lat": 53.2655,
-    "centroid_lng": 0.0195
+    "centroid_lat": 53.3675,
+    "centroid_lng": -1.844
   },
   {
-    "id": "E08000017",
-    "name": "Doncaster",
-    "state_code": "YH",
+    "id": "E07000133",
+    "name": "Melton",
+    "state_code": "EM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 39,
-    "centroid_lat": 53.5335,
-    "centroid_lng": -1.107
+    "centroid_lat": 52.812,
+    "centroid_lng": -0.8555
   },
   {
-    "id": "E09000025",
-    "name": "Newham",
-    "state_code": "LON",
+    "id": "E07000143",
+    "name": "Breckland",
+    "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 39,
-    "centroid_lat": 51.531,
-    "centroid_lng": 0.038
+    "centroid_lat": 52.5905,
+    "centroid_lng": 0.8195
   },
   {
-    "id": "W06000012",
-    "name": "Neath Port Talbot",
+    "id": "E07000145",
+    "name": "Great Yarmouth",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 52.6345,
+    "centroid_lng": 1.6455
+  },
+  {
+    "id": "E07000193",
+    "name": "East Staffordshire",
+    "state_code": "WM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 52.888,
+    "centroid_lng": -1.8145
+  },
+  {
+    "id": "E07000200",
+    "name": "Babergh",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 52.065,
+    "centroid_lng": 0.953
+  },
+  {
+    "id": "E07000245",
+    "name": "West Suffolk",
+    "state_code": "EE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 52.2585,
+    "centroid_lng": 0.6535
+  },
+  {
+    "id": "W06000003",
+    "name": "Conwy",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 39,
-    "centroid_lat": 51.6685,
-    "centroid_lng": -3.7495
+    "centroid_lat": 53.146,
+    "centroid_lng": -3.743
+  },
+  {
+    "id": "W06000006",
+    "name": "Wrexham",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 53.0005,
+    "centroid_lng": -3.05
+  },
+  {
+    "id": "W06000009",
+    "name": "Pembrokeshire",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 39,
+    "centroid_lat": 51.857,
+    "centroid_lng": -5.0775
   },
   {
     "id": "W06000016",
@@ -3210,24 +3060,34 @@
     "centroid_lng": -3.415
   },
   {
-    "id": "E06000047",
-    "name": "County Durham",
+    "id": "E06000005",
+    "name": "Darlington",
     "state_code": "NE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 38,
-    "centroid_lat": 54.6855,
-    "centroid_lng": -1.798
+    "centroid_lat": 54.535,
+    "centroid_lng": -1.5585
   },
   {
-    "id": "E07000010",
-    "name": "Fenland",
-    "state_code": "EE",
+    "id": "E06000019",
+    "name": "Herefordshire, County of",
+    "state_code": "WM",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 38,
-    "centroid_lat": 52.563,
-    "centroid_lng": 0.019
+    "centroid_lat": 52.1105,
+    "centroid_lng": -2.74
+  },
+  {
+    "id": "E07000064",
+    "name": "Rother",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 38,
+    "centroid_lat": 50.952,
+    "centroid_lng": 0.595
   },
   {
     "id": "E07000117",
@@ -3240,14 +3100,74 @@
     "centroid_lng": -2.227
   },
   {
-    "id": "E07000122",
-    "name": "Pendle",
+    "id": "E07000137",
+    "name": "East Lindsey",
+    "state_code": "EM",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 38,
+    "centroid_lat": 53.2655,
+    "centroid_lng": 0.0195
+  },
+  {
+    "id": "E08000033",
+    "name": "Calderdale",
+    "state_code": "YH",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 38,
+    "centroid_lat": 53.7205,
+    "centroid_lng": -1.95
+  },
+  {
+    "id": "W06000008",
+    "name": "Ceredigion",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 38,
+    "centroid_lat": 52.2945,
+    "centroid_lng": -4.177
+  },
+  {
+    "id": "W06000020",
+    "name": "Torfaen",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 38,
+    "centroid_lat": 51.7015,
+    "centroid_lng": -3.0515
+  },
+  {
+    "id": "E07000047",
+    "name": "West Devon",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 37,
+    "centroid_lat": 50.6545,
+    "centroid_lng": -4.0335
+  },
+  {
+    "id": "E07000121",
+    "name": "Lancaster",
     "state_code": "NW",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 37,
-    "centroid_lat": 53.879,
-    "centroid_lng": -2.1895
+    "centroid_lat": 54.079,
+    "centroid_lng": -2.6915
+  },
+  {
+    "id": "E07000125",
+    "name": "Rossendale",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 37,
+    "centroid_lat": 53.685,
+    "centroid_lng": -2.278
   },
   {
     "id": "E07000168",
@@ -3260,6 +3180,36 @@
     "centroid_lng": -0.639
   },
   {
+    "id": "W06000004",
+    "name": "Denbighshire",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 37,
+    "centroid_lat": 53.108,
+    "centroid_lng": -3.346
+  },
+  {
+    "id": "E06000046",
+    "name": "Isle of Wight",
+    "state_code": "SE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 36,
+    "centroid_lat": 50.671,
+    "centroid_lng": -1.3285
+  },
+  {
+    "id": "E06000047",
+    "name": "County Durham",
+    "state_code": "NE",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 36,
+    "centroid_lat": 54.6855,
+    "centroid_lng": -1.798
+  },
+  {
     "id": "E06000053",
     "name": "Isles of Scilly",
     "state_code": "SW",
@@ -3270,24 +3220,44 @@
     "centroid_lng": -6.332
   },
   {
-    "id": "E07000145",
-    "name": "Great Yarmouth",
+    "id": "E07000045",
+    "name": "Teignbridge",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 36,
+    "centroid_lat": 50.6125,
+    "centroid_lng": -3.653
+  },
+  {
+    "id": "E07000046",
+    "name": "Torridge",
+    "state_code": "SW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 36,
+    "centroid_lat": 50.9245,
+    "centroid_lng": -4.2825
+  },
+  {
+    "id": "E07000147",
+    "name": "North Norfolk",
     "state_code": "EE",
     "type": "lad",
     "market": "uk",
     "opportunity_score": 36,
-    "centroid_lat": 52.6345,
-    "centroid_lng": 1.6455
+    "centroid_lat": 52.83,
+    "centroid_lng": 1.1915
   },
   {
-    "id": "W06000024",
-    "name": "Merthyr Tydfil",
-    "state_code": "WLS",
+    "id": "E07000033",
+    "name": "Bolsover",
+    "state_code": "EM",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 36,
-    "centroid_lat": 51.74,
-    "centroid_lng": -3.3635
+    "opportunity_score": 35,
+    "centroid_lat": 53.197,
+    "centroid_lng": -1.272
   },
   {
     "id": "E07000136",
@@ -3300,13 +3270,43 @@
     "centroid_lng": -0.0235
   },
   {
+    "id": "W06000002",
+    "name": "Gwynedd",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 35,
+    "centroid_lat": 52.8945,
+    "centroid_lng": -4.1205
+  },
+  {
     "id": "W06000019",
     "name": "Blaenau Gwent",
     "state_code": "WLS",
     "type": "lad",
     "market": "uk",
-    "opportunity_score": 33,
+    "opportunity_score": 35,
     "centroid_lat": 51.753,
     "centroid_lng": -3.208
+  },
+  {
+    "id": "W06000024",
+    "name": "Merthyr Tydfil",
+    "state_code": "WLS",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 35,
+    "centroid_lat": 51.74,
+    "centroid_lng": -3.3635
+  },
+  {
+    "id": "E07000122",
+    "name": "Pendle",
+    "state_code": "NW",
+    "type": "lad",
+    "market": "uk",
+    "opportunity_score": 33,
+    "centroid_lat": 53.879,
+    "centroid_lng": -2.1895
   }
 ]
