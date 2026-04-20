@@ -7,7 +7,7 @@ import DistributionChart from './DistributionChart.jsx';
 import InsightsDrawer from './InsightsDrawer.jsx';
 import { formatCount, formatPopulation, formatPercent, formatDensity, SA_TYPE_LABELS } from '../utils/formatters.js';
 import { scoreToHex } from '../utils/scoreColors.js';
-import { SMARTBIZ_SCORE_LABELS, ANZSIC_SHORT } from '../config.js';
+import { SMARTBIZ_SCORE_LABELS, ANZSIC_SHORT, UK_SIC_SHORT } from '../config.js';
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 
@@ -71,19 +71,19 @@ function OpportunityRow({ label, value, accentColor }) {
 
 // ── Top industries list ───────────────────────────────────────────────────────
 
-function TopIndustriesList({ distribution, total }) {
+function TopIndustriesList({ distribution, total, industryShort }) {
   const sorted = useMemo(() => {
     if (!distribution) return [];
     return Object.entries(distribution)
       .map(([code, count]) => ({
         code,
-        label: ANZSIC_SHORT[code] ?? code,
+        label: (industryShort ?? ANZSIC_SHORT)[code] ?? code,
         count,
         pct: total > 0 ? (count / total) * 100 : 0,
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 6);
-  }, [distribution, total]);
+  }, [distribution, total, industryShort]);
 
   if (sorted.length === 0) return <div className="dist-chart-empty">No data available</div>;
 
@@ -122,16 +122,16 @@ const IndTooltip = ({ active, payload, label }) => {
   );
 };
 
-function IndustryMixChart({ distribution, total }) {
+function IndustryMixChart({ distribution, total, industryShort }) {
   const chartData = useMemo(() => {
     if (!distribution || !total) return [];
     return Object.entries(distribution)
       .map(([code, count]) => ({
-        label: ANZSIC_SHORT[code] ?? code,
+        label: (industryShort ?? ANZSIC_SHORT)[code] ?? code,
         value: Math.round((count / total) * 1000) / 10,
       }))
       .sort((a, b) => b.value - a.value);
-  }, [distribution, total]);
+  }, [distribution, total, industryShort]);
 
   if (!chartData.length) return null;
 
@@ -211,7 +211,8 @@ export default function BusinessPanel({
   insights,
   onGenerateInsights,
 }) {
-  const d = data ?? {};
+  const d            = data ?? {};
+  const industryShort = d.market === 'uk' ? UK_SIC_SHORT : ANZSIC_SHORT;
 
   const scoreComponents = useMemo(() => [
     { key: 'industry_mix_component', label: SMARTBIZ_SCORE_LABELS.industry_mix_component },
@@ -220,13 +221,11 @@ export default function BusinessPanel({
     { key: 'biz_density_component',  label: SMARTBIZ_SCORE_LABELS.biz_density_component },
   ], []);
 
-
-  // Top industry name
   const topIndustry = useMemo(() => {
     if (!d.industry_distribution) return null;
     const top = Object.entries(d.industry_distribution).sort((a, b) => b[1] - a[1])[0];
-    return top ? (ANZSIC_SHORT[top[0]] ?? top[0]) : null;
-  }, [d.industry_distribution]);
+    return top ? (industryShort[top[0]] ?? top[0]) : null;
+  }, [d.industry_distribution, industryShort]);
 
   return (
     <div className="panel region-panel">
@@ -294,6 +293,7 @@ export default function BusinessPanel({
             <IndustryMixChart
               distribution={d.industry_distribution}
               total={d.working_population ?? 0}
+              industryShort={industryShort}
             />
           </div>
         )}
@@ -305,6 +305,7 @@ export default function BusinessPanel({
             <TopIndustriesList
               distribution={d.industry_distribution}
               total={d.working_population ?? 0}
+              industryShort={industryShort}
             />
           </div>
         )}
@@ -320,7 +321,7 @@ export default function BusinessPanel({
         <div className="panel-section">
           <SectionLabel>Business Broadband Signals</SectionLabel>
           <OpportunityRow
-            label="Knowledge Workers (J+K+M+Q+P)"
+            label={d.market === 'uk' ? 'Knowledge Workers (J+K+M+Q+P)' : 'Knowledge Workers (J+K+M+Q+P)'}
             value={d.knowledge_worker_pct}
             accentColor="var(--accent-biz)"
           />

@@ -2,6 +2,7 @@ export const SA_TYPE_LABELS = {
   sa4: 'Statistical Area 4',
   sa3: 'Statistical Area 3',
   sa2: 'Statistical Area 2',
+  lad: 'Local Authority District',
 };
 
 export function formatPopulation(n) {

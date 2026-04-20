@@ -1,17 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
 import { scoreToHex } from '../utils/scoreColors.js';
-import { MAP_CENTER, MAP_CAMERA_DISTANCE } from '../config.js';
+import { MARKETS } from '../config.js';
 
 /**
- * SignalMap — Apple MapKit JS choropleth for SA4 broadband opportunity scores.
+ * SignalMap — Apple MapKit JS choropleth for broadband opportunity scores.
  *
  * Props:
- *   geojson        — FeatureCollection (sa4.geojson or business-sa4.geojson), null while loading
+ *   geojson        — FeatureCollection (residential or business), null while loading
  *   selectedId     — currently selected region id (string)
  *   onRegionSelect — callback(properties) when a region is clicked
  *   scoreField     — property name to use for choropleth coloring (default: 'opportunity_score')
+ *   market         — 'au' | 'uk' (controls map center + boundary)
  */
-export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreField = 'opportunity_score' }) {
+export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreField = 'opportunity_score', market = 'au' }) {
+  const mkt = MARKETS[market] ?? MARKETS.au;
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   const overlayMapRef = useRef({}); // id → overlay item
@@ -33,8 +35,8 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
         });
 
         const map = new mapkit.Map(containerRef.current, {
-          center: new mapkit.Coordinate(MAP_CENTER.lat, MAP_CENTER.lng),
-          cameraDistance: MAP_CAMERA_DISTANCE,
+          center: new mapkit.Coordinate(mkt.center.lat, mkt.center.lng),
+          cameraDistance: mkt.cameraDistance,
           mapType: mapkit.Map.MapTypes.MutedStandard,
           colorScheme: mapkit.Map.ColorSchemes.Dark,
           showsCompass: mapkit.FeatureVisibility.Hidden,
@@ -44,10 +46,9 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
           isRotationEnabled: false,
         });
 
-        // Constrain to Australia
         map.cameraBoundary = new mapkit.CoordinateRegion(
-          new mapkit.Coordinate(-25.7, 134.0),
-          new mapkit.CoordinateSpan(35, 45)
+          new mapkit.Coordinate(mkt.boundaryCenter.lat, mkt.boundaryCenter.lng),
+          new mapkit.CoordinateSpan(mkt.boundarySpan.latDelta, mkt.boundarySpan.lngDelta)
         );
 
         mapRef.current = map;

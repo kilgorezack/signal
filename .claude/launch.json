@@ -4,7 +4,7 @@
     {
       "name": "signal-dev",
       "runtimeExecutable": "/usr/local/bin/node",
-      "runtimeArgs": ["node_modules/.bin/vite"],
+      "runtimeArgs": ["/Users/zack/Documents/GitHub/signal/node_modules/.bin/vite"],
       "port": 5173
     }
   ]
