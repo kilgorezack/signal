@@ -3,6 +3,7 @@ export const SA_TYPE_LABELS = {
   sa3: 'Statistical Area 3',
   sa2: 'Statistical Area 2',
   lad: 'Local Authority District',
+  cd:  'Census Division',
 };
 
 export function formatPopulation(n) {

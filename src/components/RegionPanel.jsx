@@ -86,10 +86,11 @@ export default function RegionPanel({
   const d = data ?? {};
 
   const homeOwnershipPct = useMemo(() => {
+    if (d.owned_pct != null) return d.owned_pct;
     const outright = d.owned_outright_pct ?? 0;
     const mortgage = d.owned_mortgage_pct ?? 0;
     return outright > 0 || mortgage > 0 ? outright + mortgage : null;
-  }, [d.owned_outright_pct, d.owned_mortgage_pct]);
+  }, [d.owned_pct, d.owned_outright_pct, d.owned_mortgage_pct]);
 
   const lowerIncomePct = useMemo(() => {
     if (d.lower_income_pct != null) return d.lower_income_pct;
@@ -148,16 +149,25 @@ export default function RegionPanel({
                     ? `£${d.median_annual_earnings.toLocaleString('en-GB')}`
                     : formatPercent(d.professional_pct, 1)}
                 />
+              : d.market === 'ca'
+              ? <StatCard
+                  label="Median Household Income"
+                  value={d.median_household_income_annual != null
+                    ? `CA$${Math.round(d.median_household_income_annual / 1000)}k`
+                    : '—'}
+                />
               : <StatCard label="Avg Annual Income" value={formatAnnualIncome(d.median_household_income_weekly)} />
             }
             <StatCard
-              label={d.market === 'uk' ? 'Detached Houses' : 'Single Family Homes'}
-              value={formatPercent(d.market === 'uk' ? d.detached_pct : d.separate_house_pct, 0)}
+              label={d.market === 'uk' ? 'Detached Houses' : 'Detached Homes'}
+              value={formatPercent(d.market === 'uk' ? d.detached_pct : (d.separate_house_pct ?? d.detached_pct), 0)}
             />
             <StatCard label="Home Ownership" value={formatPercent(homeOwnershipPct, 0)} />
             <StatCard label="Median Age" value={formatAge(d.median_age)} />
             {d.market === 'uk'
               ? <StatCard label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 0)} />
+              : d.market === 'ca'
+              ? <StatCard label="Apartment Dwellers" value={formatPercent(d.apartment_pct, 0)} />
               : <StatCard label="Internet Access" value={formatPercent(d.internet_access_pct, 0)} />
             }
           </div>
@@ -216,13 +226,19 @@ export default function RegionPanel({
                     value={`£${d.median_annual_earnings.toLocaleString('en-GB')}`} />}
                 <MetricRow label="Professional Workers (NS-SeC)" value={formatPercent(d.professional_pct, 1)} />
               </>
+            : d.market === 'ca'
+            ? <MetricRow label="Median Household Income" value={d.median_household_income_annual != null
+                ? `CA$${Math.round(d.median_household_income_annual).toLocaleString('en-CA')}/yr` : '—'} />
             : <MetricRow label="Median Income" value={d.median_household_income_weekly
                 ? `AU$${Math.round(d.median_household_income_weekly).toLocaleString('en-AU')}/wk` : '—'} />
           }
           <MetricRow label="Avg Household Size" value={formatHouseholdSize(d.avg_household_size)} />
           <MetricRow label="Population Density" value={formatDensity(d.population_density_per_sqkm)} />
           <MetricRow label="Youth (0–19)" value={formatPercent(d.youth_pct, 1)} />
-          <MetricRow label="Owned Outright" value={formatPercent(d.owned_outright_pct, 1)} />
+          {d.market === 'ca'
+            ? <MetricRow label="Home Ownership" value={formatPercent(d.owned_pct, 1)} />
+            : <MetricRow label="Owned Outright" value={formatPercent(d.owned_outright_pct, 1)} />
+          }
           <MetricRow label="Renting" value={formatPercent(d.renting_pct, 1)} />
           {d.market === 'uk' && (
             <MetricRow label="Terraced Houses" value={formatPercent(d.terraced_pct, 1)} />

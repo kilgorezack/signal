@@ -7,7 +7,8 @@
     "dev": "vite",
     "build:data": "node scripts/build-data.js",
     "build:data:uk": "node scripts/build-data-uk.js",
-    "build:data:all": "node scripts/build-data.js && node scripts/build-data-uk.js",
+    "build:data:ca": "node scripts/build-data-ca.js",
+    "build:data:all": "node scripts/build-data.js && node scripts/build-data-uk.js && node scripts/build-data-ca.js",
     "build": "npm run build:data:all && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -27,6 +28,8 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "proj4": "^2.20.8",
+    "simplify-js": "^1.2.4",
     "vite": "^8.0.1"
   }
 }
