@@ -6,8 +6,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 61,
-    "centroid_lat": 1537195.9745,
-    "centroid_lng": 5792900.153
+    "centroid_lat": 49.808,
+    "centroid_lng": -97.556
   },
   {
     "id": "3524",
@@ -16,8 +16,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 58,
-    "centroid_lat": 904209.467,
-    "centroid_lng": 7186318.567
+    "centroid_lat": 43.51,
+    "centroid_lng": -79.8925
   },
   {
     "id": "3519",
@@ -26,8 +26,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 57,
-    "centroid_lat": 978096.733,
-    "centroid_lng": 7211641.877
+    "centroid_lat": 44.105,
+    "centroid_lng": -79.466
   },
   {
     "id": "3521",
@@ -36,8 +36,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 57,
-    "centroid_lat": 932832.62,
-    "centroid_lng": 7186283.1975
+    "centroid_lat": 43.7355,
+    "centroid_lng": -79.8425
   },
   {
     "id": "4816",
@@ -46,8 +46,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 56,
-    "centroid_lat": 2589262.8185,
-    "centroid_lng": 5076870.13
+    "centroid_lat": 57.7745,
+    "centroid_lng": -112.7845
   },
   {
     "id": "2482",
@@ -56,8 +56,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 54,
-    "centroid_lat": 1212138.3315,
-    "centroid_lng": 7452492.4145
+    "centroid_lat": 45.624,
+    "centroid_lng": -75.84
   },
   {
     "id": "6103",
@@ -66,8 +66,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 54,
-    "centroid_lat": 3292920.194,
-    "centroid_lng": 5092924.216
+    "centroid_lat": 63.916,
+    "centroid_lng": -115.657
   },
   {
     "id": "6105",
@@ -76,8 +76,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 54,
-    "centroid_lat": 2880630.7675,
-    "centroid_lng": 5284882.903
+    "centroid_lat": 61.4625,
+    "centroid_lng": -109.4895
   },
   {
     "id": "6106",
@@ -86,8 +86,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 54,
-    "centroid_lat": 3261083.94,
-    "centroid_lng": 5289469.56
+    "centroid_lat": 64.24,
+    "centroid_lng": -111
   },
   {
     "id": "2422",
@@ -96,8 +96,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 53,
-    "centroid_lat": 1477751.276,
-    "centroid_lng": 7713270.61
+    "centroid_lat": 47.2785,
+    "centroid_lng": -71.663
   },
   {
     "id": "3518",
@@ -106,8 +106,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 52,
-    "centroid_lat": 989171.04,
-    "centroid_lng": 7255908.2885
+    "centroid_lat": 44.155,
+    "centroid_lng": -78.8825
   },
   {
     "id": "3522",
@@ -116,8 +116,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 52,
-    "centroid_lat": 958717.959,
-    "centroid_lng": 7150870.4645
+    "centroid_lat": 44.028,
+    "centroid_lng": -80.1945
   },
   {
     "id": "4612",
@@ -126,8 +126,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 52,
-    "centroid_lat": 1556427.4615,
-    "centroid_lng": 5856044.667
+    "centroid_lat": 50.04,
+    "centroid_lng": -96.69
   },
   {
     "id": "1010",
@@ -136,8 +136,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 50,
-    "centroid_lat": 2404468.1285,
-    "centroid_lng": 8108057.957
+    "centroid_lat": 53.92,
+    "centroid_lng": -61.7025
   },
   {
     "id": "2464",
@@ -146,8 +146,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 50,
-    "centroid_lat": 1268930.2315,
-    "centroid_lng": 7616641.091
+    "centroid_lat": 45.7485,
+    "centroid_lng": -73.667
   },
   {
     "id": "2465",
@@ -156,8 +156,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 50,
-    "centroid_lat": 1253043.453,
-    "centroid_lng": 7617165.9115
+    "centroid_lat": 45.6055,
+    "centroid_lng": -73.7075
   },
   {
     "id": "4613",
@@ -166,8 +166,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 49,
-    "centroid_lat": 1580139.0915,
-    "centroid_lng": 5851393.763
+    "centroid_lat": 50.239,
+    "centroid_lng": -96.7685
   },
   {
     "id": "2457",
@@ -176,8 +176,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 48,
-    "centroid_lat": 1264631.716,
-    "centroid_lng": 7657729.9345
+    "centroid_lat": 45.6225,
+    "centroid_lng": -73.223
   },
   {
     "id": "2459",
@@ -186,8 +186,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 48,
-    "centroid_lat": 1280676.9585,
-    "centroid_lng": 7641646.34
+    "centroid_lat": 45.766,
+    "centroid_lng": -73.323
   },
   {
     "id": "4614",
@@ -196,8 +196,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 48,
-    "centroid_lat": 1580196.904,
-    "centroid_lng": 5796418.01
+    "centroid_lat": 50.2115,
+    "centroid_lng": -97.5645
   },
   {
     "id": "4819",
@@ -206,8 +206,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 48,
-    "centroid_lat": 2508406.06,
-    "centroid_lng": 4591683.57
+    "centroid_lat": 55.5195,
+    "centroid_lng": -118.3845
   },
   {
     "id": "6102",
@@ -216,8 +216,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 48,
-    "centroid_lat": 3636336.973,
-    "centroid_lng": 4792749.0515
+    "centroid_lat": 64.899,
+    "centroid_lng": -124.353
   },
   {
     "id": "2467",
@@ -226,8 +226,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1225693.96,
-    "centroid_lng": 7632801.5025
+    "centroid_lat": 45.3315,
+    "centroid_lng": -73.6065
   },
   {
     "id": "2471",
@@ -236,8 +236,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1214166.8745,
-    "centroid_lng": 7591087.83
+    "centroid_lat": 45.3795,
+    "centroid_lng": -74.162
   },
   {
     "id": "2473",
@@ -246,8 +246,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1259963.067,
-    "centroid_lng": 7605005.236
+    "centroid_lat": 45.7,
+    "centroid_lng": -73.831
   },
   {
     "id": "3502",
@@ -256,8 +256,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1203793.983,
-    "centroid_lng": 7531908.457
+    "centroid_lat": 45.414,
+    "centroid_lng": -74.905
   },
   {
     "id": "3543",
@@ -266,8 +266,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1008112.626,
-    "centroid_lng": 7179655.563
+    "centroid_lat": 44.441,
+    "centroid_lng": -79.6875
   },
   {
     "id": "4611",
@@ -276,8 +276,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 47,
-    "centroid_lat": 1539724.9245,
-    "centroid_lng": 5817770.623
+    "centroid_lat": 49.854,
+    "centroid_lng": -97.205
   },
   {
     "id": "1305",
@@ -286,8 +286,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1468257.5445,
-    "centroid_lng": 8212680.3325
+    "centroid_lat": 45.6605,
+    "centroid_lng": -65.7895
   },
   {
     "id": "2420",
@@ -296,8 +296,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1460838.466,
-    "centroid_lng": 7779129.1845
+    "centroid_lat": 46.9365,
+    "centroid_lng": -70.9605
   },
   {
     "id": "2458",
@@ -306,8 +306,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1251249.2525,
-    "centroid_lng": 7642507.5485
+    "centroid_lat": 45.5345,
+    "centroid_lng": -73.41
   },
   {
     "id": "2460",
@@ -316,8 +316,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1281519.15,
-    "centroid_lng": 7631353.1445
+    "centroid_lat": 45.8245,
+    "centroid_lng": -73.432
   },
   {
     "id": "3528",
@@ -326,8 +326,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 825095.6915,
-    "centroid_lng": 7184166.02
+    "centroid_lat": 42.8355,
+    "centroid_lng": -80.0915
   },
   {
     "id": "3541",
@@ -336,8 +336,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1006681.763,
-    "centroid_lng": 7044205.98
+    "centroid_lat": 44.618,
+    "centroid_lng": -81.367
   },
   {
     "id": "4806",
@@ -346,8 +346,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 1938381.2825,
-    "centroid_lng": 4688071.2575
+    "centroid_lat": 51.1255,
+    "centroid_lng": -114.1855
   },
   {
     "id": "4812",
@@ -356,8 +356,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 2262824.1245,
-    "centroid_lng": 4983474.7545
+    "centroid_lat": 54.8515,
+    "centroid_lng": -111.4255
   },
   {
     "id": "4814",
@@ -366,8 +366,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 2256866.96,
-    "centroid_lng": 4582030.1415
+    "centroid_lat": 53.387,
+    "centroid_lng": -117.4345
   },
   {
     "id": "4818",
@@ -376,8 +376,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 46,
-    "centroid_lat": 2387512.1825,
-    "centroid_lng": 4578383.0455
+    "centroid_lat": 54.7425,
+    "centroid_lng": -117.981
   },
   {
     "id": "1011",
@@ -386,8 +386,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 2722767.193,
-    "centroid_lng": 7972020.1215
+    "centroid_lat": 56.9605,
+    "centroid_lng": -60.928
   },
   {
     "id": "2472",
@@ -396,8 +396,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1239058.213,
-    "centroid_lng": 7592451.7715
+    "centroid_lat": 45.54,
+    "centroid_lng": -74.06
   },
   {
     "id": "3506",
@@ -406,8 +406,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1174182.7245,
-    "centroid_lng": 7464266.717
+    "centroid_lat": 45.2495,
+    "centroid_lng": -75.8
   },
   {
     "id": "3509",
@@ -416,8 +416,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1136843.947,
-    "centroid_lng": 7435590.0615
+    "centroid_lat": 45.0575,
+    "centroid_lng": -76.295
   },
   {
     "id": "3511",
@@ -426,8 +426,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1077388.964,
-    "centroid_lng": 7384719.2615
+    "centroid_lat": 44.6425,
+    "centroid_lng": -77.08
   },
   {
     "id": "3523",
@@ -436,8 +436,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 919627.8415,
-    "centroid_lng": 7131767.8685
+    "centroid_lat": 43.7065,
+    "centroid_lng": -80.4805
   },
   {
     "id": "3530",
@@ -446,8 +446,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 891672.9755,
-    "centroid_lng": 7136587.5555
+    "centroid_lat": 43.4785,
+    "centroid_lng": -80.5285
   },
   {
     "id": "4602",
@@ -456,8 +456,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1487780.5155,
-    "centroid_lng": 5840602.2885
+    "centroid_lat": 49.399,
+    "centroid_lng": -96.8385
   },
   {
     "id": "4701",
@@ -466,8 +466,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1549100.614,
-    "centroid_lng": 5446901.3045
+    "centroid_lat": 49.5315,
+    "centroid_lng": -102.2985
   },
   {
     "id": "4712",
@@ -476,8 +476,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1910363.624,
-    "centroid_lng": 5129142.1485
+    "centroid_lat": 52.1355,
+    "centroid_lng": -107.7475
   },
   {
     "id": "4713",
@@ -486,8 +486,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 1939635.026,
-    "centroid_lng": 5040406.423
+    "centroid_lat": 52.2025,
+    "centroid_lng": -109.0835
   },
   {
     "id": "6001",
@@ -496,8 +496,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 3709538.123,
-    "centroid_lng": 4205275.073
+    "centroid_lat": 64.8235,
+    "centroid_lng": -132.4035
   },
   {
     "id": "6204",
@@ -506,8 +506,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 3499193.6575,
-    "centroid_lng": 6676501.0615
+    "centroid_lat": 67.196,
+    "centroid_lng": -85.463
   },
   {
     "id": "6205",
@@ -516,8 +516,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 45,
-    "centroid_lat": 2879702.1315,
-    "centroid_lng": 6174653.666
+    "centroid_lat": 62.0465,
+    "centroid_lng": -92.584
   },
   {
     "id": "2426",
@@ -526,8 +526,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1410383.0455,
-    "centroid_lng": 7789292.5345
+    "centroid_lat": 46.4955,
+    "centroid_lng": -71.01
   },
   {
     "id": "3513",
@@ -536,8 +536,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1007977.9915,
-    "centroid_lng": 7400953.251
+    "centroid_lat": 44.006,
+    "centroid_lng": -77.097
   },
   {
     "id": "3514",
@@ -546,8 +546,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1008590.334,
-    "centroid_lng": 7320359.5375
+    "centroid_lat": 44.174,
+    "centroid_lng": -78.0745
   },
   {
     "id": "3516",
@@ -556,8 +556,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1034646.4115,
-    "centroid_lng": 7250154.2515
+    "centroid_lat": 44.522,
+    "centroid_lng": -78.817
   },
   {
     "id": "3520",
@@ -566,8 +566,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 936332.284,
-    "centroid_lng": 7222632.314
+    "centroid_lat": 43.717,
+    "centroid_lng": -79.377
   },
   {
     "id": "3532",
@@ -576,8 +576,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 845399.654,
-    "centroid_lng": 7120043.0615
+    "centroid_lat": 43.0885,
+    "centroid_lng": -80.784
   },
   {
     "id": "3534",
@@ -586,8 +586,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 792385.88,
-    "centroid_lng": 7090455.023
+    "centroid_lat": 42.693,
+    "centroid_lng": -81.276
   },
   {
     "id": "3544",
@@ -596,8 +596,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1096231.5785,
-    "centroid_lng": 7183986.91
+    "centroid_lat": 45.1535,
+    "centroid_lng": -79.4705
   },
   {
     "id": "4804",
@@ -606,8 +606,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1888015.199,
-    "centroid_lng": 4892616.357
+    "centroid_lat": 51.4205,
+    "centroid_lng": -111.258
   },
   {
     "id": "4807",
@@ -616,8 +616,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2015015.707,
-    "centroid_lng": 4899561.833
+    "centroid_lat": 52.5,
+    "centroid_lng": -111.549
   },
   {
     "id": "4810",
@@ -626,8 +626,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2116464.94,
-    "centroid_lng": 4921976.906
+    "centroid_lat": 53.276,
+    "centroid_lng": -111.5945
   },
   {
     "id": "4811",
@@ -636,8 +636,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2148900.3825,
-    "centroid_lng": 4764454.4255
+    "centroid_lat": 53.3895,
+    "centroid_lng": -114.226
   },
   {
     "id": "4813",
@@ -646,8 +646,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2269280.9215,
-    "centroid_lng": 4797710.643
+    "centroid_lat": 54.53,
+    "centroid_lng": -114.507
   },
   {
     "id": "4817",
@@ -656,8 +656,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2622671.33,
-    "centroid_lng": 4774210.8415
+    "centroid_lat": 57.25,
+    "centroid_lng": -116.256
   },
   {
     "id": "5901",
@@ -666,8 +666,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 1858323.3715,
-    "centroid_lng": 4532087.2315
+    "centroid_lat": 50.1655,
+    "centroid_lng": -115.4255
   },
   {
     "id": "5951",
@@ -676,8 +676,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2621654.6255,
-    "centroid_lng": 4145588.067
+    "centroid_lat": 54.498,
+    "centroid_lng": -125.882
   },
   {
     "id": "5955",
@@ -686,8 +686,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 44,
-    "centroid_lat": 2657239.227,
-    "centroid_lng": 4403875.987
+    "centroid_lat": 55.911,
+    "centroid_lng": -123.869
   },
   {
     "id": "1303",
@@ -696,8 +696,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1479800.4815,
-    "centroid_lng": 8148324.4515
+    "centroid_lat": 45.9475,
+    "centroid_lng": -66.395
   },
   {
     "id": "2421",
@@ -706,8 +706,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1503469.143,
-    "centroid_lng": 7727475.1285
+    "centroid_lat": 47.418,
+    "centroid_lng": -71.347
   },
   {
     "id": "2498",
@@ -716,8 +716,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 2155169.303,
-    "centroid_lng": 8208245.0275
+    "centroid_lat": 50.9695,
+    "centroid_lng": -61.328
   },
   {
     "id": "3507",
@@ -726,8 +726,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1108322.9015,
-    "centroid_lng": 7470724.97
+    "centroid_lat": 44.7105,
+    "centroid_lng": -75.9435
   },
   {
     "id": "3525",
@@ -736,8 +736,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 876734.5815,
-    "centroid_lng": 7187984.467
+    "centroid_lat": 43.261,
+    "centroid_lng": -79.935
   },
   {
     "id": "3529",
@@ -746,8 +746,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 856226.2115,
-    "centroid_lng": 7161234.3985
+    "centroid_lat": 43.14,
+    "centroid_lng": -80.2965
   },
   {
     "id": "3537",
@@ -756,8 +756,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 696970.16,
-    "centroid_lng": 6971467.29
+    "centroid_lat": 42.0335,
+    "centroid_lng": -82.782
   },
   {
     "id": "3540",
@@ -766,8 +766,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 894406.766,
-    "centroid_lng": 7059695.0285
+    "centroid_lat": 43.6455,
+    "centroid_lng": -81.364
   },
   {
     "id": "3546",
@@ -776,8 +776,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1109088.453,
-    "centroid_lng": 7263727.3085
+    "centroid_lat": 45.1575,
+    "centroid_lng": -78.481
   },
   {
     "id": "3552",
@@ -786,8 +786,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1287314.573,
-    "centroid_lng": 6946772.1715
+    "centroid_lat": 47.161,
+    "centroid_lng": -82.078
   },
   {
     "id": "4601",
@@ -796,8 +796,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1536905.5255,
-    "centroid_lng": 5904016.4685
+    "centroid_lat": 49.889,
+    "centroid_lng": -95.969
   },
   {
     "id": "4702",
@@ -806,8 +806,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1574246.3885,
-    "centroid_lng": 5304660.6345
+    "centroid_lat": 49.523,
+    "centroid_lng": -104.3565
   },
   {
     "id": "4705",
@@ -816,8 +816,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1666682.764,
-    "centroid_lng": 5459430.057
+    "centroid_lat": 50.586,
+    "centroid_lng": -102.4145
   },
   {
     "id": "4802",
@@ -826,8 +826,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1771740.67,
-    "centroid_lng": 4774618.0015
+    "centroid_lat": 50.105,
+    "centroid_lng": -112.309
   },
   {
     "id": "4803",
@@ -836,8 +836,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1764093.29,
-    "centroid_lng": 4658411.59
+    "centroid_lat": 49.7055,
+    "centroid_lng": -113.5065
   },
   {
     "id": "4805",
@@ -846,8 +846,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1899614.34,
-    "centroid_lng": 4766864.069
+    "centroid_lat": 51.0155,
+    "centroid_lng": -112.9215
   },
   {
     "id": "5915",
@@ -856,8 +856,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 1994950.309,
-    "centroid_lng": 4034881.197
+    "centroid_lat": 49.288,
+    "centroid_lng": -122.9195
   },
   {
     "id": "5949",
@@ -866,8 +866,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 43,
-    "centroid_lat": 2831807.9345,
-    "centroid_lng": 4033558.076
+    "centroid_lat": 55.6365,
+    "centroid_lng": -129.8575
   },
   {
     "id": "2481",
@@ -876,8 +876,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1199709.8325,
-    "centroid_lng": 7474129.8
+    "centroid_lat": 45.4875,
+    "centroid_lng": -75.627
   },
   {
     "id": "3526",
@@ -886,8 +886,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 865075.7745,
-    "centroid_lng": 7244084.01
+    "centroid_lat": 43.0475,
+    "centroid_lng": -79.3315
   },
   {
     "id": "3531",
@@ -896,8 +896,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 889912.2845,
-    "centroid_lng": 7091285.6055
+    "centroid_lat": 43.524,
+    "centroid_lng": -81.0895
   },
   {
     "id": "3538",
@@ -906,8 +906,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 803317.307,
-    "centroid_lng": 7009624.2715
+    "centroid_lat": 42.9005,
+    "centroid_lng": -82.212
   },
   {
     "id": "3542",
@@ -916,8 +916,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 991193.2645,
-    "centroid_lng": 7102600.9555
+    "centroid_lat": 44.4135,
+    "centroid_lng": -80.6845
   },
   {
     "id": "3547",
@@ -926,8 +926,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1182305.416,
-    "centroid_lng": 7332729.829
+    "centroid_lat": 45.696,
+    "centroid_lng": -77.354
   },
   {
     "id": "3549",
@@ -936,8 +936,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1142061.2385,
-    "centroid_lng": 7141342.6955
+    "centroid_lat": 45.668,
+    "centroid_lng": -79.839
   },
   {
     "id": "3559",
@@ -946,8 +946,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1398430.8915,
-    "centroid_lng": 6126992.9315
+    "centroid_lat": 48.7065,
+    "centroid_lng": -92.88
   },
   {
     "id": "4603",
@@ -956,8 +956,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1483999.977,
-    "centroid_lng": 5771606.5185
+    "centroid_lat": 49.3105,
+    "centroid_lng": -97.7875
   },
   {
     "id": "4604",
@@ -966,8 +966,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1486339.6855,
-    "centroid_lng": 5689547.094
+    "centroid_lat": 49.27,
+    "centroid_lng": -98.8815
   },
   {
     "id": "4703",
@@ -976,8 +976,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1607574.8075,
-    "centroid_lng": 5158043.517
+    "centroid_lat": 49.5235,
+    "centroid_lng": -106.427
   },
   {
     "id": "4706",
@@ -986,8 +986,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1690950.997,
-    "centroid_lng": 5327597.8745
+    "centroid_lat": 50.615,
+    "centroid_lng": -104.4345
   },
   {
     "id": "4708",
@@ -996,8 +996,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1774803.906,
-    "centroid_lng": 5022167.914
+    "centroid_lat": 50.659,
+    "centroid_lng": -108.8245
   },
   {
     "id": "4715",
@@ -1006,8 +1006,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1970634.226,
-    "centroid_lng": 5279159.453
+    "centroid_lat": 53.061,
+    "centroid_lng": -105.7785
   },
   {
     "id": "4808",
@@ -1016,8 +1016,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 2058018.5015,
-    "centroid_lng": 4752469.81
+    "centroid_lat": 52.385,
+    "centroid_lng": -113.781
   },
   {
     "id": "4809",
@@ -1026,8 +1026,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 2087002.286,
-    "centroid_lng": 4631458.5445
+    "centroid_lat": 52.3445,
+    "centroid_lng": -115.7605
   },
   {
     "id": "5919",
@@ -1036,8 +1036,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 1997255.69,
-    "centroid_lng": 3925168.8455
+    "centroid_lat": 48.835,
+    "centroid_lng": -124.185
   },
   {
     "id": "5931",
@@ -1046,8 +1046,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 2110065.8145,
-    "centroid_lng": 4110080.95
+    "centroid_lat": 50.3505,
+    "centroid_lng": -122.814
   },
   {
     "id": "5953",
@@ -1056,8 +1056,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 42,
-    "centroid_lat": 2416098.683,
-    "centroid_lng": 4351905.567
+    "centroid_lat": 54.067,
+    "centroid_lng": -121.123
   },
   {
     "id": "1208",
@@ -1066,8 +1066,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1471378.1685,
-    "centroid_lng": 8372114.99
+    "centroid_lat": 45.0485,
+    "centroid_lng": -63.907
   },
   {
     "id": "1306",
@@ -1076,8 +1076,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1514590.9515,
-    "centroid_lng": 8261431.774
+    "centroid_lat": 45.806,
+    "centroid_lng": -64.898
   },
   {
     "id": "2401",
@@ -1086,8 +1086,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1794078.2355,
-    "centroid_lng": 8403540.967
+    "centroid_lat": 47.5075,
+    "centroid_lng": -61.705
   },
   {
     "id": "2419",
@@ -1096,8 +1096,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1436374.423,
-    "centroid_lng": 7802536.216
+    "centroid_lat": 46.654,
+    "centroid_lng": -70.738
   },
   {
     "id": "2433",
@@ -1106,8 +1106,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1399889.934,
-    "centroid_lng": 7750177.0985
+    "centroid_lat": 46.489,
+    "centroid_lng": -71.5695
   },
   {
     "id": "2463",
@@ -1116,8 +1116,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1288525.7925,
-    "centroid_lng": 7606200.253
+    "centroid_lat": 45.923,
+    "centroid_lng": -73.7185
   },
   {
     "id": "2468",
@@ -1126,8 +1126,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1208613.771,
-    "centroid_lng": 7644022.857
+    "centroid_lat": 45.166,
+    "centroid_lng": -73.5535
   },
   {
     "id": "2474",
@@ -1136,8 +1136,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1250533.787,
-    "centroid_lng": 7588859.9055
+    "centroid_lat": 45.652,
+    "centroid_lng": -74.059
   },
   {
     "id": "2499",
@@ -1146,8 +1146,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2274090.4,
-    "centroid_lng": 7401066.766
+    "centroid_lat": 55.7545,
+    "centroid_lng": -71.5415
   },
   {
     "id": "3560",
@@ -1156,8 +1156,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1864048.0585,
-    "centroid_lng": 6428422.103
+    "centroid_lat": 52.931,
+    "centroid_lng": -88.33
   },
   {
     "id": "4605",
@@ -1166,8 +1166,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1500960.056,
-    "centroid_lng": 5583843.2585
+    "centroid_lat": 49.266,
+    "centroid_lng": -100.3765
   },
   {
     "id": "4608",
@@ -1176,8 +1176,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1577297.913,
-    "centroid_lng": 5698547.146
+    "centroid_lat": 50.0855,
+    "centroid_lng": -98.915
   },
   {
     "id": "4621",
@@ -1186,8 +1186,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2046803.576,
-    "centroid_lng": 5695085.307
+    "centroid_lat": 54.313,
+    "centroid_lng": -99.6475
   },
   {
     "id": "4704",
@@ -1196,8 +1196,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1653226.3,
-    "centroid_lng": 4992640.93
+    "centroid_lat": 49.655,
+    "centroid_lng": -108.608
   },
   {
     "id": "4711",
@@ -1206,8 +1206,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1839232.3915,
-    "centroid_lng": 5238840.24
+    "centroid_lat": 51.7655,
+    "centroid_lng": -106.049
   },
   {
     "id": "4717",
@@ -1216,8 +1216,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2107734.0115,
-    "centroid_lng": 5112732.1245
+    "centroid_lat": 53.766,
+    "centroid_lng": -108.675
   },
   {
     "id": "4801",
@@ -1226,8 +1226,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1721709.8855,
-    "centroid_lng": 4859543.886
+    "centroid_lat": 49.916,
+    "centroid_lng": -110.9525
   },
   {
     "id": "5909",
@@ -1236,8 +1236,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 1991598.793,
-    "centroid_lng": 4112760.36
+    "centroid_lat": 49.577,
+    "centroid_lng": -121.907
   },
   {
     "id": "5926",
@@ -1246,8 +1246,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2111227.763,
-    "centroid_lng": 3914997.587
+    "centroid_lat": 49.6625,
+    "centroid_lng": -125.0685
   },
   {
     "id": "5929",
@@ -1256,8 +1256,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2085781.28,
-    "centroid_lng": 4003678.283
+    "centroid_lat": 49.8615,
+    "centroid_lng": -123.7505
   },
   {
     "id": "5939",
@@ -1266,8 +1266,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 41,
-    "centroid_lat": 2059692.6885,
-    "centroid_lng": 4427778.4625
+    "centroid_lat": 51.451,
+    "centroid_lng": -117.9805
   },
   {
     "id": "1009",
@@ -1276,8 +1276,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 2276646.0225,
-    "centroid_lng": 8556746.9785
+    "centroid_lat": 50.6485,
+    "centroid_lng": -56.7615
   },
   {
     "id": "1218",
@@ -1286,8 +1286,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1741976.4325,
-    "centroid_lng": 8529794.843
+    "centroid_lat": 46.57,
+    "centroid_lng": -60.594
   },
   {
     "id": "2425",
@@ -1296,8 +1296,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1429222.5645,
-    "centroid_lng": 7763215.7085
+    "centroid_lat": 46.7025,
+    "centroid_lng": -71.2475
   },
   {
     "id": "2434",
@@ -1306,8 +1306,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1439822.6285,
-    "centroid_lng": 7696210.184
+    "centroid_lat": 46.9945,
+    "centroid_lng": -72.0355
   },
   {
     "id": "3515",
@@ -1316,8 +1316,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1041559.8585,
-    "centroid_lng": 7298052.1745
+    "centroid_lat": 44.499,
+    "centroid_lng": -78.191
   },
   {
     "id": "3558",
@@ -1326,8 +1326,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1494365.606,
-    "centroid_lng": 6476221.4345
+    "centroid_lat": 49.4485,
+    "centroid_lng": -88.148
   },
   {
     "id": "4606",
@@ -1336,8 +1336,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1564249.367,
-    "centroid_lng": 5549948.3155
+    "centroid_lat": 49.798,
+    "centroid_lng": -100.955
   },
   {
     "id": "4615",
@@ -1346,8 +1346,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1621420.9445,
-    "centroid_lng": 5595128.283
+    "centroid_lat": 50.395,
+    "centroid_lng": -100.4385
   },
   {
     "id": "4707",
@@ -1356,8 +1356,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1730817.2785,
-    "centroid_lng": 5173235.1255
+    "centroid_lat": 50.66,
+    "centroid_lng": -106.55
   },
   {
     "id": "4709",
@@ -1366,8 +1366,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1790180.1185,
-    "centroid_lng": 5478933.9615
+    "centroid_lat": 51.7205,
+    "centroid_lng": -102.4155
   },
   {
     "id": "4714",
@@ -1376,8 +1376,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1947055.3155,
-    "centroid_lng": 5449084.973
+    "centroid_lat": 52.973,
+    "centroid_lng": -103.384
   },
   {
     "id": "5905",
@@ -1386,8 +1386,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1866261.4755,
-    "centroid_lng": 4319425.61
+    "centroid_lat": 49.406,
+    "centroid_lng": -118.4205
   },
   {
     "id": "5933",
@@ -1396,8 +1396,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 2117165.499,
-    "centroid_lng": 4279043.2945
+    "centroid_lat": 51.244,
+    "centroid_lng": -120.7315
   },
   {
     "id": "5937",
@@ -1406,8 +1406,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 1968475.364,
-    "centroid_lng": 4344754.6745
+    "centroid_lat": 50.3735,
+    "centroid_lng": -118.9625
   },
   {
     "id": "6101",
@@ -1416,8 +1416,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 4194169.993,
-    "centroid_lng": 5127727.39
+    "centroid_lat": 71.541,
+    "centroid_lng": -123.15
   },
   {
     "id": "6104",
@@ -1426,8 +1426,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 3170796.5,
-    "centroid_lng": 4743319.386
+    "centroid_lat": 62.0505,
+    "centroid_lng": -121.661
   },
   {
     "id": "6208",
@@ -1436,8 +1436,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 40,
-    "centroid_lat": 3677183.2815,
-    "centroid_lng": 5691076.0155
+    "centroid_lat": 69.107,
+    "centroid_lng": -104.855
   },
   {
     "id": "1003",
@@ -1446,8 +1446,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2006222.586,
-    "centroid_lng": 8694288.9
+    "centroid_lat": 47.8905,
+    "centroid_lng": -57.001
   },
   {
     "id": "1101",
@@ -1456,8 +1456,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1643085.2315,
-    "centroid_lng": 8406247.4045
+    "centroid_lat": 46.2225,
+    "centroid_lng": -62.4185
   },
   {
     "id": "1302",
@@ -1466,8 +1466,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1380215.3915,
-    "centroid_lng": 8135241.473
+    "centroid_lat": 45.039,
+    "centroid_lng": -66.981
   },
   {
     "id": "2455",
@@ -1476,8 +1476,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1246731.6045,
-    "centroid_lng": 7673201.5485
+    "centroid_lat": 45.4,
+    "centroid_lng": -73.0485
   },
   {
     "id": "3501",
@@ -1486,8 +1486,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1176414.0585,
-    "centroid_lng": 7535224.007
+    "centroid_lat": 45.155,
+    "centroid_lng": -74.969
   },
   {
     "id": "3512",
@@ -1496,8 +1496,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1077175.0445,
-    "centroid_lng": 7340933.113
+    "centroid_lat": 44.7275,
+    "centroid_lng": -77.6085
   },
   {
     "id": "3536",
@@ -1506,8 +1506,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 742662.4115,
-    "centroid_lng": 7025027.556
+    "centroid_lat": 42.3565,
+    "centroid_lng": -82.0765
   },
   {
     "id": "3553",
@@ -1516,8 +1516,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1229056.9085,
-    "centroid_lng": 7032257.6085
+    "centroid_lat": 46.584,
+    "centroid_lng": -81.073
   },
   {
     "id": "3554",
@@ -1526,8 +1526,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1369718.0725,
-    "centroid_lng": 7044941.3415
+    "centroid_lat": 47.6675,
+    "centroid_lng": -80.6335
   },
   {
     "id": "3556",
@@ -1536,8 +1536,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1628214.0785,
-    "centroid_lng": 6839454.0615
+    "centroid_lat": 50.2845,
+    "centroid_lng": -83.0325
   },
   {
     "id": "4609",
@@ -1546,8 +1546,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1556256.773,
-    "centroid_lng": 5750318.537
+    "centroid_lat": 49.963,
+    "centroid_lng": -98.1465
   },
   {
     "id": "4710",
@@ -1556,8 +1556,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1801579.2625,
-    "centroid_lng": 5366357.454
+    "centroid_lat": 51.6195,
+    "centroid_lng": -104.137
   },
   {
     "id": "4716",
@@ -1566,8 +1566,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2024904.523,
-    "centroid_lng": 5207408.2415
+    "centroid_lat": 53.3475,
+    "centroid_lng": -107.216
   },
   {
     "id": "4815",
@@ -1576,8 +1576,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2039226.17,
-    "centroid_lng": 4555908.327
+    "centroid_lat": 51.49,
+    "centroid_lng": -116.77
   },
   {
     "id": "5903",
@@ -1586,8 +1586,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1883169.5285,
-    "centroid_lng": 4423217.939
+    "centroid_lat": 50.032,
+    "centroid_lng": -117.2605
   },
   {
     "id": "5921",
@@ -1596,8 +1596,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2047337.4245,
-    "centroid_lng": 3943700.27
+    "centroid_lat": 49.2245,
+    "centroid_lng": -124.329
   },
   {
     "id": "5924",
@@ -1606,8 +1606,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2197685.147,
-    "centroid_lng": 3915439.103
+    "centroid_lat": 50.4385,
+    "centroid_lng": -125.8155
   },
   {
     "id": "5935",
@@ -1616,8 +1616,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 1959581.0315,
-    "centroid_lng": 4289292.84
+    "centroid_lat": 49.954,
+    "centroid_lng": -119.427
   },
   {
     "id": "5941",
@@ -1626,8 +1626,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2310484.6775,
-    "centroid_lng": 4190005.073
+    "centroid_lat": 52.204,
+    "centroid_lng": -123.3945
   },
   {
     "id": "5947",
@@ -1636,8 +1636,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2688728.27,
-    "centroid_lng": 3821623.96
+    "centroid_lat": 53.344,
+    "centroid_lng": -131.211
   },
   {
     "id": "5959",
@@ -1646,8 +1646,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 39,
-    "centroid_lat": 2968210.4045,
-    "centroid_lng": 4519972.6955
+    "centroid_lat": 59,
+    "centroid_lng": -123.9055
   },
   {
     "id": "1001",
@@ -1656,8 +1656,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 2111432.9715,
-    "centroid_lng": 8945393.377
+    "centroid_lat": 47.392,
+    "centroid_lng": -53.4105
   },
   {
     "id": "1002",
@@ -1666,8 +1666,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 2046045.1185,
-    "centroid_lng": 8855594.0145
+    "centroid_lat": 47.5245,
+    "centroid_lng": -54.9815
   },
   {
     "id": "1206",
@@ -1676,8 +1676,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1396545.4575,
-    "centroid_lng": 8354079.6585
+    "centroid_lat": 44.5165,
+    "centroid_lng": -64.4755
   },
   {
     "id": "1215",
@@ -1686,8 +1686,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1702578.176,
-    "centroid_lng": 8513574.517
+    "centroid_lat": 46.326,
+    "centroid_lng": -61.081
   },
   {
     "id": "1304",
@@ -1696,8 +1696,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1479933.5085,
-    "centroid_lng": 8185700.697
+    "centroid_lat": 45.825,
+    "centroid_lng": -65.953
   },
   {
     "id": "1308",
@@ -1706,8 +1706,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1592629.8615,
-    "centroid_lng": 8217579.66
+    "centroid_lat": 46.6555,
+    "centroid_lng": -65.181
   },
   {
     "id": "2427",
@@ -1716,8 +1716,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1391468.764,
-    "centroid_lng": 7806078.77
+    "centroid_lat": 46.244,
+    "centroid_lng": -70.852
   },
   {
     "id": "2438",
@@ -1726,8 +1726,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1368834.22,
-    "centroid_lng": 7704529.873
+    "centroid_lat": 46.3765,
+    "centroid_lng": -72.241
   },
   {
     "id": "2441",
@@ -1736,8 +1736,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1294970.7255,
-    "centroid_lng": 7795081.673
+    "centroid_lat": 45.516,
+    "centroid_lng": -71.482
   },
   {
     "id": "2442",
@@ -1746,8 +1746,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1281258.771,
-    "centroid_lng": 7747165.1715
+    "centroid_lat": 45.568,
+    "centroid_lng": -72.0445
   },
   {
     "id": "2488",
@@ -1756,8 +1756,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1501283.38,
-    "centroid_lng": 7220290.6645
+    "centroid_lat": 48.6205,
+    "centroid_lng": -77.8525
   },
   {
     "id": "4616",
@@ -1766,8 +1766,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1707669.907,
-    "centroid_lng": 5559223.141
+    "centroid_lat": 51.1075,
+    "centroid_lng": -101.051
   },
   {
     "id": "4618",
@@ -1776,8 +1776,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 38,
-    "centroid_lat": 1678739.676,
-    "centroid_lng": 5803673.25
+    "centroid_lat": 51.035,
+    "centroid_lng": -97.569
   },
   {
     "id": "1007",
@@ -1786,8 +1786,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2191738.0825,
-    "centroid_lng": 8837074.554
+    "centroid_lat": 48.587,
+    "centroid_lng": -54.148
   },
   {
     "id": "1008",
@@ -1796,8 +1796,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2233508.5525,
-    "centroid_lng": 8710076.547
+    "centroid_lat": 49.607,
+    "centroid_lng": -55.26
   },
   {
     "id": "1102",
@@ -1806,8 +1806,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1623882.94,
-    "centroid_lng": 8366634.271
+    "centroid_lat": 46.244,
+    "centroid_lng": -63.136
   },
   {
     "id": "1103",
@@ -1816,8 +1816,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1635533,
-    "centroid_lng": 8298487.3055
+    "centroid_lat": 46.6315,
+    "centroid_lng": -63.9495
   },
   {
     "id": "1201",
@@ -1826,8 +1826,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1288963.6815,
-    "centroid_lng": 8326147.799
+    "centroid_lat": 43.811,
+    "centroid_lng": -65.364
   },
   {
     "id": "1214",
@@ -1836,8 +1836,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1596502.017,
-    "centroid_lng": 8485410.821
+    "centroid_lat": 45.636,
+    "centroid_lng": -61.8355
   },
   {
     "id": "1216",
@@ -1846,8 +1846,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1642445.704,
-    "centroid_lng": 8559373.087
+    "centroid_lat": 45.6445,
+    "centroid_lng": -60.8005
   },
   {
     "id": "1309",
@@ -1856,8 +1856,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1595647.997,
-    "centroid_lng": 8125044.186
+    "centroid_lat": 46.9225,
+    "centroid_lng": -65.9235
   },
   {
     "id": "1310",
@@ -1866,8 +1866,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1489833.69,
-    "centroid_lng": 8095270.8285
+    "centroid_lat": 46.215,
+    "centroid_lng": -67.003
   },
   {
     "id": "1311",
@@ -1876,8 +1876,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1497579.8875,
-    "centroid_lng": 8048435.4455
+    "centroid_lat": 46.3545,
+    "centroid_lng": -67.3275
   },
   {
     "id": "2403",
@@ -1886,8 +1886,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1825966.2115,
-    "centroid_lng": 8124101.783
+    "centroid_lat": 48.955,
+    "centroid_lng": -64.8455
   },
   {
     "id": "2423",
@@ -1896,8 +1896,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1439941.9015,
-    "centroid_lng": 7750333.26
+    "centroid_lat": 46.8485,
+    "centroid_lng": -71.375
   },
   {
     "id": "2428",
@@ -1906,8 +1906,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1413512.8,
-    "centroid_lng": 7840201.833
+    "centroid_lat": 46.352,
+    "centroid_lng": -70.3595
   },
   {
     "id": "2445",
@@ -1916,8 +1916,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1243802.087,
-    "centroid_lng": 7744255.6185
+    "centroid_lat": 45.227,
+    "centroid_lng": -72.175
   },
   {
     "id": "2452",
@@ -1926,8 +1926,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1325938.267,
-    "centroid_lng": 7628107.513
+    "centroid_lat": 46.217,
+    "centroid_lng": -73.272
   },
   {
     "id": "2469",
@@ -1936,8 +1936,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1186976.5285,
-    "centroid_lng": 7600527.861
+    "centroid_lat": 45.105,
+    "centroid_lng": -74.1655
   },
   {
     "id": "2475",
@@ -1946,8 +1946,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1268660.2575,
-    "centroid_lng": 7589645.4145
+    "centroid_lat": 45.834,
+    "centroid_lng": -74.0095
   },
   {
     "id": "2477",
@@ -1956,8 +1956,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1275925.7255,
-    "centroid_lng": 7566197.0185
+    "centroid_lat": 45.9355,
+    "centroid_lng": -74.2485
   },
   {
     "id": "2480",
@@ -1966,8 +1966,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1250021.6425,
-    "centroid_lng": 7490480.724
+    "centroid_lat": 45.8765,
+    "centroid_lng": -75.248
   },
   {
     "id": "2484",
@@ -1976,8 +1976,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1271929.617,
-    "centroid_lng": 7339628.8585
+    "centroid_lat": 46.373,
+    "centroid_lng": -77.041
   },
   {
     "id": "2485",
@@ -1986,8 +1986,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1320861.043,
-    "centroid_lng": 7205188.107
+    "centroid_lat": 47.058,
+    "centroid_lng": -78.5055
   },
   {
     "id": "2487",
@@ -1996,8 +1996,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1491782.8875,
-    "centroid_lng": 7134067.197
+    "centroid_lat": 48.7195,
+    "centroid_lng": -79.0805
   },
   {
     "id": "2497",
@@ -2006,8 +2006,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2151832.08,
-    "centroid_lng": 7780361.06
+    "centroid_lat": 52.2935,
+    "centroid_lng": -66.7915
   },
   {
     "id": "3510",
@@ -2016,8 +2016,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1088714.1,
-    "centroid_lng": 7417181.5785
+    "centroid_lat": 44.658,
+    "centroid_lng": -76.694
   },
   {
     "id": "3539",
@@ -2026,8 +2026,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 816585.6915,
-    "centroid_lng": 7075511.893
+    "centroid_lat": 42.9505,
+    "centroid_lng": -81.3675
   },
   {
     "id": "3551",
@@ -2036,8 +2036,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1128999.787,
-    "centroid_lng": 6939117.2715
+    "centroid_lat": 45.754,
+    "centroid_lng": -82.4775
   },
   {
     "id": "3557",
@@ -2046,8 +2046,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1338724.6755,
-    "centroid_lng": 6817036.8885
+    "centroid_lat": 47.871,
+    "centroid_lng": -83.6385
   },
   {
     "id": "4607",
@@ -2056,8 +2056,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1559155.497,
-    "centroid_lng": 5632653.306
+    "centroid_lat": 49.8865,
+    "centroid_lng": -99.7915
   },
   {
     "id": "4620",
@@ -2066,8 +2066,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1815869.1755,
-    "centroid_lng": 5589276.5925
+    "centroid_lat": 52.102,
+    "centroid_lng": -100.855
   },
   {
     "id": "4622",
@@ -2076,8 +2076,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2087389.3055,
-    "centroid_lng": 5977338.913
+    "centroid_lat": 54.8565,
+    "centroid_lng": -95.3385
   },
   {
     "id": "4718",
@@ -2086,8 +2086,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2385662.8185,
-    "centroid_lng": 5359248.84
+    "centroid_lat": 56.814,
+    "centroid_lng": -105.8885
   },
   {
     "id": "5917",
@@ -2096,8 +2096,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 1961055.969,
-    "centroid_lng": 3944353.9
+    "centroid_lat": 48.66,
+    "centroid_lng": -123.7725
   },
   {
     "id": "5923",
@@ -2106,8 +2106,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2082591.0445,
-    "centroid_lng": 3862791.2555
+    "centroid_lat": 49.156,
+    "centroid_lng": -125.5585
   },
   {
     "id": "5927",
@@ -2116,8 +2116,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 37,
-    "centroid_lat": 2129876.3745,
-    "centroid_lng": 3998398.0215
+    "centroid_lat": 50.1495,
+    "centroid_lng": -124.3375
   },
   {
     "id": "1005",
@@ -2126,8 +2126,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 2133266.397,
-    "centroid_lng": 8584975.0955
+    "centroid_lat": 49.3695,
+    "centroid_lng": -57.5745
   },
   {
     "id": "1202",
@@ -2136,8 +2136,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1282360.3915,
-    "centroid_lng": 8280184.6925
+    "centroid_lat": 43.811,
+    "centroid_lng": -65.784
   },
   {
     "id": "1204",
@@ -2146,8 +2146,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1345006.0445,
-    "centroid_lng": 8333513.4015
+    "centroid_lat": 44.163,
+    "centroid_lng": -64.9565
   },
   {
     "id": "1207",
@@ -2156,8 +2156,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1442128.8825,
-    "centroid_lng": 8317950.3315
+    "centroid_lat": 44.9995,
+    "centroid_lng": -64.5945
   },
   {
     "id": "1212",
@@ -2166,8 +2166,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1566633.911,
-    "centroid_lng": 8432959.376
+    "centroid_lat": 45.5525,
+    "centroid_lng": -62.6225
   },
   {
     "id": "1213",
@@ -2176,8 +2176,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1569266.283,
-    "centroid_lng": 8506387.0145
+    "centroid_lat": 45.287,
+    "centroid_lng": -61.8285
   },
   {
     "id": "1307",
@@ -2186,8 +2186,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1548120.3415,
-    "centroid_lng": 8266035.477
+    "centroid_lat": 46,
+    "centroid_lng": -64.594
   },
   {
     "id": "2414",
@@ -2196,8 +2196,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1552695.793,
-    "centroid_lng": 7849876.504
+    "centroid_lat": 47.485,
+    "centroid_lng": -69.7005
   },
   {
     "id": "2416",
@@ -2206,8 +2206,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1541357.406,
-    "centroid_lng": 7757991.6245
+    "centroid_lat": 47.614,
+    "centroid_lng": -70.8125
   },
   {
     "id": "2417",
@@ -2216,8 +2216,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1494308.09,
-    "centroid_lng": 7835984.7
+    "centroid_lat": 47.037,
+    "centroid_lng": -70.0295
   },
   {
     "id": "2444",
@@ -2226,8 +2226,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1248169.66,
-    "centroid_lng": 7780997.114
+    "centroid_lat": 45.1785,
+    "centroid_lng": -71.7475
   },
   {
     "id": "2446",
@@ -2236,8 +2236,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1226906.569,
-    "centroid_lng": 7704387.0515
+    "centroid_lat": 45.1805,
+    "centroid_lng": -72.7575
   },
   {
     "id": "2450",
@@ -2246,8 +2246,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1335542.2655,
-    "centroid_lng": 7687761.376
+    "centroid_lat": 46.1405,
+    "centroid_lng": -72.5605
   },
   {
     "id": "2456",
@@ -2256,8 +2256,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1219532.4875,
-    "centroid_lng": 7664551.6715
+    "centroid_lat": 45.2115,
+    "centroid_lng": -73.2035
   },
   {
     "id": "2462",
@@ -2266,8 +2266,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1377705.967,
-    "centroid_lng": 7545137.0515
+    "centroid_lat": 46.8695,
+    "centroid_lng": -74.086
   },
   {
     "id": "2493",
@@ -2276,8 +2276,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1597498.4985,
-    "centroid_lng": 7671013.136
+    "centroid_lat": 48.4565,
+    "centroid_lng": -71.722
   },
   {
     "id": "2496",
@@ -2286,8 +2286,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1872647.293,
-    "centroid_lng": 7804826.5555
+    "centroid_lat": 50.251,
+    "centroid_lng": -68.6255
   },
   {
     "id": "3548",
@@ -2296,8 +2296,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1226806.78,
-    "centroid_lng": 7201556.03
+    "centroid_lat": 46.2725,
+    "centroid_lng": -78.9285
   },
   {
     "id": "4617",
@@ -2306,8 +2306,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1712196.57,
-    "centroid_lng": 5645657.4
+    "centroid_lat": 51.282,
+    "centroid_lng": -99.806
   },
   {
     "id": "5907",
@@ -2316,8 +2316,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 1918943.4085,
-    "centroid_lng": 4214988.88
+    "centroid_lat": 49.456,
+    "centroid_lng": -120.1385
   },
   {
     "id": "5943",
@@ -2326,8 +2326,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 36,
-    "centroid_lat": 2280006.6385,
-    "centroid_lng": 3881716.917
+    "centroid_lat": 50.9595,
+    "centroid_lng": -127.148
   },
   {
     "id": "1006",
@@ -2336,8 +2336,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 2108753.666,
-    "centroid_lng": 8703255.7985
+    "centroid_lat": 48.7895,
+    "centroid_lng": -56.1025
   },
   {
     "id": "1203",
@@ -2346,8 +2346,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1329716.229,
-    "centroid_lng": 8260785.3545
+    "centroid_lat": 44.3455,
+    "centroid_lng": -65.863
   },
   {
     "id": "1205",
@@ -2356,8 +2356,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1391091.213,
-    "centroid_lng": 8287050.696
+    "centroid_lat": 44.6895,
+    "centroid_lng": -65.2665
   },
   {
     "id": "1209",
@@ -2366,8 +2366,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1474008.054,
-    "centroid_lng": 8542956.363
+    "centroid_lat": 44.6005,
+    "centroid_lng": -61.954
   },
   {
     "id": "1312",
@@ -2376,8 +2376,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1561223.044,
-    "centroid_lng": 8032966.4685
+    "centroid_lat": 47.082,
+    "centroid_lng": -67.2675
   },
   {
     "id": "1315",
@@ -2386,8 +2386,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1693205.159,
-    "centroid_lng": 8142023.8415
+    "centroid_lat": 47.6275,
+    "centroid_lng": -65.3425
   },
   {
     "id": "2405",
@@ -2396,8 +2396,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1756790.8485,
-    "centroid_lng": 8095618.4985
+    "centroid_lat": 48.3395,
+    "centroid_lng": -65.6185
   },
   {
     "id": "2406",
@@ -2406,8 +2406,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1698971.844,
-    "centroid_lng": 8023715.8385
+    "centroid_lat": 48.1635,
+    "centroid_lng": -66.786
   },
   {
     "id": "2415",
@@ -2416,8 +2416,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1579036.19,
-    "centroid_lng": 7796816.5115
+    "centroid_lat": 47.8455,
+    "centroid_lng": -70.118
   },
   {
     "id": "2429",
@@ -2426,8 +2426,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1367267.3915,
-    "centroid_lng": 7834271.734
+    "centroid_lat": 46.021,
+    "centroid_lng": -70.673
   },
   {
     "id": "2430",
@@ -2436,8 +2436,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1314815.0045,
-    "centroid_lng": 7824854.2685
+    "centroid_lat": 45.593,
+    "centroid_lng": -70.8885
   },
   {
     "id": "2448",
@@ -2446,8 +2446,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1281564.14,
-    "centroid_lng": 7706091.5
+    "centroid_lat": 45.6205,
+    "centroid_lng": -72.522
   },
   {
     "id": "2451",
@@ -2456,8 +2456,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1364007.617,
-    "centroid_lng": 7633795.073
+    "centroid_lat": 46.5225,
+    "centroid_lng": -73.077
   },
   {
     "id": "2483",
@@ -2466,8 +2466,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1337506.8215,
-    "centroid_lng": 7390387.2515
+    "centroid_lat": 46.7985,
+    "centroid_lng": -76.1555
   },
   {
     "id": "2491",
@@ -2476,8 +2476,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1626336.8285,
-    "centroid_lng": 7557971.6155
+    "centroid_lat": 49.012,
+    "centroid_lng": -73.1625
   },
   {
     "id": "2492",
@@ -2486,8 +2486,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 1817969.466,
-    "centroid_lng": 7572611.09
+    "centroid_lat": 50.479,
+    "centroid_lng": -72.3265
   },
   {
     "id": "4623",
@@ -2496,8 +2496,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 35,
-    "centroid_lat": 2392043.186,
-    "centroid_lng": 5975774.29
+    "centroid_lat": 57.579,
+    "centroid_lng": -95.4935
   },
   {
     "id": "1210",
@@ -2506,8 +2506,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1527573.01,
-    "centroid_lng": 8386337.0185
+    "centroid_lat": 45.398,
+    "centroid_lng": -63.424
   },
   {
     "id": "1211",
@@ -2516,8 +2516,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1512713.6515,
-    "centroid_lng": 8329420.56
+    "centroid_lat": 45.6265,
+    "centroid_lng": -64.126
   },
   {
     "id": "1217",
@@ -2526,8 +2526,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1698410.7515,
-    "centroid_lng": 8580822.9625
+    "centroid_lat": 46.0325,
+    "centroid_lng": -60.238
   },
   {
     "id": "1313",
@@ -2536,8 +2536,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1577907.8755,
-    "centroid_lng": 7952795.92
+    "centroid_lat": 47.425,
+    "centroid_lng": -68.36
   },
   {
     "id": "2402",
@@ -2546,8 +2546,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1788102.5585,
-    "centroid_lng": 8138786.1985
+    "centroid_lat": 48.4015,
+    "centroid_lng": -64.8235
   },
   {
     "id": "2413",
@@ -2556,8 +2556,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1588232.3115,
-    "centroid_lng": 7897400.533
+    "centroid_lat": 47.682,
+    "centroid_lng": -68.986
   },
   {
     "id": "2432",
@@ -2566,8 +2566,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1369253.23,
-    "centroid_lng": 7746152.3515
+    "centroid_lat": 46.239,
+    "centroid_lng": -71.679
   },
   {
     "id": "2439",
@@ -2576,8 +2576,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1341587.297,
-    "centroid_lng": 7744554.157
+    "centroid_lat": 46.057,
+    "centroid_lng": -71.891
   },
   {
     "id": "2466",
@@ -2586,8 +2586,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1246881.6015,
-    "centroid_lng": 7619280.506
+    "centroid_lat": 45.5515,
+    "centroid_lng": -73.7265
   },
   {
     "id": "2486",
@@ -2596,8 +2596,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1435135.1455,
-    "centroid_lng": 7165893.6115
+    "centroid_lat": 48.1385,
+    "centroid_lng": -78.8685
   },
   {
     "id": "2489",
@@ -2606,8 +2606,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1464153.03,
-    "centroid_lng": 7308213.403
+    "centroid_lat": 48.0725,
+    "centroid_lng": -76.9145
   },
   {
     "id": "2495",
@@ -2616,8 +2616,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 1716262.9685,
-    "centroid_lng": 7797788.3745
+    "centroid_lat": 49.0645,
+    "centroid_lng": -69.3485
   },
   {
     "id": "5945",
@@ -2626,8 +2626,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 34,
-    "centroid_lat": 2426757.09,
-    "centroid_lng": 3933565.973
+    "centroid_lat": 52.234,
+    "centroid_lng": -126.931
   },
   {
     "id": "1314",
@@ -2636,8 +2636,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1656438.6245,
-    "centroid_lng": 8013956.35
+    "centroid_lat": 47.7175,
+    "centroid_lng": -67.0885
   },
   {
     "id": "2407",
@@ -2646,8 +2646,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1721215.5155,
-    "centroid_lng": 7994492.324
+    "centroid_lat": 48.4135,
+    "centroid_lng": -66.965
   },
   {
     "id": "2409",
@@ -2656,8 +2656,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1686478.324,
-    "centroid_lng": 7935224.386
+    "centroid_lat": 48.345,
+    "centroid_lng": -68.006
   },
   {
     "id": "2411",
@@ -2666,8 +2666,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1627545.3215,
-    "centroid_lng": 7875408.6915
+    "centroid_lat": 48.064,
+    "centroid_lng": -68.9675
   },
   {
     "id": "2412",
@@ -2676,8 +2676,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1599832.2385,
-    "centroid_lng": 7865873.3915
+    "centroid_lat": 47.865,
+    "centroid_lng": -69.255
   },
   {
     "id": "2431",
@@ -2686,8 +2686,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1357374.664,
-    "centroid_lng": 7783074.9015
+    "centroid_lat": 46.0585,
+    "centroid_lng": -71.328
   },
   {
     "id": "2435",
@@ -2696,8 +2696,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1421823.0215,
-    "centroid_lng": 7616084.157
+    "centroid_lat": 47.052,
+    "centroid_lng": -73.0985
   },
   {
     "id": "2453",
@@ -2706,8 +2706,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1306481.233,
-    "centroid_lng": 7662180.87
+    "centroid_lat": 45.964,
+    "centroid_lng": -72.9785
   },
   {
     "id": "2476",
@@ -2716,8 +2716,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1248689.6085,
-    "centroid_lng": 7556953.21
+    "centroid_lat": 45.72,
+    "centroid_lng": -74.456
   },
   {
     "id": "2478",
@@ -2726,8 +2726,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1296842.9725,
-    "centroid_lng": 7535837.716
+    "centroid_lat": 46.18,
+    "centroid_lng": -74.5615
   },
   {
     "id": "2494",
@@ -2736,8 +2736,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 33,
-    "centroid_lat": 1823439.084,
-    "centroid_lng": 7693421.87
+    "centroid_lat": 50.348,
+    "centroid_lng": -70.7555
   },
   {
     "id": "1004",
@@ -2746,8 +2746,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1975082.47,
-    "centroid_lng": 8568191.1855
+    "centroid_lat": 48.312,
+    "centroid_lng": -58.403
   },
   {
     "id": "2404",
@@ -2756,8 +2756,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1810689.1425,
-    "centroid_lng": 8034630.1575
+    "centroid_lat": 48.9125,
+    "centroid_lng": -66.048
   },
   {
     "id": "2410",
@@ -2766,8 +2766,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1659363.8075,
-    "centroid_lng": 7908699.4585
+    "centroid_lat": 48.204,
+    "centroid_lng": -68.461
   },
   {
     "id": "2418",
@@ -2776,8 +2776,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1465859.2425,
-    "centroid_lng": 7825151.7685
+    "centroid_lat": 46.8165,
+    "centroid_lng": -70.3715
   },
   {
     "id": "2447",
@@ -2786,8 +2786,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1253843.633,
-    "centroid_lng": 7705493.643
+    "centroid_lat": 45.4115,
+    "centroid_lng": -72.6625
   },
   {
     "id": "2470",
@@ -2796,8 +2796,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1207280.037,
-    "centroid_lng": 7612877.2645
+    "centroid_lat": 45.2375,
+    "centroid_lng": -73.925
   },
   {
     "id": "2479",
@@ -2806,8 +2806,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1354146.94,
-    "centroid_lng": 7466173.6615
+    "centroid_lat": 46.862,
+    "centroid_lng": -75.247
   },
   {
     "id": "2490",
@@ -2816,8 +2816,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 1516114.1685,
-    "centroid_lng": 7531266.6585
+    "centroid_lat": 48.031,
+    "centroid_lng": -73.709
   },
   {
     "id": "5957",
@@ -2826,8 +2826,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 32,
-    "centroid_lat": 3118462.8245,
-    "centroid_lng": 4123824.0015
+    "centroid_lat": 57.9995,
+    "centroid_lng": -131.7465
   },
   {
     "id": "2408",
@@ -2836,8 +2836,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1755248.61,
-    "centroid_lng": 7985387.844
+    "centroid_lat": 48.788,
+    "centroid_lng": -67.0225
   },
   {
     "id": "2440",
@@ -2846,8 +2846,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1312192.566,
-    "centroid_lng": 7756979.46
+    "centroid_lat": 45.7425,
+    "centroid_lng": -71.7855
   },
   {
     "id": "2449",
@@ -2856,8 +2856,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1308340.197,
-    "centroid_lng": 7703090.197
+    "centroid_lat": 45.8435,
+    "centroid_lng": -72.473
   },
   {
     "id": "2454",
@@ -2866,8 +2866,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1278423.4,
-    "centroid_lng": 7678763.7015
+    "centroid_lat": 45.68,
+    "centroid_lng": -72.878
   },
   {
     "id": "2461",
@@ -2876,8 +2876,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1306497.0515,
-    "centroid_lng": 7623563.6585
+    "centroid_lat": 46.0555,
+    "centroid_lng": -73.436
   },
   {
     "id": "4619",
@@ -2886,8 +2886,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 31,
-    "centroid_lat": 1758442.3585,
-    "centroid_lng": 5796143.0145
+    "centroid_lat": 51.872,
+    "centroid_lng": -97.971
   },
   {
     "id": "2443",
@@ -2896,8 +2896,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 30,
-    "centroid_lat": 1271468.0385,
-    "centroid_lng": 7758657.953
+    "centroid_lat": 45.413,
+    "centroid_lng": -71.956
   },
   {
     "id": "1301",
@@ -2906,8 +2906,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 29,
-    "centroid_lat": 1438424.5645,
-    "centroid_lng": 8218045.7685
+    "centroid_lat": 45.3365,
+    "centroid_lng": -65.772
   },
   {
     "id": "2437",
@@ -2916,8 +2916,8 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 29,
-    "centroid_lat": 1376431.3755,
-    "centroid_lng": 7683384.57
+    "centroid_lat": 46.4975,
+    "centroid_lng": -72.44
   },
   {
     "id": "2436",
@@ -2926,7 +2926,7 @@
     "type": "cd",
     "market": "ca",
     "opportunity_score": 26,
-    "centroid_lat": 1388130.897,
-    "centroid_lng": 7645369.28
+    "centroid_lat": 46.6895,
+    "centroid_lng": -72.881
   }
 ]
