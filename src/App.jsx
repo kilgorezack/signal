@@ -11,14 +11,18 @@ import { useComparison } from './hooks/useComparison.js';
 import { MARKETS } from './config.js';
 
 const LS_MARKET_KEY = 'signal_last_market';
+const LS_THEME_KEY  = 'signal_theme';
 
 export default function App() {
   // Restore last market from localStorage — skip landing for returning users
   const lastMarket = localStorage.getItem(LS_MARKET_KEY);
   const validLast  = lastMarket && MARKETS[lastMarket] ? lastMarket : null;
 
+  const savedTheme = localStorage.getItem(LS_THEME_KEY) ?? 'dark';
+
   const [showLanding, setShowLanding] = useState(!validLast);
   const [market, setMarket]           = useState(validLast);
+  const [theme, setTheme]             = useState(savedTheme);
   const [activeTab, setActiveTab]     = useState('residential'); // 'residential' | 'business'
 
   const [geojson, setGeojson]                   = useState(null);
@@ -32,6 +36,16 @@ export default function App() {
   const preloadCache  = useRef({});
   // Per-market load status for landing page indicators: 'loading' | 'ready'
   const [preloadState, setPreloadState] = useState({});
+
+  // Apply theme to <html> data attribute and persist
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(LS_THEME_KEY, theme);
+  }, [theme]);
+
+  const handleThemeToggle = useCallback(() => {
+    setTheme(t => t === 'dark' ? 'light' : 'dark');
+  }, []);
 
   const { selectedId, regionData, selectRegion, clearRegion } = useRegion();
   const insights  = useInsights();
@@ -205,6 +219,14 @@ export default function App() {
               {regionCount} {market === 'uk' ? 'LADs' : market === 'ca' ? 'Census Divisions' : 'SA4 regions'} · {mkt.dataBadge}
             </span>
           )}
+
+          <button
+            className="btn-theme"
+            onClick={handleThemeToggle}
+            title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {theme === 'dark' ? '☀︎' : '☾'}
+          </button>
         </div>
       </header>
 
@@ -226,6 +248,7 @@ export default function App() {
             onRegionSelect={handleRegionSelect}
             scoreField={scoreField}
             market={market}
+            theme={theme}
           />
         )}
 
