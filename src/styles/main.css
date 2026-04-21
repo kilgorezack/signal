@@ -1,4 +1,4 @@
-/* ─── Design Tokens ───────────────────────────────────────────────────────── */
+/* ─── Design Tokens — Dark (default) ──────────────────────────────────────── */
 :root {
   --bg-base:       #070b14;
   --bg-surface:    #0f1623;
@@ -19,13 +19,61 @@
   --score-mid:  #eab308;
   --score-low:  #ef4444;
 
-  --accent-biz: #6366f1; /* indigo — SmartBiz tab accent */
+  --accent-biz: #6366f1;
 
   --radius-sm:  4px;
   --radius-md:  8px;
   --radius-lg:  12px;
 
   --shadow-panel: 0 8px 32px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
+
+  /* Nav glass tokens */
+  --nav-bg:            rgba(8, 12, 22, 0.78);
+  --nav-border-bottom: rgba(255, 255, 255, 0.07);
+  --nav-pill-bg:       rgba(255, 255, 255, 0.07);
+  --nav-pill-border:   rgba(255, 255, 255, 0.11);
+  --nav-inactive:      rgba(255, 255, 255, 0.38);
+  --nav-inactive-hover:rgba(255, 255, 255, 0.65);
+  --nav-active-bg:     rgba(255, 255, 255, 0.14);
+  --nav-active-text:   rgba(255, 255, 255, 0.95);
+  --nav-active-top:    rgba(255, 255, 255, 0.26);
+  --nav-active-btm:    rgba(0, 0, 0, 0.18);
+  --nav-stroke:        #ffffff;
+}
+
+/* ─── Design Tokens — Light ───────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-base:       #edf1f7;
+  --bg-surface:    #ffffff;
+  --bg-raised:     #f4f7fb;
+  --bg-hover:      #e6ecf5;
+
+  --accent:        #2563eb;
+  --accent-hover:  #1d4ed8;
+
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #8899b0;
+
+  --border-subtle:  #dde4ef;
+  --border-default: #c5d0e2;
+
+  --accent-biz: #4f46e5;
+
+  --shadow-panel: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+
+  /* Nav glass tokens — light */
+  --nav-bg:            rgba(242, 246, 252, 0.82);
+  --nav-border-bottom: rgba(0, 0, 0, 0.08);
+  --nav-pill-bg:       rgba(0, 0, 0, 0.055);
+  --nav-pill-border:   rgba(0, 0, 0, 0.09);
+  --nav-inactive:      rgba(0, 0, 0, 0.38);
+  --nav-inactive-hover:rgba(0, 0, 0, 0.65);
+  --nav-active-bg:     rgba(255, 255, 255, 0.82);
+  --nav-active-text:   rgba(0, 0, 0, 0.88);
+  --nav-active-top:    rgba(255, 255, 255, 1.0);
+  --nav-active-btm:    rgba(0, 0, 0, 0.10);
+  --nav-stroke:        #334155;
 }
 
 /* ─── Reset ───────────────────────────────────────────────────────────────── */
@@ -63,15 +111,14 @@ html, body, #root {
   padding: 0 16px;
   z-index: 100;
 
-  /* Liquid glass material — dark tint + heavy blur */
-  background: rgba(8, 12, 22, 0.60);
-  backdrop-filter: blur(48px) saturate(200%) brightness(1.05);
-  -webkit-backdrop-filter: blur(48px) saturate(200%) brightness(1.05);
+  /* Liquid glass — fogged tint + heavy blur */
+  background: var(--nav-bg);
+  backdrop-filter: blur(48px) saturate(180%) brightness(1.04);
+  -webkit-backdrop-filter: blur(48px) saturate(180%) brightness(1.04);
 
-  /* Specular rim on bottom edge only; no hard border */
   box-shadow:
-    inset 0 -0.5px 0 rgba(255, 255, 255, 0.07),  /* bottom specular line */
-    0 1px 0 rgba(0, 0, 0, 0.35);                   /* subtle ground shadow */
+    inset 0 -0.5px 0 var(--nav-border-bottom),
+    0 1px 0 rgba(0, 0, 0, 0.18);
 }
 
 /* ─── Logo — clickable, returns to landing ───────────────────────────────── */
@@ -108,10 +155,10 @@ html, body, #root {
 
 .app-logo-sub {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.30);
+  color: var(--text-muted);
   font-weight: 400;
   padding-left: 10px;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.12);
+  border-left: 0.5px solid var(--border-subtle);
   letter-spacing: 0.01em;
 }
 
@@ -123,13 +170,12 @@ html, body, #root {
   padding: 3px;
   border-radius: 12px;
 
-  /* Glass container: lighter tint so active pill reads against it */
-  background: rgba(255, 255, 255, 0.07);
-  border: 0.5px solid rgba(255, 255, 255, 0.11);
+  background: var(--nav-pill-bg);
+  border: 0.5px solid var(--nav-pill-border);
   box-shadow:
     inset 0 0.5px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -0.5px 0 rgba(0, 0, 0, 0.12),
-    0 2px 12px rgba(0, 0, 0, 0.20);
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.10),
+    0 2px 10px rgba(0, 0, 0, 0.14);
 }
 
 .app-tab {
@@ -142,7 +188,7 @@ html, body, #root {
   cursor: pointer;
   border: none;
   background: transparent;
-  color: rgba(255, 255, 255, 0.38);
+  color: var(--nav-inactive);
   transition:
     color      0.20s ease,
     background 0.20s ease,
@@ -151,30 +197,38 @@ html, body, #root {
   -webkit-font-smoothing: antialiased;
 }
 
-.app-tab:hover {
-  color: rgba(255, 255, 255, 0.65);
-}
+.app-tab:hover { color: var(--nav-inactive-hover); }
 
-/* Active pill — bright glass chip, top-lit */
+/* Active pill */
 .app-tab--active {
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(255, 255, 255, 0.14);
+  color: var(--nav-active-text);
+  background: var(--nav-active-bg);
   box-shadow:
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.26),  /* top light catch */
-    inset 0 -0.5px 0 rgba(0, 0, 0, 0.18),         /* bottom depth */
-    0 1px 6px rgba(0, 0, 0, 0.22),                 /* lift */
-    0 0 0 0.5px rgba(255, 255, 255, 0.10);          /* hairline */
+    inset 0 0.5px 0 var(--nav-active-top),
+    inset 0 -0.5px 0 var(--nav-active-btm),
+    0 1px 6px rgba(0, 0, 0, 0.18),
+    0 0 0 0.5px rgba(128, 128, 128, 0.10);
 }
 
-/* Business active — indigo-tinted glass */
+/* Business active — indigo tint (both modes) */
 .app-tab--business.app-tab--active {
   color: #d4bbff;
   background: rgba(99, 102, 241, 0.22);
   box-shadow:
     inset 0 0.5px 0 rgba(180, 150, 255, 0.35),
-    inset 0 -0.5px 0 rgba(0, 0, 0, 0.20),
-    0 1px 6px rgba(99, 102, 241, 0.22),
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.18),
+    0 1px 6px rgba(99, 102, 241, 0.20),
     0 0 0 0.5px rgba(130, 100, 255, 0.18);
+}
+
+[data-theme="light"] .app-tab--business.app-tab--active {
+  color: #4338ca;
+  background: rgba(99, 102, 241, 0.12);
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.90),
+    inset 0 -0.5px 0 rgba(99, 102, 241, 0.15),
+    0 1px 6px rgba(99, 102, 241, 0.16),
+    0 0 0 0.5px rgba(99, 102, 241, 0.20);
 }
 
 /* ─── Header right ────────────────────────────────────────────────────────── */
@@ -191,12 +245,12 @@ html, body, #root {
   gap: 2px;
   padding: 3px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 0.5px solid rgba(255, 255, 255, 0.11);
+  background: var(--nav-pill-bg);
+  border: 0.5px solid var(--nav-pill-border);
   box-shadow:
     inset 0 0.5px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -0.5px 0 rgba(0, 0, 0, 0.12),
-    0 2px 12px rgba(0, 0, 0, 0.20);
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.10),
+    0 2px 10px rgba(0, 0, 0, 0.14);
 }
 
 .market-btn {
@@ -207,7 +261,7 @@ html, body, #root {
   border-radius: 16px;
   border: none;
   background: transparent;
-  color: rgba(255, 255, 255, 0.38);
+  color: var(--nav-inactive);
   font-size: 11.5px;
   font-weight: 600;
   cursor: pointer;
@@ -217,19 +271,16 @@ html, body, #root {
   -webkit-font-smoothing: antialiased;
 }
 
-.market-btn:hover {
-  color: rgba(255, 255, 255, 0.65);
-}
+.market-btn:hover { color: var(--nav-inactive-hover); }
 
-/* Active market — same top-lit glass chip */
 .market-btn--active {
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(255, 255, 255, 0.14);
+  color: var(--nav-active-text);
+  background: var(--nav-active-bg);
   box-shadow:
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.26),
-    inset 0 -0.5px 0 rgba(0, 0, 0, 0.18),
-    0 1px 6px rgba(0, 0, 0, 0.22),
-    0 0 0 0.5px rgba(255, 255, 255, 0.10);
+    inset 0 0.5px 0 var(--nav-active-top),
+    inset 0 -0.5px 0 var(--nav-active-btm),
+    0 1px 6px rgba(0, 0, 0, 0.18),
+    0 0 0 0.5px rgba(128, 128, 128, 0.10);
 }
 
 .market-flag  { font-size: 14px; line-height: 1; }
@@ -239,8 +290,31 @@ html, body, #root {
 .app-data-badge {
   font-size: 10.5px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.30);
+  color: var(--text-muted);
   letter-spacing: 0.01em;
+}
+
+/* ─── Theme toggle ───────────────────────────────────────────────────────── */
+.btn-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 28px;
+  border-radius: 8px;
+  border: 0.5px solid var(--nav-pill-border);
+  background: var(--nav-pill-bg);
+  color: var(--nav-inactive);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.18s ease, background 0.18s ease;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.btn-theme:hover {
+  color: var(--nav-inactive-hover);
+  background: var(--nav-active-bg);
 }
 
 /* ─── Main canvas — fills entire screen, map bleeds under nav ────────────── */

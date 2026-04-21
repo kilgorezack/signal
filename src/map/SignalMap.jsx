@@ -12,7 +12,7 @@ import { MARKETS } from '../config.js';
  *   scoreField     — property name to use for choropleth coloring (default: 'opportunity_score')
  *   market         — 'au' | 'uk' (controls map center + boundary)
  */
-export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreField = 'opportunity_score', market = 'au' }) {
+export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreField = 'opportunity_score', market = 'au', theme = 'dark' }) {
   const mkt = MARKETS[market] ?? MARKETS.au;
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -38,7 +38,9 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
           center: new mapkit.Coordinate(mkt.center.lat, mkt.center.lng),
           cameraDistance: mkt.cameraDistance,
           mapType: mapkit.Map.MapTypes.MutedStandard,
-          colorScheme: mapkit.Map.ColorSchemes.Dark,
+          colorScheme: theme === 'light'
+            ? mapkit.Map.ColorSchemes.Light
+            : mapkit.Map.ColorSchemes.Dark,
           showsCompass: mapkit.FeatureVisibility.Hidden,
           showsScale: mapkit.FeatureVisibility.Hidden,
           showsMapTypeControl: false,
@@ -72,6 +74,14 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
     };
   }, []);
 
+  // ── Sync map color scheme when theme changes ────────────────────────────────
+  useEffect(() => {
+    if (!mapRef.current) return;
+    mapRef.current.colorScheme = theme === 'light'
+      ? mapkit.Map.ColorSchemes.Light
+      : mapkit.Map.ColorSchemes.Dark;
+  }, [theme]);
+
   // ── Render choropleth overlays when geojson arrives ─────────────────────────
   useEffect(() => {
     if (!mapReady || !geojson || !mapRef.current) return;
@@ -104,11 +114,12 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
         if (!overlay) return null;
         const props = feature.properties ?? {};
         const score = props[scoreField];
+        const stroke = theme === 'light' ? '#1e293b' : '#ffffff';
         overlay.style = new mapkit.Style({
           fillColor: scoreToHex(score),
-          fillOpacity: 0.78,
-          strokeColor: '#ffffff',
-          strokeOpacity: 0.25,
+          fillOpacity: 0.72,
+          strokeColor: stroke,
+          strokeOpacity: 0.20,
           lineWidth: 0.8,
         });
         overlay.data = props;
@@ -127,12 +138,13 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
           if (!pt) continue;
           const props = coordToProps.get(coordKey(pt.latitude, pt.longitude));
           if (props) {
+            const stroke = theme === 'light' ? '#1e293b' : '#ffffff';
             overlay.data = props;
             overlay.style = new mapkit.Style({
               fillColor: scoreToHex(props[scoreField]),
-              fillOpacity: 0.78,
-              strokeColor: '#ffffff',
-              strokeOpacity: 0.25,
+              fillOpacity: 0.72,
+              strokeColor: stroke,
+              strokeOpacity: 0.20,
               lineWidth: 0.8,
             });
           }
@@ -159,15 +171,16 @@ export default function SignalMap({ geojson, selectedId, onRegionSelect, scoreFi
     for (const [id, overlay] of Object.entries(overlayMapRef.current)) {
       const score = overlay.data?.[scoreField];
       const isSelected = id === selectedId;
+      const stroke = theme === 'light' ? '#1e293b' : '#ffffff';
       overlay.style = new mapkit.Style({
         fillColor: scoreToHex(score),
-        fillOpacity: isSelected ? 0.92 : 0.78,
-        strokeColor: '#ffffff',
-        strokeOpacity: isSelected ? 0.7 : 0.25,
+        fillOpacity: isSelected ? 0.90 : 0.72,
+        strokeColor: stroke,
+        strokeOpacity: isSelected ? 0.6 : 0.20,
         lineWidth: isSelected ? 2 : 0.5,
       });
     }
-  }, [selectedId]);
+  }, [selectedId, theme]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Mouse move for tooltip ───────────────────────────────────────────────────
   useEffect(() => {
