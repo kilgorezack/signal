@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MARKETS } from '../config.js';
+import ScoreGauge from './ScoreGauge.jsx';
 
 const MARKET_META = {
   au: {
@@ -28,7 +29,7 @@ const MARKET_META = {
   },
 };
 
-export default function LandingPage({ onSelect, preloadState }) {
+export default function LandingPage({ onSelect, preloadState, avgScores }) {
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -65,9 +66,16 @@ export default function LandingPage({ onSelect, preloadState }) {
                 onMouseEnter={() => setHovered(key)}
                 onMouseLeave={() => setHovered(null)}
               >
-                <div className="landing-card-flag">{m.flag}</div>
-                <div className="landing-card-name">{m.label}</div>
-                <div className="landing-card-region">{meta.regionLabel}</div>
+                <div className="landing-card-top">
+                  <div>
+                    <div className="landing-card-flag">{m.flag}</div>
+                    <div className="landing-card-name">{m.label}</div>
+                    <div className="landing-card-region">{meta.regionLabel}</div>
+                  </div>
+                  <div className="landing-card-gauge">
+                    <ScoreGauge score={avgScores[key] ?? null} label="AVG SCORE" size={88} />
+                  </div>
+                </div>
                 <div className="landing-card-desc">{meta.description}</div>
                 <div className="landing-card-footer">
                   <span className="landing-card-census">{meta.census}</span>

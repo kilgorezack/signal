@@ -10,9 +10,15 @@ import { useInsights } from './hooks/useInsights.js';
 import { useComparison } from './hooks/useComparison.js';
 import { MARKETS } from './config.js';
 
+const LS_MARKET_KEY = 'signal_last_market';
+
 export default function App() {
-  const [showLanding, setShowLanding] = useState(true);
-  const [market, setMarket]           = useState(null);
+  // Restore last market from localStorage — skip landing for returning users
+  const lastMarket = localStorage.getItem(LS_MARKET_KEY);
+  const validLast  = lastMarket && MARKETS[lastMarket] ? lastMarket : null;
+
+  const [showLanding, setShowLanding] = useState(!validLast);
+  const [market, setMarket]           = useState(validLast);
   const [activeTab, setActiveTab]     = useState('residential'); // 'residential' | 'business'
 
   const [geojson, setGeojson]                   = useState(null);
@@ -26,6 +32,8 @@ export default function App() {
   const preloadCache  = useRef({});
   // Per-market load status for landing page indicators: 'loading' | 'ready'
   const [preloadState, setPreloadState] = useState({});
+  // Average opportunity scores per market (computed from preloaded GeoJSON)
+  const [avgScores, setAvgScores] = useState({});
 
   const { selectedId, regionData, selectRegion, clearRegion } = useRegion();
   const insights  = useInsights();
@@ -46,10 +54,18 @@ export default function App() {
         .then(([res, biz]) => {
           preloadCache.current[key] = { res, biz };
           setPreloadState(s => ({ ...s, [key]: 'ready' }));
+          // Compute average opportunity score from residential features
+          const scores = res.features
+            .map(f => f.properties?.opportunity_score)
+            .filter(v => v != null);
+          if (scores.length) {
+            const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+            setAvgScores(s => ({ ...s, [key]: avg }));
+          }
         })
         .catch(err => {
           console.warn(`Preload failed for ${key}:`, err);
-          preloadCache.current[key] = null; // mark as failed so main load handles it
+          preloadCache.current[key] = null;
           setPreloadState(s => ({ ...s, [key]: 'error' }));
         });
     });
@@ -86,11 +102,20 @@ export default function App() {
   }, [market]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleLandingSelect = useCallback((m) => {
+    localStorage.setItem(LS_MARKET_KEY, m);
     setMarket(m);
     setShowLanding(false);
   }, []);
 
+  const handleGoToLanding = useCallback(() => {
+    clearRegion();
+    insights.clear();
+    comparison.clear();
+    setShowLanding(true);
+  }, [clearRegion, insights, comparison]);
+
   const handleMarketChange = useCallback((m) => {
+    localStorage.setItem(LS_MARKET_KEY, m);
     setMarket(m);
     clearRegion();
     insights.clear();
@@ -140,7 +165,7 @@ export default function App() {
 
   // Show landing until a market is chosen
   if (showLanding) {
-    return <LandingPage onSelect={handleLandingSelect} preloadState={preloadState} />;
+    return <LandingPage onSelect={handleLandingSelect} preloadState={preloadState} avgScores={avgScores} />;
   }
 
   return (
@@ -148,6 +173,9 @@ export default function App() {
       {/* Header */}
       <header className="app-header">
         <div className="app-logo">
+          <button className="btn-markets" onClick={handleGoToLanding} title="Change market">
+            ←
+          </button>
           <span className="app-logo-mark">◈</span>
           <span className="app-logo-name">Signal</span>
           <span className="app-logo-sub">Broadband Market Intelligence</span>

@@ -8,7 +8,8 @@ const CIRCUMFERENCE = 2 * Math.PI * R;
 const ARC_FRACTION = 0.75;
 const ARC_LENGTH = CIRCUMFERENCE * ARC_FRACTION;
 
-export default function ScoreGauge({ score }) {
+export default function ScoreGauge({ score, label = 'OPPORTUNITY', size = SIZE }) {
+  const scale = size / SIZE;
   const pct = score != null ? Math.max(0, Math.min(100, score)) / 100 : 0;
   const filled = pct * ARC_LENGTH;
   const color = scoreToHex(score);
@@ -18,7 +19,7 @@ export default function ScoreGauge({ score }) {
 
   return (
     <div className="score-gauge">
-      <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+      <svg width={size} height={size} viewBox={`0 0 ${SIZE} ${SIZE}`}>
         {/* Track */}
         <circle
           cx={SIZE / 2}
@@ -69,7 +70,7 @@ export default function ScoreGauge({ score }) {
           fontFamily="-apple-system, BlinkMacSystemFont, sans-serif"
           letterSpacing="0.06em"
         >
-          OPPORTUNITY
+          {label}
         </text>
       </svg>
     </div>
