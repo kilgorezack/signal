@@ -1,8 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import SignalMap from './map/SignalMap.jsx';
 import RegionPanel from './components/RegionPanel.jsx';
 import BusinessPanel from './components/BusinessPanel.jsx';
 import ComparisonTray from './components/ComparisonTray.jsx';
+import LandingPage from './components/LandingPage.jsx';
 import Toast from './components/Toast.jsx';
 import { useRegion } from './hooks/useRegion.js';
 import { useInsights } from './hooks/useInsights.js';
@@ -10,47 +11,84 @@ import { useComparison } from './hooks/useComparison.js';
 import { MARKETS } from './config.js';
 
 export default function App() {
-  const [market, setMarket]       = useState('au'); // 'au' | 'uk'
-  const [activeTab, setActiveTab] = useState('residential'); // 'residential' | 'business'
+  const [showLanding, setShowLanding] = useState(true);
+  const [market, setMarket]           = useState(null);
+  const [activeTab, setActiveTab]     = useState('residential'); // 'residential' | 'business'
 
-  const [geojson, setGeojson]               = useState(null);
-  const [geoError, setGeoError]             = useState(null);
-  const [businessGeojson, setBusinessGeojson] = useState(null);
+  const [geojson, setGeojson]                   = useState(null);
+  const [geoError, setGeoError]                 = useState(null);
+  const [businessGeojson, setBusinessGeojson]   = useState(null);
   const [businessGeoError, setBusinessGeoError] = useState(null);
 
   const [toast, setToast] = useState(null);
+
+  // Background preload cache: { au: {res, biz}, uk: {...}, ca: {...} }
+  const preloadCache  = useRef({});
+  // Per-market load status for landing page indicators: 'loading' | 'ready'
+  const [preloadState, setPreloadState] = useState({});
 
   const { selectedId, regionData, selectRegion, clearRegion } = useRegion();
   const insights  = useInsights();
   const comparison = useComparison();
 
-  const mkt = MARKETS[market];
-
-  // Load residential GeoJSON whenever market changes
+  // Kick off background fetches for all markets while landing page is shown
   useEffect(() => {
-    setGeojson(null);
-    setGeoError(null);
-    fetch(mkt.geojsonRes)
-      .then(r => {
-        if (!r.ok) throw new Error(`Failed to load map data (${r.status})`);
-        return r.json();
-      })
-      .then(setGeojson)
-      .catch(err => { console.error(err); setGeoError(err.message); });
+    if (!showLanding) return;
+    Object.entries(MARKETS).forEach(([key, m]) => {
+      if (preloadCache.current[key]) return; // already started
+      preloadCache.current[key] = {};
+      setPreloadState(s => ({ ...s, [key]: 'loading' }));
+
+      const resPromise = fetch(m.geojsonRes).then(r => r.ok ? r.json() : Promise.reject(r.status));
+      const bizPromise = fetch(m.geojsonBiz).then(r => r.ok ? r.json() : Promise.reject(r.status));
+
+      Promise.all([resPromise, bizPromise])
+        .then(([res, biz]) => {
+          preloadCache.current[key] = { res, biz };
+          setPreloadState(s => ({ ...s, [key]: 'ready' }));
+        })
+        .catch(err => {
+          console.warn(`Preload failed for ${key}:`, err);
+          preloadCache.current[key] = null; // mark as failed so main load handles it
+          setPreloadState(s => ({ ...s, [key]: 'error' }));
+        });
+    });
+  }, [showLanding]);
+
+  // Resolve GeoJSON from cache or re-fetch when market is set
+  useEffect(() => {
+    if (!market) return;
+    const cached = preloadCache.current[market];
+
+    if (cached?.res) {
+      setGeojson(cached.res);
+      setGeoError(null);
+    } else {
+      setGeojson(null);
+      setGeoError(null);
+      fetch(MARKETS[market].geojsonRes)
+        .then(r => { if (!r.ok) throw new Error(`Failed to load map data (${r.status})`); return r.json(); })
+        .then(setGeojson)
+        .catch(err => { console.error(err); setGeoError(err.message); });
+    }
+
+    if (cached?.biz) {
+      setBusinessGeojson(cached.biz);
+      setBusinessGeoError(null);
+    } else {
+      setBusinessGeojson(null);
+      setBusinessGeoError(null);
+      fetch(MARKETS[market].geojsonBiz)
+        .then(r => { if (!r.ok) throw new Error(`Failed to load business data (${r.status})`); return r.json(); })
+        .then(setBusinessGeojson)
+        .catch(err => { console.error(err); setBusinessGeoError(err.message); });
+    }
   }, [market]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Load business GeoJSON whenever market changes
-  useEffect(() => {
-    setBusinessGeojson(null);
-    setBusinessGeoError(null);
-    fetch(mkt.geojsonBiz)
-      .then(r => {
-        if (!r.ok) throw new Error(`Failed to load business data (${r.status})`);
-        return r.json();
-      })
-      .then(setBusinessGeojson)
-      .catch(err => { console.error(err); setBusinessGeoError(err.message); });
-  }, [market]); // eslint-disable-line react-hooks/exhaustive-deps
+  const handleLandingSelect = useCallback((m) => {
+    setMarket(m);
+    setShowLanding(false);
+  }, []);
 
   const handleMarketChange = useCallback((m) => {
     setMarket(m);
@@ -92,12 +130,18 @@ export default function App() {
     setTimeout(() => setToast(null), 3000);
   }
 
-  const isBusiness    = activeTab === 'business';
+  const mkt            = market ? MARKETS[market] : null;
+  const isBusiness     = activeTab === 'business';
   const activeGeojson  = isBusiness ? businessGeojson : geojson;
   const activeGeoError = isBusiness ? businessGeoError : geoError;
   const scoreField     = isBusiness ? 'smartbiz_score' : 'opportunity_score';
   const regionCount    = activeGeojson?.features?.length ?? 0;
   const buildCmd       = market === 'uk' ? 'build:data:uk' : market === 'ca' ? 'build:data:ca' : 'build:data';
+
+  // Show landing until a market is chosen
+  if (showLanding) {
+    return <LandingPage onSelect={handleLandingSelect} preloadState={preloadState} />;
+  }
 
   return (
     <div className="app">
@@ -141,7 +185,7 @@ export default function App() {
             ))}
           </div>
 
-          {activeGeojson && (
+          {activeGeojson && mkt && (
             <span className="app-data-badge">
               {regionCount} {market === 'uk' ? 'LADs' : market === 'ca' ? 'Census Divisions' : 'SA4 regions'} · {mkt.dataBadge}
             </span>
