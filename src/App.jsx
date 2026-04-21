@@ -32,8 +32,6 @@ export default function App() {
   const preloadCache  = useRef({});
   // Per-market load status for landing page indicators: 'loading' | 'ready'
   const [preloadState, setPreloadState] = useState({});
-  // Average opportunity scores per market (computed from preloaded GeoJSON)
-  const [avgScores, setAvgScores] = useState({});
 
   const { selectedId, regionData, selectRegion, clearRegion } = useRegion();
   const insights  = useInsights();
@@ -54,14 +52,6 @@ export default function App() {
         .then(([res, biz]) => {
           preloadCache.current[key] = { res, biz };
           setPreloadState(s => ({ ...s, [key]: 'ready' }));
-          // Compute average opportunity score from residential features
-          const scores = res.features
-            .map(f => f.properties?.opportunity_score)
-            .filter(v => v != null);
-          if (scores.length) {
-            const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
-            setAvgScores(s => ({ ...s, [key]: avg }));
-          }
         })
         .catch(err => {
           console.warn(`Preload failed for ${key}:`, err);
@@ -165,21 +155,18 @@ export default function App() {
 
   // Show landing until a market is chosen
   if (showLanding) {
-    return <LandingPage onSelect={handleLandingSelect} preloadState={preloadState} avgScores={avgScores} />;
+    return <LandingPage onSelect={handleLandingSelect} preloadState={preloadState} />;
   }
 
   return (
     <div className="app">
       {/* Header */}
       <header className="app-header">
-        <div className="app-logo">
-          <button className="btn-markets" onClick={handleGoToLanding} title="Change market">
-            ←
-          </button>
+        <button className="app-logo" onClick={handleGoToLanding} title="Change market">
           <span className="app-logo-mark">◈</span>
           <span className="app-logo-name">Signal</span>
           <span className="app-logo-sub">Broadband Market Intelligence</span>
-        </div>
+        </button>
 
         {/* Tab switcher */}
         <div className="app-tabs">

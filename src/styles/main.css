@@ -43,180 +43,210 @@ html, body, #root {
 
 /* ─── App Layout ──────────────────────────────────────────────────────────── */
 .app {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
+/* ─── Navigation Bar — Apple Liquid Glass ────────────────────────────────── */
+/*
+ * Floats above the map so the backdrop-filter has live content to blur.
+ * Apple HIG: bars use vibrancy + translucency, never opaque fills.
+ */
 .app-header {
-  height: 52px;
-  min-height: 52px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  background: var(--bg-surface);
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 16px;
   z-index: 100;
+
+  /* Liquid glass material — dark tint + heavy blur */
+  background: rgba(8, 12, 22, 0.60);
+  backdrop-filter: blur(48px) saturate(200%) brightness(1.05);
+  -webkit-backdrop-filter: blur(48px) saturate(200%) brightness(1.05);
+
+  /* Specular rim on bottom edge only; no hard border */
+  box-shadow:
+    inset 0 -0.5px 0 rgba(255, 255, 255, 0.07),  /* bottom specular line */
+    0 1px 0 rgba(0, 0, 0, 0.35);                   /* subtle ground shadow */
 }
 
+/* ─── Logo — clickable, returns to landing ───────────────────────────────── */
 .app-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  margin: 0 -8px;
+  border-radius: 10px;
+  transition: background 0.18s ease;
+  text-decoration: none;
+}
+
+.app-logo:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.app-logo-mark {
+  font-size: 19px;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.app-logo-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.app-logo-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.30);
+  font-weight: 400;
+  padding-left: 10px;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.12);
+  letter-spacing: 0.01em;
+}
+
+/* ─── Mode Tabs — segmented control ─────────────────────────────────────── */
+.app-tabs {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 12px;
+
+  /* Glass container: lighter tint so active pill reads against it */
+  background: rgba(255, 255, 255, 0.07);
+  border: 0.5px solid rgba(255, 255, 255, 0.11);
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.12),
+    0 2px 12px rgba(0, 0, 0, 0.20);
+}
+
+.app-tab {
+  position: relative;
+  padding: 5px 20px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.38);
+  transition:
+    color      0.20s ease,
+    background 0.20s ease,
+    box-shadow 0.20s ease;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-tab:hover {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Active pill — bright glass chip, top-lit */
+.app-tab--active {
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.26),  /* top light catch */
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.18),         /* bottom depth */
+    0 1px 6px rgba(0, 0, 0, 0.22),                 /* lift */
+    0 0 0 0.5px rgba(255, 255, 255, 0.10);          /* hairline */
+}
+
+/* Business active — indigo-tinted glass */
+.app-tab--business.app-tab--active {
+  color: #d4bbff;
+  background: rgba(99, 102, 241, 0.22);
+  box-shadow:
+    inset 0 0.5px 0 rgba(180, 150, 255, 0.35),
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.20),
+    0 1px 6px rgba(99, 102, 241, 0.22),
+    0 0 0 0.5px rgba(130, 100, 255, 0.18);
+}
+
+/* ─── Header right ────────────────────────────────────────────────────────── */
+.app-header-right {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.app-logo-mark {
-  font-size: 20px;
-  color: var(--accent);
-}
-
-.app-logo-name {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-}
-
-.app-logo-sub {
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 400;
-  padding-left: 8px;
-  border-left: 1px solid var(--border-subtle);
-}
-
-/* ─── Mode Tabs — Liquid Glass (Apple HIG) ───────────────────────────────── */
-.app-tabs {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  padding: 3px;
-  border-radius: 12px;
-
-  /* Frosted glass container */
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-
-  /* Edge refraction: faint white border + subtle outer glow */
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.10),  /* top specular highlight */
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15),        /* bottom shadow depth */
-    0 4px 20px rgba(0, 0, 0, 0.30),             /* ambient lift shadow */
-    0 1px 4px rgba(0, 0, 0, 0.20);
-}
-
-.app-tab {
-  position: relative;
-  padding: 5px 18px;
-  border-radius: 9px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.42);
-  transition:
-    color        0.22s ease,
-    background   0.22s ease,
-    box-shadow   0.22s ease,
-    transform    0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
-  white-space: nowrap;
-}
-
-.app-tab:hover {
-  color: rgba(255, 255, 255, 0.72);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-/* Active pill — thicker, brighter glass with specular rim */
-.app-tab--active {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.13);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),   /* top specular rim */
-    inset 0 -1px 0 rgba(0, 0, 0, 0.18),          /* bottom depth */
-    0 2px 8px rgba(0, 0, 0, 0.28),               /* lift shadow */
-    0 0 0 0.5px rgba(255, 255, 255, 0.08);        /* hairline edge */
-  transform: translateY(-0.5px);
-}
-
-/* Business tab active — indigo tint baked into the glass */
-.app-tab--business.app-tab--active {
-  color: #c4b5fd;  /* violet-300 — soft, readable indigo on dark */
-  background: rgba(99, 102, 241, 0.20);
-  box-shadow:
-    inset 0 1px 0 rgba(167, 139, 250, 0.30),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.18),
-    0 2px 8px rgba(99, 102, 241, 0.25),
-    0 0 0 0.5px rgba(99, 102, 241, 0.20);
-}
-
-/* ─── Header right section ───────────────────────────────────────────────── */
-.app-header-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* ─── Market selector — liquid glass pill ────────────────────────────────── */
+/* ─── Market selector — same glass material as tabs ─────────────────────── */
 .market-selector {
   display: flex;
   align-items: center;
-  gap: 3px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  gap: 2px;
   padding: 3px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 0.5px solid rgba(255, 255, 255, 0.11);
+  box-shadow:
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.12),
+    0 2px 12px rgba(0, 0, 0, 0.20);
 }
 
 .market-btn {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 3px 10px;
-  border-radius: 14px;
+  padding: 4px 11px;
+  border-radius: 16px;
   border: none;
   background: transparent;
-  color: var(--text-muted);
-  font-size: 11px;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 11.5px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition: color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
   white-space: nowrap;
+  letter-spacing: 0.005em;
+  -webkit-font-smoothing: antialiased;
 }
 
 .market-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.65);
 }
 
+/* Active market — same top-lit glass chip */
 .market-btn--active {
-  background: rgba(255, 255, 255, 0.13);
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.14);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.26),
+    inset 0 -0.5px 0 rgba(0, 0, 0, 0.18),
+    0 1px 6px rgba(0, 0, 0, 0.22),
+    0 0 0 0.5px rgba(255, 255, 255, 0.10);
 }
 
-.market-flag { font-size: 14px; line-height: 1; }
-.market-label { font-size: 11px; }
+.market-flag  { font-size: 14px; line-height: 1; }
+.market-label { font-size: 11.5px; }
 
+/* ─── Data badge ─────────────────────────────────────────────────────────── */
 .app-data-badge {
-  font-size: 11px;
-  color: var(--text-muted);
-  background: var(--bg-raised);
-  border: 1px solid var(--border-subtle);
-  border-radius: 20px;
-  padding: 3px 10px;
+  font-size: 10.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.30);
+  letter-spacing: 0.01em;
 }
 
+/* ─── Main canvas — fills entire screen, map bleeds under nav ────────────── */
 .app-main {
-  flex: 1;
-  position: relative;
+  position: absolute;
+  inset: 0;
   overflow: hidden;
 }
 
@@ -319,10 +349,10 @@ html, body, #root {
 /* ─── Panel ───────────────────────────────────────────────────────────────── */
 .panel {
   position: absolute;
-  top: 16px;
+  top: 68px;
   right: 16px;
   width: 320px;
-  max-height: calc(100vh - 52px - 32px);
+  max-height: calc(100vh - 56px - 28px);
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -1059,34 +1089,3 @@ html, body, #root {
 .landing-card-status.loading { color: var(--score-mid); }
 .landing-card-status.idle    { color: var(--text-muted); }
 
-/* ─── Landing card gauge layout ──────────────────────────────────────────── */
-.landing-card-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.landing-card-gauge {
-  flex-shrink: 0;
-  opacity: 0.9;
-}
-
-/* ─── Markets back button ─────────────────────────────────────────────────── */
-.btn-markets {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 16px;
-  cursor: pointer;
-  padding: 4px 6px;
-  border-radius: var(--radius-sm);
-  line-height: 1;
-  transition: color 120ms, background 120ms;
-  margin-right: 2px;
-}
-
-.btn-markets:hover {
-  color: var(--text-primary);
-  background: var(--bg-hover);
-}
