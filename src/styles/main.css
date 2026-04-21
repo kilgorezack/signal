@@ -1058,3 +1058,35 @@ html, body, #root {
 .landing-card-status.ready   { color: var(--score-high); }
 .landing-card-status.loading { color: var(--score-mid); }
 .landing-card-status.idle    { color: var(--text-muted); }
+
+/* ─── Landing card gauge layout ──────────────────────────────────────────── */
+.landing-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.landing-card-gauge {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+/* ─── Markets back button ─────────────────────────────────────────────────── */
+.btn-markets {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  transition: color 120ms, background 120ms;
+  margin-right: 2px;
+}
+
+.btn-markets:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
