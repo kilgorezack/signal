@@ -315,7 +315,9 @@ export default async function handler(req, res) {
     const model = genAI.getGenerativeModel({
       model: 'gemini-2.5-flash',
       generationConfig: {
-        maxOutputTokens: 1200,
+        // gemini-2.5-flash uses thinking tokens that count against this budget,
+        // so it must be generous enough to cover reasoning + 3 paragraphs of output.
+        maxOutputTokens: 4096,
         temperature: 0.7,
       },
     });
