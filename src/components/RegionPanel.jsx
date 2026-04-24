@@ -156,11 +156,23 @@ export default function RegionPanel({
                     ? `CA$${Math.round(d.median_household_income_annual / 1000)}k`
                     : '—'}
                 />
+              : d.market === 'za'
+              ? <StatCard
+                  label="Electricity Access"
+                  value={d.electricity_cooking_pct != null
+                    ? `${d.electricity_cooking_pct.toFixed(0)}%`
+                    : '—'}
+                />
               : <StatCard label="Avg Annual Income" value={formatAnnualIncome(d.median_household_income_weekly)} />
             }
             <StatCard
-              label={d.market === 'uk' ? 'Detached Houses' : 'Detached Homes'}
-              value={formatPercent(d.market === 'uk' ? d.detached_pct : (d.separate_house_pct ?? d.detached_pct), 0)}
+              label={d.market === 'uk' ? 'Detached Houses' : d.market === 'za' ? 'Formal House' : 'Detached Homes'}
+              value={formatPercent(
+                d.market === 'uk' ? d.detached_pct
+                : d.market === 'za' ? d.separate_house_pct
+                : (d.separate_house_pct ?? d.detached_pct),
+                0
+              )}
             />
             <StatCard label="Home Ownership" value={formatPercent(homeOwnershipPct, 0)} />
             <StatCard label="Median Age" value={formatAge(d.median_age)} />
@@ -168,6 +180,8 @@ export default function RegionPanel({
               ? <StatCard label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 0)} />
               : d.market === 'ca'
               ? <StatCard label="Apartment Dwellers" value={formatPercent(d.apartment_pct, 0)} />
+              : d.market === 'za'
+              ? <StatCard label="Informal Dwellings" value={formatPercent(d.informal_dwelling_pct, 0)} />
               : <StatCard label="Internet Access" value={formatPercent(d.internet_access_pct, 0)} />
             }
           </div>
@@ -193,7 +207,9 @@ export default function RegionPanel({
         {d.income_distribution && (
           <div className="panel-section">
             <DistributionChart
-              title={d.market === 'uk' ? 'Socioeconomic Profile (NS-SeC)' : 'Income Ranges'}
+              title={d.market === 'uk' ? 'Socioeconomic Profile (NS-SeC)'
+                : d.market === 'za' ? 'Service Access Profile (income proxy)'
+                : 'Income Ranges'}
               data={d.income_distribution}
               unit="%"
               color="var(--score-mid)"
@@ -206,7 +222,9 @@ export default function RegionPanel({
         <div className="panel-section">
           <SectionLabel>Market Opportunities</SectionLabel>
           <OpportunityRow
-            label={d.market === 'uk' ? 'Routine/Semi-routine Workers' : 'Lower Income (<$1k/wk)'}
+            label={d.market === 'uk' ? 'Routine/Semi-routine Workers'
+              : d.market === 'za' ? 'Lower Income (<R3,200/mo)'
+              : 'Lower Income (<$1k/wk)'}
             value={lowerIncomePct}
           />
           <OpportunityRow label="Parental Control Candidates" value={d.households_with_children_pct} />
@@ -229,13 +247,20 @@ export default function RegionPanel({
             : d.market === 'ca'
             ? <MetricRow label="Median Household Income" value={d.median_household_income_annual != null
                 ? `CA$${Math.round(d.median_household_income_annual).toLocaleString('en-CA')}/yr` : '—'} />
+            : d.market === 'za'
+            ? <>
+                <MetricRow label="Electricity Access" value={formatPercent(d.electricity_cooking_pct, 0)} />
+                <MetricRow label="Piped Water Access" value={formatPercent(d.piped_water_pct, 0)} />
+                <MetricRow label="Flush Toilet Access" value={formatPercent(d.flush_toilet_pct, 0)} />
+              </>
+
             : <MetricRow label="Median Income" value={d.median_household_income_weekly
                 ? `AU$${Math.round(d.median_household_income_weekly).toLocaleString('en-AU')}/wk` : '—'} />
           }
           <MetricRow label="Avg Household Size" value={formatHouseholdSize(d.avg_household_size)} />
           <MetricRow label="Population Density" value={formatDensity(d.population_density_per_sqkm)} />
           <MetricRow label="Youth (0–19)" value={formatPercent(d.youth_pct, 1)} />
-          {d.market === 'ca'
+          {d.market === 'ca' || d.market === 'za'
             ? <MetricRow label="Home Ownership" value={formatPercent(d.owned_pct, 1)} />
             : <MetricRow label="Owned Outright" value={formatPercent(d.owned_outright_pct, 1)} />
           }
@@ -243,8 +268,17 @@ export default function RegionPanel({
           {d.market === 'uk' && (
             <MetricRow label="Terraced Houses" value={formatPercent(d.terraced_pct, 1)} />
           )}
-          <MetricRow label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 1)} />
-          <MetricRow label="Apartments" value={formatPercent(d.apartment_pct, 1)} />
+          {d.market === 'za'
+            ? <>
+                <MetricRow label="Formal Dwellings" value={formatPercent(d.formal_dwelling_pct, 1)} />
+                <MetricRow label="Informal Dwellings" value={formatPercent(d.informal_dwelling_pct, 1)} />
+                <MetricRow label="Traditional Dwellings" value={formatPercent(d.traditional_dwelling_pct, 1)} />
+              </>
+            : <>
+                <MetricRow label="Semi-Detached" value={formatPercent(d.semi_detached_pct, 1)} />
+                <MetricRow label="Apartments" value={formatPercent(d.apartment_pct, 1)} />
+              </>
+          }
         </div>
 
         {/* ── AI Insights ── */}

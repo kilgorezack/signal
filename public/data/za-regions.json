@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "ETH",
+    "name": "Ethekwini",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 59,
+    "centroid_lat": -29.885,
+    "centroid_lng": 30.8725
+  },
+  {
+    "id": "NC073",
+    "name": "Emthanjeni",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 59,
+    "centroid_lat": -30.6905,
+    "centroid_lng": 23.903
+  },
+  {
+    "id": "KZN225",
+    "name": "The Msunduzi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 58,
+    "centroid_lat": -29.6345,
+    "centroid_lng": 30.3105
+  },
+  {
+    "id": "NW396",
+    "name": "Lekwa-Teemane",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 58,
+    "centroid_lat": -27.6375,
+    "centroid_lng": 25.3325
+  },
+  {
+    "id": "NC062",
+    "name": "Nama Khoi",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 58,
+    "centroid_lat": -29.391,
+    "centroid_lng": 17.8995
+  },
+  {
+    "id": "FS201",
+    "name": "Moqhaka",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -27.5685,
+    "centroid_lng": 27.1975
+  },
+  {
+    "id": "FS194",
+    "name": "Maluti a Phofung",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -28.3745,
+    "centroid_lng": 29.072
+  },
+  {
+    "id": "FS162",
+    "name": "Kopanong",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -29.9475,
+    "centroid_lng": 25.61
+  },
+  {
+    "id": "JHB",
+    "name": "City of Johannesburg",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -26.2145,
+    "centroid_lng": 27.964
+  },
+  {
+    "id": "KZN252",
+    "name": "Newcastle",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -27.6965,
+    "centroid_lng": 29.9335
+  },
+  {
+    "id": "KZN291",
+    "name": "Mandeni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -29.12,
+    "centroid_lng": 31.496
+  },
+  {
+    "id": "NC065",
+    "name": "Hantam",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -31.1385,
+    "centroid_lng": 20.09
+  },
+  {
+    "id": "NC066",
+    "name": "Karoo Hoogland",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -31.596,
+    "centroid_lng": 21.143
+  },
+  {
+    "id": "WC053",
+    "name": "Beaufort West",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 57,
+    "centroid_lat": -32.3105,
+    "centroid_lng": 22.705
+  },
+  {
+    "id": "EC101",
+    "name": "Camdeboo",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -32.376,
+    "centroid_lng": 24.0945
+  },
+  {
+    "id": "NMA",
+    "name": "Nelson Mandela Bay",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -33.801,
+    "centroid_lng": 25.53
+  },
+  {
+    "id": "FS185",
+    "name": "Nala",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -27.601,
+    "centroid_lng": 26.4565
+  },
+  {
+    "id": "MAN",
+    "name": "Mangaung",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -29.147,
+    "centroid_lng": 26.4065
+  },
+  {
+    "id": "KZN282",
+    "name": "uMhlathuze",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -28.7885,
+    "centroid_lng": 31.93
+  },
+  {
+    "id": "NC061",
+    "name": "Richtersveld",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 56,
+    "centroid_lat": -28.774,
+    "centroid_lng": 17.0085
+  },
+  {
+    "id": "EC109",
+    "name": "Kou-Kamma",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -33.857,
+    "centroid_lng": 24.0285
+  },
+  {
+    "id": "EC131",
+    "name": "Inxuba Yethemba",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -31.864,
+    "centroid_lng": 25.3555
+  },
+  {
+    "id": "EKU",
+    "name": "Ekurhuleni",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -26.1845,
+    "centroid_lng": 28.2965
+  },
+  {
+    "id": "NC093",
+    "name": "Magareng",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -28.175,
+    "centroid_lng": 24.7815
+  },
+  {
+    "id": "NC094",
+    "name": "Phokwane",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -27.8,
+    "centroid_lng": 24.832
+  },
+  {
+    "id": "NC067",
+    "name": "KhÃ¢i-Ma",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 55,
+    "centroid_lat": -29.4955,
+    "centroid_lng": 19.313
+  },
+  {
+    "id": "FS181",
+    "name": "Masilonyana",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -28.627,
+    "centroid_lng": 26.549
+  },
+  {
+    "id": "FS183",
+    "name": "Tswelopele",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -28.0775,
+    "centroid_lng": 25.896
+  },
+  {
+    "id": "FS161",
+    "name": "Letsemeng",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -29.431,
+    "centroid_lng": 25.0595
+  },
+  {
+    "id": "KZN216",
+    "name": "Hibiscus Coast",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -30.8085,
+    "centroid_lng": 30.3525
+  },
+  {
+    "id": "KZN275",
+    "name": "Mtubatuba",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -28.28,
+    "centroid_lng": 32.2705
+  },
+  {
+    "id": "KZN281",
+    "name": "Mfolozi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -28.5555,
+    "centroid_lng": 32.1255
+  },
+  {
+    "id": "NW371",
+    "name": "Moretele",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -25.18,
+    "centroid_lng": 28.0515
+  },
+  {
+    "id": "NW393",
+    "name": "Mamusa",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -27.2,
+    "centroid_lng": 25.2315
+  },
+  {
+    "id": "NC075",
+    "name": "Renosterberg",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -30.286,
+    "centroid_lng": 24.396
+  },
+  {
+    "id": "NC077",
+    "name": "Siyathemba",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -29.592,
+    "centroid_lng": 22.536
+  },
+  {
+    "id": "NC071",
+    "name": "Ubuntu",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -31.403,
+    "centroid_lng": 23.0875
+  },
+  {
+    "id": "NC072",
+    "name": "Umsobomvu",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -30.822,
+    "centroid_lng": 25.0355
+  },
+  {
+    "id": "WC026",
+    "name": "Langeberg",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -33.7905,
+    "centroid_lng": 20.042
+  },
+  {
+    "id": "CPT",
+    "name": "City of Cape Town",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 54,
+    "centroid_lat": -33.9145,
+    "centroid_lng": 18.656
+  },
+  {
+    "id": "EC102",
+    "name": "Blue Crane Route",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -32.778,
+    "centroid_lng": 25.3495
+  },
+  {
+    "id": "FS203",
+    "name": "Ngwathe",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -27.2815,
+    "centroid_lng": 27.7095
+  },
+  {
+    "id": "FS184",
+    "name": "Matjhabeng",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -27.9615,
+    "centroid_lng": 26.934
+  },
+  {
+    "id": "FS196",
+    "name": "Mantsopa",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -29.15,
+    "centroid_lng": 27.234
+  },
+  {
+    "id": "FS163",
+    "name": "Mohokare",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -30.1315,
+    "centroid_lng": 26.7755
+  },
+  {
+    "id": "GT421",
+    "name": "Emfuleni",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -26.609,
+    "centroid_lng": 27.797
+  },
+  {
+    "id": "KZN292",
+    "name": "KwaDukuza",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -29.354,
+    "centroid_lng": 31.2615
+  },
+  {
+    "id": "KZN227",
+    "name": "Richmond",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -29.9165,
+    "centroid_lng": 30.2805
+  },
+  {
+    "id": "KZN265",
+    "name": "Nongoma",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -27.9065,
+    "centroid_lng": 31.744
+  },
+  {
+    "id": "MP315",
+    "name": "Thembisile",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -25.49,
+    "centroid_lng": 28.9885
+  },
+  {
+    "id": "NW404",
+    "name": "Maquassi Hills",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -27.2855,
+    "centroid_lng": 26.062
+  },
+  {
+    "id": "NW394",
+    "name": "Greater Taung",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -27.552,
+    "centroid_lng": 24.492
+  },
+  {
+    "id": "NC064",
+    "name": "Kamiesberg",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -30.504,
+    "centroid_lng": 18.1355
+  },
+  {
+    "id": "NC086",
+    "name": "Kgatelopele",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -28.2335,
+    "centroid_lng": 23.6265
+  },
+  {
+    "id": "WC052",
+    "name": "Prince Albert",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 53,
+    "centroid_lat": -32.9875,
+    "centroid_lng": 22.177
+  },
+  {
+    "id": "FS205",
+    "name": "Mafube",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -27.2805,
+    "centroid_lng": 28.621
+  },
+  {
+    "id": "FS191",
+    "name": "Setsoto",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -28.5695,
+    "centroid_lng": 27.5695
+  },
+  {
+    "id": "MP324",
+    "name": "Nkomazi",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -25.4765,
+    "centroid_lng": 31.6445
+  },
+  {
+    "id": "MP307",
+    "name": "Govan Mbeki",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -26.454,
+    "centroid_lng": 29.196
+  },
+  {
+    "id": "MP305",
+    "name": "Lekwa",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -26.8955,
+    "centroid_lng": 29.349
+  },
+  {
+    "id": "NW375",
+    "name": "Moses Kotane",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -25.121,
+    "centroid_lng": 26.9475
+  },
+  {
+    "id": "NW403",
+    "name": "City of Matlosana",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -26.832,
+    "centroid_lng": 26.4875
+  },
+  {
+    "id": "NW384",
+    "name": "Ditsobotla",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -26.1155,
+    "centroid_lng": 26.26
+  },
+  {
+    "id": "NW383",
+    "name": "Mafikeng",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 52,
+    "centroid_lat": -25.947,
+    "centroid_lng": 25.71
+  },
+  {
+    "id": "GT484",
+    "name": "Merafong City",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -26.369,
+    "centroid_lng": 27.393
+  },
+  {
+    "id": "KZN433",
+    "name": "Greater Kokstad",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -30.2885,
+    "centroid_lng": 29.328
+  },
+  {
+    "id": "KZN226",
+    "name": "Mkhambathini",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -29.846,
+    "centroid_lng": 30.5485
+  },
+  {
+    "id": "KZN222",
+    "name": "uMngeni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -29.4425,
+    "centroid_lng": 30.0485
+  },
+  {
+    "id": "KZN262",
+    "name": "UPhongolo",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -27.5405,
+    "centroid_lng": 31.541
+  },
+  {
+    "id": "LIM354",
+    "name": "Polokwane",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -23.9545,
+    "centroid_lng": 29.524
+  },
+  {
+    "id": "MP316",
+    "name": "Dr JS Moroka",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -25.115,
+    "centroid_lng": 28.7535
+  },
+  {
+    "id": "WC022",
+    "name": "Witzenberg",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -32.904,
+    "centroid_lng": 19.7485
+  },
+  {
+    "id": "WC042",
+    "name": "Hessequa",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -34.1175,
+    "centroid_lng": 21.2255
+  },
+  {
+    "id": "WC013",
+    "name": "Bergrivier",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 51,
+    "centroid_lat": -32.8115,
+    "centroid_lng": 18.6435
+  },
+  {
+    "id": "FS182",
+    "name": "Tokologo",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -28.3795,
+    "centroid_lng": 25.4305
+  },
+  {
+    "id": "FS193",
+    "name": "Nketoana",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -27.865,
+    "centroid_lng": 28.251
+  },
+  {
+    "id": "GT423",
+    "name": "Lesedi",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -26.424,
+    "centroid_lng": 28.52
+  },
+  {
+    "id": "KZN254",
+    "name": "Dannhauser",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -27.989,
+    "centroid_lng": 29.9665
+  },
+  {
+    "id": "KZN266",
+    "name": "Ulundi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -28.2055,
+    "centroid_lng": 31.331
+  },
+  {
+    "id": "MP313",
+    "name": "Steve Tshwete",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -25.8305,
+    "centroid_lng": 29.5225
+  },
+  {
+    "id": "NC092",
+    "name": "Dikgatlong",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -28.1975,
+    "centroid_lng": 24.1585
+  },
+  {
+    "id": "WC051",
+    "name": "Laingsburg",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -33.0155,
+    "centroid_lng": 20.9495
+  },
+  {
+    "id": "WC011",
+    "name": "Matzikama",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 50,
+    "centroid_lat": -31.2205,
+    "centroid_lng": 18.4265
+  },
+  {
+    "id": "EC126",
+    "name": "Ngqushwa",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -33.193,
+    "centroid_lng": 27.162
+  },
+  {
+    "id": "FS192",
+    "name": "Dihlabeng",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -28.3715,
+    "centroid_lng": 28.297
+  },
+  {
+    "id": "KZN241",
+    "name": "Endumeni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -28.1855,
+    "centroid_lng": 30.2785
+  },
+  {
+    "id": "LIM353",
+    "name": "Molemole",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -23.5225,
+    "centroid_lng": 29.5365
+  },
+  {
+    "id": "NW382",
+    "name": "Tswaing",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -26.5835,
+    "centroid_lng": 25.685
+  },
+  {
+    "id": "NC452",
+    "name": "Ga-Segonyana",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -27.5495,
+    "centroid_lng": 23.602
+  },
+  {
+    "id": "NC082",
+    "name": "Kai !Garib",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -28.882,
+    "centroid_lng": 20.409
+  },
+  {
+    "id": "WC041",
+    "name": "Kannaland",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 49,
+    "centroid_lat": -33.6165,
+    "centroid_lng": 21.2395
+  },
+  {
+    "id": "EC124",
+    "name": "Amahlathi",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -32.468,
+    "centroid_lng": 27.351
+  },
+  {
+    "id": "EC106",
+    "name": "Sundays River Valley",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -33.547,
+    "centroid_lng": 25.5825
+  },
+  {
+    "id": "EC136",
+    "name": "Emalahleni",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -31.5855,
+    "centroid_lng": 27.1995
+  },
+  {
+    "id": "EC142",
+    "name": "Senqu",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -30.8675,
+    "centroid_lng": 27.58
+  },
+  {
+    "id": "KZN224",
+    "name": "Impendle",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -29.5345,
+    "centroid_lng": 29.7
+  },
+  {
+    "id": "KZN242",
+    "name": "Nqutu",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -28.298,
+    "centroid_lng": 30.772
+  },
+  {
+    "id": "MP325",
+    "name": "Bushbuckridge",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -24.5845,
+    "centroid_lng": 31.4145
+  },
+  {
+    "id": "NW373",
+    "name": "Rustenburg",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -25.7025,
+    "centroid_lng": 27.3245
+  },
+  {
+    "id": "NW392",
+    "name": "Naledi",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -26.8145,
+    "centroid_lng": 24.844
+  },
+  {
+    "id": "NW381",
+    "name": "Ratlou",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -26.136,
+    "centroid_lng": 24.9875
+  },
+  {
+    "id": "NC091",
+    "name": "Sol Plaatjie",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -28.737,
+    "centroid_lng": 24.48
+  },
+  {
+    "id": "WC023",
+    "name": "Drakenstein",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -33.5035,
+    "centroid_lng": 18.9995
+  },
+  {
+    "id": "WC015",
+    "name": "Swartland",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 48,
+    "centroid_lat": -33.294,
+    "centroid_lng": 18.5345
+  },
+  {
+    "id": "BUF",
+    "name": "Buffalo City",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -32.979,
+    "centroid_lng": 27.62
+  },
+  {
+    "id": "EC104",
+    "name": "Makana",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -33.2525,
+    "centroid_lng": 26.4785
+  },
+  {
+    "id": "EC138",
+    "name": "Sakhisizwe",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -31.4675,
+    "centroid_lng": 27.8385
+  },
+  {
+    "id": "TSH",
+    "name": "City of Tshwane",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -25.594,
+    "centroid_lng": 28.494
+  },
+  {
+    "id": "KZN221",
+    "name": "uMshwathi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -29.3945,
+    "centroid_lng": 30.5975
+  },
+  {
+    "id": "LIM472",
+    "name": "Elias Motsoaledi",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -25.169,
+    "centroid_lng": 29.5225
+  },
+  {
+    "id": "NC451",
+    "name": "Joe Morolong",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -26.768,
+    "centroid_lng": 22.904
+  },
+  {
+    "id": "WC047",
+    "name": "Bitou",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 47,
+    "centroid_lat": -33.9465,
+    "centroid_lng": 23.4335
+  },
+  {
+    "id": "FS204",
+    "name": "Metsimaholo",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -26.9275,
+    "centroid_lng": 28.0545
+  },
+  {
+    "id": "KZN214",
+    "name": "UMuziwabantu",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -30.6475,
+    "centroid_lng": 29.8715
+  },
+  {
+    "id": "KZN223",
+    "name": "Mpofana",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -29.165,
+    "centroid_lng": 29.9405
+  },
+  {
+    "id": "KZN272",
+    "name": "Jozini",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -27.367,
+    "centroid_lng": 32.194
+  },
+  {
+    "id": "KZN284",
+    "name": "uMlalazi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -28.936,
+    "centroid_lng": 31.4325
+  },
+  {
+    "id": "LIM334",
+    "name": "Ba-Phalaborwa",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -23.681,
+    "centroid_lng": 31.182
+  },
+  {
+    "id": "NW374",
+    "name": "Kgetlengrivier",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -25.7505,
+    "centroid_lng": 26.835
+  },
+  {
+    "id": "NC074",
+    "name": "Kareeberg",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -30.601,
+    "centroid_lng": 22.158
+  },
+  {
+    "id": "NC084",
+    "name": "!Kheis",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -29.2135,
+    "centroid_lng": 21.672
+  },
+  {
+    "id": "WC025",
+    "name": "Breede Valley",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -33.585,
+    "centroid_lng": 19.765
+  },
+  {
+    "id": "WC045",
+    "name": "Oudtshoorn",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 46,
+    "centroid_lat": -33.6015,
+    "centroid_lng": 22.2255
+  },
+  {
+    "id": "EC122",
+    "name": "Mnquma",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -32.3505,
+    "centroid_lng": 28.191
+  },
+  {
+    "id": "EC108",
+    "name": "Kouga",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -33.914,
+    "centroid_lng": 24.852
+  },
+  {
+    "id": "EC157",
+    "name": "King Sabata Dalindyebo",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -31.7485,
+    "centroid_lng": 28.744
+  },
+  {
+    "id": "KZN212",
+    "name": "Umdoni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -30.3515,
+    "centroid_lng": 30.664
+  },
+  {
+    "id": "KZN213",
+    "name": "Umzumbe",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -30.486,
+    "centroid_lng": 30.3325
+  },
+  {
+    "id": "KZN263",
+    "name": "Abaqulusi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -27.8315,
+    "centroid_lng": 31.075
+  },
+  {
+    "id": "LIM355",
+    "name": "Lepele-Nkumpi",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -24.2925,
+    "centroid_lng": 29.699
+  },
+  {
+    "id": "LIM333",
+    "name": "Greater Tzaneen",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -23.858,
+    "centroid_lng": 30.2705
+  },
+  {
+    "id": "MP306",
+    "name": "Dipaleseng",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -26.784,
+    "centroid_lng": 28.6155
+  },
+  {
+    "id": "NW397",
+    "name": "Kagisano/Molopo",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -26.199,
+    "centroid_lng": 23.723
+  },
+  {
+    "id": "NC453",
+    "name": "Gamagara",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -27.67,
+    "centroid_lng": 23.0075
+  },
+  {
+    "id": "NC085",
+    "name": "Tsantsabane",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -27.8715,
+    "centroid_lng": 22.694
+  },
+  {
+    "id": "WC043",
+    "name": "Mossel Bay",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -34.0955,
+    "centroid_lng": 21.9975
+  },
+  {
+    "id": "WC031",
+    "name": "Theewaterskloof",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 45,
+    "centroid_lat": -34.1545,
+    "centroid_lng": 19.4685
+  },
+  {
+    "id": "EC127",
+    "name": "Nkonkobe",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -32.726,
+    "centroid_lng": 26.8175
+  },
+  {
+    "id": "EC128",
+    "name": "Nxuba",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -32.6225,
+    "centroid_lng": 26.2655
+  },
+  {
+    "id": "EC107",
+    "name": "Baviaans",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -33.253,
+    "centroid_lng": 23.7895
+  },
+  {
+    "id": "EC103",
+    "name": "Ikwezi",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -33.0395,
+    "centroid_lng": 24.5765
+  },
+  {
+    "id": "EC133",
+    "name": "Inkwanca",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -31.517,
+    "centroid_lng": 26.4625
+  },
+  {
+    "id": "EC134",
+    "name": "Lukanji",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -32.06,
+    "centroid_lng": 27.006
+  },
+  {
+    "id": "EC132",
+    "name": "Tsolwana",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -31.8515,
+    "centroid_lng": 26.03
+  },
+  {
+    "id": "EC144",
+    "name": "Gariep",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -30.984,
+    "centroid_lng": 26.0765
+  },
+  {
+    "id": "EC143",
+    "name": "Maletswai",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -31.025,
+    "centroid_lng": 26.859
+  },
+  {
+    "id": "FS164",
+    "name": "Naledi",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -29.6965,
+    "centroid_lng": 26.7125
+  },
+  {
+    "id": "GT482",
+    "name": "Randfontein",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.177,
+    "centroid_lng": 27.6095
+  },
+  {
+    "id": "GT483",
+    "name": "Westonaria",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.4305,
+    "centroid_lng": 27.6745
+  },
+  {
+    "id": "KZN431",
+    "name": "Ingwe",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -29.872,
+    "centroid_lng": 29.799
+  },
+  {
+    "id": "KZN432",
+    "name": "Kwa Sani",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -29.7375,
+    "centroid_lng": 29.394
+  },
+  {
+    "id": "KZN215",
+    "name": "Ezingoleni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -30.759,
+    "centroid_lng": 30.1785
+  },
+  {
+    "id": "KZN211",
+    "name": "Vulamehlo",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -30.2135,
+    "centroid_lng": 30.576
+  },
+  {
+    "id": "KZN274",
+    "name": "Hlabisa",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -28.174,
+    "centroid_lng": 31.953
+  },
+  {
+    "id": "KZN273",
+    "name": "The Big 5 False Bay",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -27.8495,
+    "centroid_lng": 32.356
+  },
+  {
+    "id": "KZN232",
+    "name": "Emnambithi/Ladysmith",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -28.4225,
+    "centroid_lng": 29.7275
+  },
+  {
+    "id": "KZN236",
+    "name": "Imbabazane",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -29.093,
+    "centroid_lng": 29.5835
+  },
+  {
+    "id": "KZN233",
+    "name": "Indaka",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -28.553,
+    "centroid_lng": 30.1545
+  },
+  {
+    "id": "KZN234",
+    "name": "Umtshezi",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -28.9305,
+    "centroid_lng": 29.998
+  },
+  {
+    "id": "KZN283",
+    "name": "Ntambanana",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -28.564,
+    "centroid_lng": 31.703
+  },
+  {
+    "id": "LIM352",
+    "name": "Aganang",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -23.6835,
+    "centroid_lng": 29.1035
+  },
+  {
+    "id": "LIM474",
+    "name": "Fetakgomo",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -24.415,
+    "centroid_lng": 29.8865
+  },
+  {
+    "id": "LIM475",
+    "name": "Greater Tubatse",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -24.6815,
+    "centroid_lng": 30.3275
+  },
+  {
+    "id": "LIM473",
+    "name": "Makhuduthamaga",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -24.737,
+    "centroid_lng": 29.777
+  },
+  {
+    "id": "LIM342",
+    "name": "Mutale",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -22.5765,
+    "centroid_lng": 30.7745
+  },
+  {
+    "id": "LIM365",
+    "name": "Modimolle",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -24.436,
+    "centroid_lng": 28.1
+  },
+  {
+    "id": "LIM364",
+    "name": "Mookgopong",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -24.503,
+    "centroid_lng": 28.882
+  },
+  {
+    "id": "MP322",
+    "name": "Mbombela",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -25.3505,
+    "centroid_lng": 31.035
+  },
+  {
+    "id": "MP323",
+    "name": "Umjindi",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -25.743,
+    "centroid_lng": 31.028
+  },
+  {
+    "id": "MP301",
+    "name": "Albert Luthuli",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.108,
+    "centroid_lng": 30.464
+  },
+  {
+    "id": "MP304",
+    "name": "Pixley Ka Seme",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -27.102,
+    "centroid_lng": 29.993
+  },
+  {
+    "id": "MP311",
+    "name": "Victor Khanye",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.108,
+    "centroid_lng": 28.7585
+  },
+  {
+    "id": "NW372",
+    "name": "Madibeng",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -25.431,
+    "centroid_lng": 27.738
+  },
+  {
+    "id": "NW402",
+    "name": "Tlokwe City Council",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.7495,
+    "centroid_lng": 27.184
+  },
+  {
+    "id": "NW401",
+    "name": "Ventersdorp",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.322,
+    "centroid_lng": 26.91
+  },
+  {
+    "id": "NW385",
+    "name": "Ramotshere Moiloa",
+    "state_code": "NW",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -25.2035,
+    "centroid_lng": 26.0715
+  },
+  {
+    "id": "NC083",
+    "name": "//Khara Hais",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -27.7405,
+    "centroid_lng": 21.195
+  },
+  {
+    "id": "NC081",
+    "name": "Mier",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -26.3405,
+    "centroid_lng": 20.5125
+  },
+  {
+    "id": "WC034",
+    "name": "Swellendam",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 44,
+    "centroid_lat": -34.037,
+    "centroid_lng": 20.445
+  },
+  {
+    "id": "GT481",
+    "name": "Mogale City",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 43,
+    "centroid_lat": -26.0045,
+    "centroid_lng": 27.683
+  },
+  {
+    "id": "KZN285",
+    "name": "Mthonjaneni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 43,
+    "centroid_lat": -28.576,
+    "centroid_lng": 31.376
+  },
+  {
+    "id": "MP312",
+    "name": "Emalahleni",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 43,
+    "centroid_lat": -26.02,
+    "centroid_lng": 29.1635
+  },
+  {
+    "id": "WC044",
+    "name": "George",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 43,
+    "centroid_lat": -33.725,
+    "centroid_lng": 22.934
+  },
+  {
+    "id": "FS195",
+    "name": "Phumelela",
+    "state_code": "FS",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -27.6345,
+    "centroid_lng": 29.2505
+  },
+  {
+    "id": "GT422",
+    "name": "Midvaal",
+    "state_code": "GP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -26.629,
+    "centroid_lng": 28.138
+  },
+  {
+    "id": "LIM367",
+    "name": "Mogalakwena",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -23.873,
+    "centroid_lng": 28.674
+  },
+  {
+    "id": "NC078",
+    "name": "Siyancuma",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -29.0525,
+    "centroid_lng": 23.367
+  },
+  {
+    "id": "WC024",
+    "name": "Stellenbosch",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -33.928,
+    "centroid_lng": 18.976
+  },
+  {
+    "id": "WC048",
+    "name": "Knysna",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -33.9445,
+    "centroid_lng": 22.9765
+  },
+  {
+    "id": "WC033",
+    "name": "Cape Agulhas",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -34.5195,
+    "centroid_lng": 20.244
+  },
+  {
+    "id": "WC014",
+    "name": "Saldanha Bay",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 42,
+    "centroid_lat": -33.0105,
+    "centroid_lng": 18.191
+  },
+  {
+    "id": "EC123",
+    "name": "Great Kei",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 41,
+    "centroid_lat": -32.681,
+    "centroid_lng": 28.0255
+  },
+  {
+    "id": "KZN293",
+    "name": "Ndwedwe",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 41,
+    "centroid_lat": -29.4025,
+    "centroid_lng": 30.9835
+  },
+  {
+    "id": "EC105",
+    "name": "Ndlambe",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -33.5105,
+    "centroid_lng": 26.733
+  },
+  {
+    "id": "EC156",
+    "name": "Mhlontlo",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -31.169,
+    "centroid_lng": 28.795
+  },
+  {
+    "id": "KZN294",
+    "name": "Maphumulo",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -29.1045,
+    "centroid_lng": 31.0745
+  },
+  {
+    "id": "LIM471",
+    "name": "Ephraim Mogale",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -24.856,
+    "centroid_lng": 29.3325
+  },
+  {
+    "id": "LIM361",
+    "name": "Thabazimbi",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -24.3935,
+    "centroid_lng": 27.2
+  },
+  {
+    "id": "MP321",
+    "name": "Thaba Chweu",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -24.976,
+    "centroid_lng": 30.5055
+  },
+  {
+    "id": "WC012",
+    "name": "Cederberg",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 40,
+    "centroid_lat": -32.3615,
+    "centroid_lng": 18.903
+  },
+  {
+    "id": "EC121",
+    "name": "Mbhashe",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -32.118,
+    "centroid_lng": 28.5565
+  },
+  {
+    "id": "EC137",
+    "name": "Engcobo",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -31.7065,
+    "centroid_lng": 28.054
+  },
+  {
+    "id": "EC153",
+    "name": "Ngquza Hill",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -31.2185,
+    "centroid_lng": 29.6215
+  },
+  {
+    "id": "KZN271",
+    "name": "Umhlabuyalingana",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -27.221,
+    "centroid_lng": 32.5505
+  },
+  {
+    "id": "KZN245",
+    "name": "Umvoti",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -29.006,
+    "centroid_lng": 30.6745
+  },
+  {
+    "id": "KZN235",
+    "name": "Okhahlamba",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 39,
+    "centroid_lat": -28.7605,
+    "centroid_lng": 29.3175
+  },
+  {
+    "id": "EC442",
+    "name": "Umzimvubu",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 38,
+    "centroid_lat": -30.825,
+    "centroid_lng": 29.0435
+  },
+  {
+    "id": "EC135",
+    "name": "Intsika Yethu",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 38,
+    "centroid_lat": -31.9455,
+    "centroid_lng": 27.5645
+  },
+  {
+    "id": "KZN435",
+    "name": "Umzimkhulu",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 38,
+    "centroid_lat": -30.2745,
+    "centroid_lng": 29.754
+  },
+  {
+    "id": "LIM366",
+    "name": "Bela-Bela",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 38,
+    "centroid_lat": -24.9525,
+    "centroid_lng": 28.2705
+  },
+  {
+    "id": "MP314",
+    "name": "Emakhazeni",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 38,
+    "centroid_lat": -25.569,
+    "centroid_lng": 30.0815
+  },
+  {
+    "id": "EC441",
+    "name": "Matatiele",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 37,
+    "centroid_lat": -30.3485,
+    "centroid_lng": 28.756
+  },
+  {
+    "id": "EC155",
+    "name": "Nyandeni",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 37,
+    "centroid_lat": -31.609,
+    "centroid_lng": 29.0395
+  },
+  {
+    "id": "KZN434",
+    "name": "Ubuhlebezwe",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 37,
+    "centroid_lat": -30.189,
+    "centroid_lng": 30.1485
+  },
+  {
+    "id": "KZN244",
+    "name": "Msinga",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 36,
+    "centroid_lat": -28.6045,
+    "centroid_lng": 30.493
+  },
+  {
+    "id": "KZN261",
+    "name": "eDumbe",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 36,
+    "centroid_lat": -27.484,
+    "centroid_lng": 30.8265
+  },
+  {
+    "id": "LIM341",
+    "name": "Musina",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 36,
+    "centroid_lat": -22.4415,
+    "centroid_lng": 29.779
+  },
+  {
+    "id": "NC076",
+    "name": "Thembelihle",
+    "state_code": "NC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 36,
+    "centroid_lat": -29.6415,
+    "centroid_lng": 23.849
+  },
+  {
+    "id": "MP303",
+    "name": "Mkhondo",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 35,
+    "centroid_lat": -26.9275,
+    "centroid_lng": 30.7595
+  },
+  {
+    "id": "MP302",
+    "name": "Msukaligwa",
+    "state_code": "MP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 35,
+    "centroid_lat": -26.5155,
+    "centroid_lng": 30.1185
+  },
+  {
+    "id": "EC443",
+    "name": "Mbizana",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 34,
+    "centroid_lat": -30.9475,
+    "centroid_lng": 29.85
+  },
+  {
+    "id": "EC141",
+    "name": "Elundini",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 34,
+    "centroid_lat": -30.927,
+    "centroid_lng": 28.3145
+  },
+  {
+    "id": "LIM343",
+    "name": "Thulamela",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 34,
+    "centroid_lat": -22.8795,
+    "centroid_lng": 30.8645
+  },
+  {
+    "id": "LIM362",
+    "name": "Lephalale",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 34,
+    "centroid_lat": -23.6335,
+    "centroid_lng": 27.7925
+  },
+  {
+    "id": "LIM351",
+    "name": "Blouberg",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 33,
+    "centroid_lat": -22.9965,
+    "centroid_lng": 28.7035
+  },
+  {
+    "id": "LIM332",
+    "name": "Greater Letaba",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 33,
+    "centroid_lat": -23.5345,
+    "centroid_lng": 30.3185
+  },
+  {
+    "id": "LIM344",
+    "name": "Makhado",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 33,
+    "centroid_lat": -23.0185,
+    "centroid_lng": 29.8655
+  },
+  {
+    "id": "KZN286",
+    "name": "Nkandla",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 32,
+    "centroid_lat": -28.6475,
+    "centroid_lng": 30.9845
+  },
+  {
+    "id": "LIM331",
+    "name": "Greater Giyani",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 32,
+    "centroid_lat": -23.3865,
+    "centroid_lng": 30.9275
+  },
+  {
+    "id": "LIM335",
+    "name": "Maruleng",
+    "state_code": "LP",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 32,
+    "centroid_lat": -24.304,
+    "centroid_lng": 30.7645
+  },
+  {
+    "id": "WC032",
+    "name": "Overstrand",
+    "state_code": "WC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 31,
+    "centroid_lat": -34.486,
+    "centroid_lng": 19.2745
+  },
+  {
+    "id": "EC154",
+    "name": "Port St Johns",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 30,
+    "centroid_lat": -31.5515,
+    "centroid_lng": 29.468
+  },
+  {
+    "id": "EC444",
+    "name": "Ntabankulu",
+    "state_code": "EC",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 29,
+    "centroid_lat": -30.996,
+    "centroid_lng": 29.31
+  },
+  {
+    "id": "KZN253",
+    "name": "Emadlangeni",
+    "state_code": "KZN",
+    "type": "lm",
+    "market": "za",
+    "opportunity_score": 29,
+    "centroid_lat": -27.638,
+    "centroid_lng": 30.299
+  }
+]

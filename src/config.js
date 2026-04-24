@@ -37,6 +37,17 @@ export const MARKETS = {
     geojsonRes:      '/data/ca-cd.geojson',
     geojsonBiz:      '/data/ca-business-cd.geojson',
   },
+  za: {
+    label:           'South Africa',
+    flag:            '🇿🇦',
+    center:          { lat: -29.0, lng: 25.0 },
+    cameraDistance:  1_800_000,
+    boundaryCenter:  { lat: -29.0, lng: 25.0 },
+    boundarySpan:    { latDelta: 20, lngDelta: 22 },
+    dataBadge:       'Stats SA Census 2022',
+    geojsonRes:      '/data/za-lm.geojson',
+    geojsonBiz:      '/data/za-business-lm.geojson',
+  },
 };
 
 // ─── Score labels ─────────────────────────────────────────────────────────────
@@ -106,6 +117,30 @@ export const NAICS_SHORT = {
   '72':    'Accommodation',
   '81':    'Other Services',
   '91':    'Public Admin',
+};
+
+// South Africa: ISIC Rev. 4 (letter-based A–T, same structure as UK SIC)
+export const ZA_ISIC_SHORT = {
+  A: 'Agriculture',
+  B: 'Mining',
+  C: 'Manufacturing',
+  D: 'Electricity',
+  E: 'Water & Waste',
+  F: 'Construction',
+  G: 'Wholesale & Retail',
+  H: 'Transport',
+  I: 'Accommodation',
+  J: 'Info & Comm',
+  K: 'Finance',
+  L: 'Real Estate',
+  M: 'Prof Services',
+  N: 'Admin & Support',
+  O: 'Public Admin',
+  P: 'Education',
+  Q: 'Healthcare',
+  R: 'Arts & Rec',
+  S: 'Other Services',
+  T: 'Private Households',
 };
 
 // UK: SIC 2007 sections (A–U, note different letters vs ANZSIC for F/G/H/I)

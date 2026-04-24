@@ -26,6 +26,15 @@ const ANZSIC_SHORT = {
   P: 'Education', Q: 'Healthcare', R: 'Arts & Recreation', S: 'Other',
 };
 
+const ZA_ISIC_SHORT = {
+  A: 'Agriculture', B: 'Mining', C: 'Manufacturing', D: 'Electricity',
+  E: 'Water & Waste', F: 'Construction', G: 'Wholesale & Retail',
+  H: 'Transport', I: 'Accommodation', J: 'Info & Comm', K: 'Finance',
+  L: 'Real Estate', M: 'Prof Services', N: 'Admin & Support', O: 'Public Admin',
+  P: 'Education', Q: 'Healthcare', R: 'Arts & Rec', S: 'Other Services',
+  T: 'Private Households',
+};
+
 const UK_SIC_SHORT = {
   A: 'Agriculture', B: 'Mining', C: 'Manufacturing', D: 'Utilities',
   E: 'Water & Waste', F: 'Construction', G: 'Wholesale & Retail',
@@ -283,6 +292,120 @@ Write 3 concise paragraphs (no headings, no bullet points, no markdown):
 Keep the tone direct and analytical. Cite specific statistics. Avoid generic statements.`;
 }
 
+function buildZaPrompt(p) {
+  const homeOwnershipPct = ((p.owned_outright_pct ?? 0) + (p.owned_mortgage_pct ?? 0)) ||
+                            (p.owned_pct ?? 0);
+  const topAgeBracket = p.age_distribution
+    ? Object.entries(p.age_distribution).sort((a, b) => b[1] - a[1])[0]?.[0]
+    : null;
+
+  // Note: Stats SA withheld income & industry data from Census 2022.
+  // Socioeconomic status is proxied via service access rates.
+  const incomeBlock = `SOCIOECONOMIC PROXY (service access — Census 2022)
+  NOTE: Stats SA withheld household income data from the 2022 Census release.
+  Electricity for cooking: ${p.electricity_cooking_pct?.toFixed(0) ?? 'N/A'}% (strong income proxy in SA)
+  Piped water access:      ${p.piped_water_pct?.toFixed(0) ?? 'N/A'}%
+  Flush toilet access:     ${p.flush_toilet_pct?.toFixed(0) ?? 'N/A'}%`;
+
+  return `You are a market analyst helping a broadband internet service provider (ISP) evaluate expansion opportunities in South Africa.
+
+Analyse the following region and provide actionable market intelligence for an ISP sales team.
+
+REGION: ${p.name} (${p.state_code})
+TYPE: Local Municipality — Stats SA Census 2022
+COMPETITIVE CONTEXT: South Africa's residential broadband market is dominated by Telkom (DSL/fibre), Vodacom and MTN (LTE/5G home broadband), and Openserve wholesale. Rain, Herotel, Frogfoot, Vumatel, and MetroFibre are expanding FTTH footprints in metropolitan and peri-urban areas. Most rural households rely on mobile data. Fixed-line penetration is low nationally (~10%) but fibre uptake is growing rapidly in high-density urban areas. Load-shedding (loadshedding) has driven demand for reliable connectivity and backup solutions. Government's SA Connect programme targets universal broadband access by 2030.
+
+MARKET OVERVIEW
+  Households: ${p.dwelling_count?.toLocaleString('en-ZA') ?? 'N/A'}
+  Population: ${p.population?.toLocaleString('en-ZA') ?? 'N/A'}
+  ${topAgeBracket ? `Dominant Age Bracket: ${topAgeBracket}` : ''}
+  Population Density: ${p.population_density_per_sqkm?.toFixed(0) ?? 'N/A'}/km²
+
+DWELLING PROFILE
+  Formal House (separate stand): ${p.separate_house_pct?.toFixed(0) ?? 'N/A'}%
+  Flat / Apartment: ${p.apartment_pct?.toFixed(0) ?? 'N/A'}%
+  Semi-Detached / Townhouse: ${p.semi_detached_pct?.toFixed(0) ?? 'N/A'}%
+  Traditional Dwelling: ${p.traditional_dwelling_pct?.toFixed(0) ?? 'N/A'}%
+  Informal Dwelling (shack): ${p.informal_dwelling_pct?.toFixed(0) ?? 'N/A'}%
+  Total Formal Dwellings: ${p.formal_dwelling_pct?.toFixed(0) ?? 'N/A'}%
+  Home Ownership: ${homeOwnershipPct.toFixed(0)}%
+  Renters: ${p.renting_pct?.toFixed(0) ?? 'N/A'}%
+
+CONNECTIVITY & OPPORTUNITY
+  Families with Children: ${p.households_with_children_pct?.toFixed(0) ?? 'N/A'}%
+  Elderly (65+): ${p.elderly_pct?.toFixed(0) ?? 'N/A'}%
+  Youth (0–19): ${p.youth_pct?.toFixed(0) ?? 'N/A'}%
+
+${incomeBlock}
+
+SIGNAL OPPORTUNITY SCORE: ${p.opportunity_score ?? 'N/A'}/100
+  Score Components:
+  - Service Access (income proxy): ${p.income_component ?? 'N/A'}/100
+  - Formal Dwellings (addressable): ${p.dwelling_component ?? 'N/A'}/100
+  - Population Density: ${p.density_component ?? 'N/A'}/100
+  - Youth (0–14): ${p.children_component ?? 'N/A'}/100
+  - Elderly (60+): ${p.elderly_component ?? 'N/A'}/100
+
+Write 3 concise paragraphs (no headings, no bullet points, no markdown):
+1. Overall market assessment — what makes this municipality attractive (or not) for fixed broadband expansion, considering the formal vs. informal housing split and service access profile.
+2. Key customer segments to target and why — reference specific demographics, dwelling types, and the load-shedding connectivity angle where relevant.
+3. Recommended approach — pricing tiers, community angles, or ISP partnership strategies most likely to succeed in this South African market.
+
+Keep the tone direct and analytical. Cite specific statistics. Avoid generic statements.`;
+}
+
+function buildZaBizPrompt(p) {
+  const topIndustries = p.industry_distribution
+    ? Object.entries(p.industry_distribution)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 7)
+        .map(([code, count]) => {
+          const pct = p.working_population > 0
+            ? ((count / p.working_population) * 100).toFixed(1) : '?';
+          return `  ${ZA_ISIC_SHORT[code] ?? code}: ${count.toLocaleString('en-ZA')} workers (${pct}%)`;
+        })
+        .join('\n')
+    : '  Not available';
+
+  return `You are a business development analyst helping a telecommunications company identify and prioritise business broadband sales opportunities in South Africa.
+
+The product targets small-to-medium enterprises (SMEs) that need reliable, high-performance internet for cloud applications, VoIP, video conferencing, and data-intensive workflows.
+
+Analyse the following Local Municipality and provide actionable intelligence for a business broadband sales team.
+
+REGION: ${p.name} (${p.state_code})
+TYPE: Local Municipality — Stats SA Census 2022
+COMPETITIVE CONTEXT: South Africa's business broadband market is served by Telkom Business (ADSL/fibre/MPLS), Vodacom Business, MTN Business, and Liquid Intelligent Technologies. Frogfoot, Vumatel, Openserve wholesale FTTH, and Dark Fibre Africa provide infrastructure. SMEs are increasingly moving from ADSL to fibre or LTE failover solutions. Load-shedding is a major pain point — ISPs offering UPS/battery backup integration or LTE failover command a premium. The government's SOE reform and SA Connect programme are expanding backbone capacity.
+
+BUSINESS LANDSCAPE
+  Working Population (employed in this area): ${p.working_population?.toLocaleString('en-ZA') ?? 'N/A'}
+  Worker Density: ${p.working_pop_density ?? 'N/A'}/km²
+
+TOP INDUSTRIES BY WORKERS (ISIC Rev. 4):
+${topIndustries}
+
+KEY SECTOR CONCENTRATIONS
+  Knowledge Workers (Finance, IT, Professional, Healthcare, Education): ${p.knowledge_worker_pct?.toFixed(1) ?? 'N/A'}%
+  Healthcare & Social Work: ${p.healthcare_pct?.toFixed(1) ?? 'N/A'}%
+  Professional & Technical Services: ${p.professional_services_pct?.toFixed(1) ?? 'N/A'}%
+  Finance & Information Tech: ${p.finance_tech_pct?.toFixed(1) ?? 'N/A'}%
+  Retail Trade: ${p.retail_pct?.toFixed(1) ?? 'N/A'}%
+  Construction: ${p.construction_pct?.toFixed(1) ?? 'N/A'}%
+
+BUSINESS OPPORTUNITY SCORE: ${p.smartbiz_score ?? 'N/A'}/100
+  Score Components:
+  - Industry Mix: ${p.industry_mix_component ?? 'N/A'}/100
+  - High-Value Sectors: ${p.high_value_component ?? 'N/A'}/100
+  - Business Density: ${p.wp_density_component ?? 'N/A'}/100
+
+Write 3 concise paragraphs (no headings, no bullet points, no markdown):
+1. Business landscape — what industries dominate, what this means for broadband demand and load-shedding resilience needs.
+2. Priority target segments — which specific business types and sectors to focus sales efforts on and why.
+3. Sales approach — how to position for this South African market, relevant use cases (VoIP, cloud, failover), partnership channels, or competitive angles.
+
+Keep the tone direct and analytical. Cite specific statistics. Focus on actionable intelligence for a field sales team.`;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -323,10 +446,15 @@ export default async function handler(req, res) {
     });
 
     const isBusiness = properties.smartbiz_score != null;
-    const isCa = properties.market === 'ca';
-    const prompt = isCa
-      ? (isBusiness ? buildCaBizPrompt(properties) : buildCaPrompt(properties))
-      : (isBusiness ? buildBusinessPrompt(properties) : buildPrompt(properties));
+    const market     = properties.market;
+    let prompt;
+    if (market === 'ca') {
+      prompt = isBusiness ? buildCaBizPrompt(properties) : buildCaPrompt(properties);
+    } else if (market === 'za') {
+      prompt = isBusiness ? buildZaBizPrompt(properties) : buildZaPrompt(properties);
+    } else {
+      prompt = isBusiness ? buildBusinessPrompt(properties) : buildPrompt(properties);
+    }
     const result = await model.generateContentStream(prompt);
 
     for await (const chunk of result.stream) {
