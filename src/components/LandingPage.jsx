@@ -26,6 +26,14 @@ const MARKET_META = {
     border:      'rgba(255,80,80,0.22)',
     glow:        'rgba(255,80,80,0.12)',
   },
+  za: {
+    regionLabel: '234 Local Municipalities',
+    census:      'Stats SA Census 2022',
+    description: 'Local Municipality scoring across all 9 provinces with dwelling type and service access data.',
+    gradient:    'linear-gradient(135deg, rgba(0,119,73,0.18) 0%, rgba(255,184,28,0.12) 100%)',
+    border:      'rgba(0,180,100,0.22)',
+    glow:        'rgba(0,180,100,0.12)',
+  },
 };
 
 export default function LandingPage({ onSelect, preloadState }) {
